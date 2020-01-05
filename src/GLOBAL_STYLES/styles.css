@@ -1,0 +1,183 @@
+/* default styles for all native html elements */
+
+:root {
+  /* initialize hsl color values: don't mess with these */
+  --hue: 0;/* degrees: subtract from this number to get different hues */
+  --saturation: 0%; /* saturation: subtract from or divide this to get the right saturation */
+  --lightness: 0%; /* lightness: subtract from or divide this to get the right lightness */
+  
+  /* change the amount added to the above values to achieve different colors  */
+  --hueSubPrimary: 180; /* should not exceed 360 (degrees) */
+  --saturationSubPrimary: 50%; /* should not exceed 100% */
+  --lightnessSubPrimary: 50%; /* should not exceed 100% */
+
+  /* don't mess with these */
+  --huePrimary: calc(var(--hue) + var(--hueSubPrimary));
+  --saturationPrimary: calc(var(--saturation) + var(--saturationSubPrimary));
+  --lightnessPrimary: calc(var(--lightness) + var(--lightnessSubPrimary));
+
+  --lightnessPrimaryD: calc((var(--lightnessSubPrimary) / 100) * 60);
+  --lightnessPrimaryC: calc((var(--lightnessSubPrimary) / 100) * 70);
+  --lightnessPrimaryB: calc((var(--lightnessSubPrimary) / 100) * 80);
+  --lightnessPrimaryA: calc((var(--lightnessSubPrimary) / 100) * 90);
+
+  --lightnessPrimary1: calc((var(--lightnessSubPrimary) / 100) * 110);
+  --lightnessPrimary2: calc((var(--lightnessSubPrimary) / 100) * 120);
+  --lightnessPrimary3: calc((var(--lightnessSubPrimary) / 100) * 130);
+  --lightnessPrimary4: calc((var(--lightnessSubPrimary) / 100) * 140);
+
+
+  /* dont mess with these */
+  --primaryD: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryD));
+  --primaryC: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryC));
+  --primaryB: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryB));
+  --primaryA: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryA));
+  --primary0: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary));
+  --primary1: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary1));
+  --primary2: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary2));
+  --primary3: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary3));
+  --primary4: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary4));
+
+
+  /* default font variables */
+  --fontFamilyRegular: sans-serif;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontMedium: 500;
+  --fontWeightBold: 700;
+  --fontWeightBlack: 900;
+  --fontStyle: normal;
+  --fontColor: var(--primary0);
+  --textMargins: 0 0 var(--fontLineHeight) 0;
+
+  /* default font styles */
+  color: var(--fontColor);
+  font-family: var(--fontFamilyRegular);
+  font-style: var(--fontStyle);
+  font-weight: var(--fontWeightRegular);
+  font-size: var(--fontSizeDefault);
+  line-height: var(--fontLineHeight);
+
+  /* default font sizes */
+  --fontSizeDefault: 62.5%;/*set font size to 62.5% = 10px = 1em = 1rem */
+  --fontSizeRatio: calc(1 + (1 / 3));
+  --fontLineHeight: calc(1 + (1 / 3));
+  --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
+  --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
+  --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
+  --fontSizeH4: calc(var(--fontSizeH5) * var(--fontSizeRatio));
+  --fontSizeH5: calc(var(--fontSizeH6) * var(--fontSizeRatio));
+  --fontSizeH6: var(--fontSizeDefault);
+  --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
+
+  /* default site padding */
+  --sitePadding: 0;
+}
+
+/* dont mess with these */
+html {
+  font-size: var(--fontSizeDefault);
+  font-weight: var(--fontWeightRegular);
+  font-style: var(--fontStyle);
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.4em; /* in this case 1.4 em is equal*/
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+/* button styles */
+button {
+  font-size: var(--fontSizeDefault);
+}
+
+/*              */
+/* font weights */
+/*              */
+.fontWeightLight {
+  font-weight: var(--fontWeightLight);
+}
+
+.fontWeightRegular {
+  font-weight: var(--fontWeightRegular);
+}
+
+.fontMedium {
+  font-weight: var(--fontMedium);
+}
+
+.fontWeightBold {
+  font-weight: var(--fontWeightBold);
+}
+
+/*         */
+/* heading */
+/*         */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin: var(--textMargins);
+}
+
+h1 {
+  font-size: var(--fontSizeH1);
+}
+
+h2 {
+  font-size: var(--fontSizeH2);
+}
+
+h3 {
+  font-size: var(--fontSizeH3);
+}
+
+h4 {
+  font-size: var(--fontSizeH4);
+}
+
+h5 {
+  font-size: var(--fontSizeH5);
+}
+
+h6 {
+  font-size: var(--fontSizeH6);
+}
+
+/* labels */
+label {
+  font-size: var(--fontSizeLabel);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--fontWeightLight);
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  height: 36px;
+  background: var(--primary0);
+  border: none;
+  outline:none;
+}

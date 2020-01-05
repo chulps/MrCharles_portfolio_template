@@ -1,0 +1,13 @@
+.home {
+  /* background: red; */
+}
+
+.site-home-section {
+  position: relative;
+  background: white;
+  height: calc(100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2)));
+}
+
+.site-home-section + .site-home-section {
+  margin-top:calc(var(--navHeight) + var(--navPadding));
+}

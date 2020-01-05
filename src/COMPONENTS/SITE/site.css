@@ -1,0 +1,8 @@
+.site {
+  min-height: 100vh;
+  padding: var(--sitePadding);
+  position: relative;
+  top: var(--navHeight);
+}
+
+

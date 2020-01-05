@@ -1,0 +1,190 @@
+/* the values for all declared variables are in /GOLBAL_STYLES/styles.css */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--navHeight);
+  bottom: 0;
+  left: 100%;
+  position: sticky;
+  width: var(--sitePadding);
+  height: calc(var(--navHeight) + (var(--navPadding) / 2));
+  background: white;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--navPadding);
+    align-items: center;
+    height: var(--navHeight);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+nav ul {
+  display: none;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li,
+.mobileNav div:not(.overlay) {
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-right: 40px;
+  font-family: var(--font0);
+  color: var(--cyan4);
+}
+
+nav ul li:last-of-type {
+  margin-right: 0 !important;
+}
+
+nav ul li:hover {
+  color: white;
+}
+
+nav ul li:active {
+  color: var(--primary0);
+}
+
+nav ul button {
+  margin-left: 20px;
+}
+
+nav span.logoWrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  width: var(--navHeight);
+  height: calc(var(--navHeight) + (var(--navPadding) / 2));
+}
+
+nav .logo {
+  height: 40px;
+  width: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav span.logoWrapper {
+    position: relative;
+    background: transparent;
+    top: unset;
+    left: unset;
+    padding: unset;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  nav .logo {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.mobileNav {
+  transform: scale(10);
+}
+
+.mobileNav div:not(.overlay) {
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 3px;
+  width: 40px;
+  white-space: nowrap;
+}
+
+/* .mobileNav div:not(.overlay):hover {
+  color: var(--grey4);
+} */
+
+.mobileNav div:not(.overlay) + div {
+  border: none;
+}
+
+.mobileNav-hide {
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  color: white;
+  transition: all 0.3s;
+  transform: translate(0, 0);
+  will-change: transform;
+  opacity: 0;
+}
+
+.mobileNav-show {
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  color: white;
+  transition: all 0.3s;
+  transform: translate(0, -100vh);
+  will-change: transform;
+  opacity: 1;
+  width: calc(100% - 80px);
+}
+
+.mobileNav-hide .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  position: fixed;
+  border: none;
+  transition: all 1s ease;
+}
+
+.mobileNav-show .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 1;
+  position: fixed;
+  border: none;
+  transition: all 1s ease;
+}
+
+#mobile-nav-button {
+  transition: 1s;
+  outline: none;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top:0;
+  padding: 0;
+  background-color: white;
+  border: none;
+  width: var(--sitePadding);
+  height: calc(var(--navHeight) + (var(--navPadding) / 2));
+}
+
+#mobile-nav-links {
+  z-index: 1;
+}
