@@ -1,6 +1,8 @@
 /* the values for all declared variables are in /GOLBAL_STYLES/styles.css */
 
 nav {
+  --navHeight: 5em;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,16 +11,16 @@ nav {
   left: 100%;
   position: sticky;
   width: var(--sitePadding);
-  height: calc(var(--navHeight) + (var(--navPadding) / 2));
+  height: var(--navHeight);
   background: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: var(--navPadding);
     align-items: center;
+    padding: var(--navPadding);
     height: var(--navHeight);
     position: absolute;
     top: 0;
@@ -49,7 +51,7 @@ nav ul li:last-of-type {
 }
 
 nav ul li:hover {
-  color: white;
+  color: var(--secondary1);
 }
 
 nav ul li:active {
