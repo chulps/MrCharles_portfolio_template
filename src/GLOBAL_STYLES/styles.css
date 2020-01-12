@@ -1,3 +1,4 @@
+/* styles.css */
 /* default styles for all native html elements */
 
 :root {
@@ -159,6 +160,10 @@ line-height: var(--fontLineHeight);
 
 /* default site padding */
 --sitePadding: 0;
+
+/* navbar height */
+--navHeight: 100px;
+
 }
 
 /* dont mess with these */
@@ -264,8 +269,21 @@ a {
 }
 
 button {
-  height: 36px;
-  background: var(--primary0);
+  font-size: 1em;
+  height: 1rem;
+  background: white;
+  border: 1px solid var(--primary0);
   border: none;
   outline:none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.6em;
+}
+
+button.contact-button {
+  border-radius: 3.2em;
+  height: 3.2em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+
 }

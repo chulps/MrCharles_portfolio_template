@@ -1,9 +1,11 @@
+// Site.js
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "../NAV/nav.js";
-import Footer from "../FOOTER/footer.js";
+import Navbar from "../NAV/Nav.js";
+import Footer from "../FOOTER/Footer.js";
 import React from "react";
 import "./site.css";
-import Home from './SITE_COMPONENTS/HOME/home.js';
+import Home from './SITE_COMPONENTS/HOME/Home.js';
 import About from './SITE_COMPONENTS/ABOUT/About.js';
 
 class Site extends React.Component {
@@ -16,11 +18,12 @@ class Site extends React.Component {
     return (
     <Router>
       <div>
-      <Navbar />
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
         </Switch>
+        <button className="contact-button">contact button</button>
         <Footer/>
       </div>
     </Router>

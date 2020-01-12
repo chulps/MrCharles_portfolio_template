@@ -18,16 +18,14 @@ class Nav extends React.Component {
       <nav>
 
         {/* wrapper for the logo and logo text, hidden on small screens */}
-        <span className='logoWrapper'>
           <img
           className="logo"
           src={Logo}
           alt="Mr. Charles"/>
-          <p 
+          <div 
           style={{margin: 0}}
           className="hidden md-flex">
-              Mr. Charles</p>
-        </span>
+              Mr. Charles</div>
         
         {/* desktop nav menu */}
         <ul className="hidden md-flex">

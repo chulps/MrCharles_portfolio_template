@@ -241,11 +241,17 @@ and set display to "grid" */
 }
 
 .flex-row-reverse {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .flex-column-reverse {
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .flex-center {
@@ -305,6 +311,7 @@ and set display to "grid" */
 .third {
   width: calc(100% / 3);
 }
+
 .fourth,
 .quarter {
   width: 25%;
@@ -473,11 +480,17 @@ and set display to "grid" */
   }
 
   .xs-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   
   .xs-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .xs-flex-center {
@@ -699,11 +712,17 @@ and set display to "grid" */
   }
 
   .sm-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   
   .sm-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .sm-flex-center {
@@ -926,11 +945,17 @@ and set display to "grid" */
   }
 
   .md-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   
   .md-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .md-flex-center {
@@ -1154,11 +1179,17 @@ and set display to "grid" */
   }
 
   .lg-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   
   .lg-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .lg-flex-center {
@@ -1600,11 +1631,17 @@ and set display to "grid" */
   }
 
   .hg-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   
   .hg-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .hg-flex-center {
