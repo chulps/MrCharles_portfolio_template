@@ -2,15 +2,13 @@
 
 nav {
   --navHeight: 5em;
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: var(--navHeight);
   bottom: 0;
-  left: 100%;
   position: sticky;
-  width: var(--sitePadding);
+  width: 100%;
   height: var(--navHeight);
   background: white;
 }

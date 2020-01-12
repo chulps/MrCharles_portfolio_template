@@ -185,6 +185,7 @@ body * {
 /* button styles */
 button {
   font-size: var(--fontSizeDefault);
+  height: calc(1.6em * 3);
 }
 
 /*              */

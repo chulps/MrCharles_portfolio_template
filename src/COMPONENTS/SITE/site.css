@@ -3,6 +3,7 @@
   padding: var(--sitePadding);
   position: relative;
   top: var(--navHeight);
+  background: grey;
 }
 
 
