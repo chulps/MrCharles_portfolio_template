@@ -15,25 +15,25 @@ class Nav extends React.Component {
   render() {
     return (
 
-      // mother nav
       <nav>
 
         {/* wrapper for the logo and logo text, hidden on small screens */}
-          <img
-          className="logo"
-          src={Logo}
-          alt="Mr. Charles"/>
-          <div 
-          style={{margin: 0}}
-          className="hidden md-flex">
-              Mr. Charles</div>
-        
+          <span className="logoWrapper">
+            <img
+            className="logo"
+            src={Logo}
+            alt="Mr. Charles"/>
+            <div 
+            style={{margin: 0}}
+            className="hidden md-flex">
+                Mr. Charles</div>
+          </span>
         {/* desktop nav menu */}
         <ul className="hidden md-flex">
           <li><Link to="/about">About</Link></li>
           <li><Link to="/clicktool">Clicktool</Link></li>
           <li><Link to="/works">Other Works</Link></li>
-          <button><Link to="/contact">Contact</Link></button>
+          <Link to="/contact"><button>Contact</button></Link>
         </ul>
 
         <button
