@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
+// Nav.js
 import Logo from "./CHULPS_LOGO_ANIMATION_instagram.gif";
 import LogoWhite from "./CHULPS_LOGO_ANIMATION_WHITE_NO_BG_portfolio.gif";
 
