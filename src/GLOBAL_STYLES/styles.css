@@ -10,7 +10,7 @@
 
   /* For color changes, these three parameters should solve 
   most of your problems. */
-  --hueSubPrimary: 360; /* choose a number between 1 and 360 */
+  --hueSubPrimary: 0; /* choose a number between 1 and 360 */
   --saturationSubPrimary: 50%; /* should not exceed 100% */
   --lightnessSubPrimary: 50%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
 
@@ -42,7 +42,7 @@
         --primary4: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary4));
 
   /* theres no need to mess with these but you can if you want to  */
-  --hueSubSecondary: calc(var(--hueSubPrimary) - 180); /* this is set to choose a color on the opposite side of the color wheel from primary1 */
+  --hueSubSecondary: calc(var(--hueSubPrimary) + 180); /* this is set to choose a color on the opposite side of the color wheel from primary1 */
   --saturationSubSecondary: var(--saturationSubPrimary);
   --lightnessSubSecondary: var(--lightnessSubPrimary);
         /* don't mess with these*/
@@ -71,7 +71,7 @@
 
 
   /* theres no need to mess with these but you can if you want to  */
-  --hueSubTertiary: calc(var(--hueSubPrimary) + 60); /* this is set to choose a color on the color wheel 60degrees from primary0 */
+  --hueSubTertiary: calc(var(--hueSubPrimary) + 30); /* this is set to choose a color on the color wheel 60degrees from primary0 */
   --saturationSubTertiary: var(--saturationSubPrimary);
   --lightnessSubTertiary: var(--lightnessSubPrimary);
         /* don't mess with these*/
@@ -99,7 +99,7 @@
         --tertiary4: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary4));
 
   /* theres no need to mess with these but you can if you want to  */
-  --hueSubQuaternary: calc(var(--hueSubSecondary) + 30); /* this is set to choose a color on the opposite side of the color wheel from secondary0 */
+  --hueSubQuaternary: calc(var(--hueSubTertiary) + 180); /* this is set to choose a color on the opposite side of the color wheel from secondary0 */
   --saturationSubQuaternary: var(--saturationSubPrimary);
   --lightnessSubQuaternary: var(--lightnessSubPrimary);
         /* don't mess with these*/
