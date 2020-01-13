@@ -1,18 +1,18 @@
 /* home.css */
-.home {
+/* .home {
   background: var(--white);
-}
+} */
 
 .home section {
   min-height: calc(100vh - var(--navHeight));
   margin-top: var(--navHeight);
   position: relative;
-  background: var(--white);
   height: calc(100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2)));
 }
 
-.home section + .home section {
+.home section + section {
   margin-top: 0;
+  height:100vh;
 }
 
 .home .me {
@@ -21,6 +21,23 @@
   right: 50%;
   transform: translateX(50%);
   max-height: calc(100vh - var(--navHeight));
+}
+
+.home .laptop-project-video-container {
+  background: red;
+  padding-top: 38%;
+  width: 61.75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home .laptop-project-video {
+  height: 102%;
+  width: auto;
+  position: absolute;
+  top: 0;
 }
 
 @media (min-width: 768px) {

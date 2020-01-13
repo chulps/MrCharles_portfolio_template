@@ -152,7 +152,7 @@
   --fontWeightBold: 700;
   --fontWeightBlack: 900;
   --fontStyle: normal;
-  --fontColor: var(--neutral5);
+  --fontColor: var(--black);
   --textMargins: 0 0 var(--fontLineHeight) 0;
 
   /* default font styles */
@@ -180,7 +180,7 @@
 
   /* navbar height */
   --navHeight: 100px;
-  --navPadding: 1rem;
+  --navPadding: 1.6rem;
 
   /* button */
   --buttonFontSize: 1em;
@@ -319,9 +319,38 @@ button.contact-button {
   color: var(--white);
 }
 
+/* text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 /* text colors */
 .text-black {
   color: var(--black);
+}
+
+.text-primary0 {
+  color: var(--primary0);
+}
+
+.text-secondary0 {
+  color: var(--secondary0);
+}
+
+.text-tertiary0 {
+  color: var(--tertiary0);
+}
+
+.text-quaternary0 {
+  color: var(--quaternary0);
 }
 
 /* background colors */
@@ -335,5 +364,17 @@ button.contact-button {
 
 .bg-primary0 {
   background: var(--primary0)
+}
+
+.bg-secondary0 {
+  background: var(--secondary0);
+}
+
+.bg-tertiary0 {
+  background: var(--tertiary0);
+}
+
+.bg-quaternary0 {
+  background: var(--quaternary0);
 }
 

@@ -12,10 +12,7 @@ nav {
   top: 0;
   width: 100%;
   height: var(--navHeight);
-  background: -moz-linear-gradient(top,  hsla(0,0%,100%,1) 0%, hsla(0,0%,100%,0) 50%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  hsla(0,0%,100%,1) 0%,hsla(0,0%,100%,0) 50%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  hsla(0,0%,100%,1) 0%,hsla(0,0%,100%,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  background: rgba(255,255,255 0.2);
 }
 
 @media (min-width: 768px) {
@@ -54,7 +51,7 @@ nav ul li,
   cursor: pointer;
   margin-right: 40px;
   font-family: var(--font0);
-  color: var(--;
+  color: var(--neutral1);
 }
 
 nav ul li:last-of-type {
@@ -62,7 +59,7 @@ nav ul li:last-of-type {
 }
 
 nav ul li:hover {
-  color: var(--secondary1);
+  color: var(--black);
 }
 
 nav ul li:active {
@@ -90,7 +87,7 @@ nav span.logoWrapper {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--white);
+  background: transparent;
   width: var(--navHeight);
   height: var(--navHeight);
 }

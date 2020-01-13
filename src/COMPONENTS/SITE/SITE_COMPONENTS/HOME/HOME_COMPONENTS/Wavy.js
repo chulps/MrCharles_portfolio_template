@@ -1,12 +1,12 @@
 import React from "react"
 
-function Wavy(props) {
+function SvgComponent(props) {
   return (
     <svg
+    overflow="visible"
       shapeRendering="geometricPrecision"
       width={'100%'}
-      height={'100vh'}
-      preserveAspectRatio={'none'}
+      height={'100%'}
       {...props}
     >
       <defs>
@@ -49,18 +49,22 @@ function Wavy(props) {
             result="woah"
           />
         </filter>
+        <style>
+          {"@import url(https://fonts.googleapis.com/css?family=Oswald:600);"}
+        </style>
       </defs>
       <g
         filter="url(#prefix__waterTexture)"
-        fontSize={140}
+        fontSize={'16vw'}
+        fontFamily="'Oswald',sans-serif"
       >
-        <rect width="100%" height="100%" fill="var(--white)" />
-        <text x="40%" y="50%" fill="var(--secondary0)" fontFamily="var(--font0)" fontWeight="bold">
-          {"Hi!"}
+        {/* <rect width="90%" height="90%" fill="#2cb8d2" /> */}
+        <text fill="var(--secondaryA)" x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
+          {'"DESELOPER"'}
         </text>
       </g>
     </svg>
   )
 }
 
-export default Wavy
+export default SvgComponent
