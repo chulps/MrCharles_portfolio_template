@@ -1,23 +1,31 @@
 /* home.css */
 .home {
-  /* background: red; */
+  background: var(--white);
 }
 
-.home section.site-home-section {
+.home section {
   min-height: calc(100vh - var(--navHeight));
   margin-top: var(--navHeight);
-}
-
-.home section.site-home-section + .home section.site-home-section {
-  margin-top: 0;
-}
-
-.site-home-section {
   position: relative;
   background: var(--white);
   height: calc(100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2)));
 }
 
-.site-home-section + .site-home-section {
-  margin-top:calc(var(--navHeight) + var(--navPadding));
+.home section + .home section {
+  margin-top: 0;
+}
+
+.home .me {
+  bottom: 0;   /* position fixed using className 'fixed' */
+  width: auto;
+  right: 50%;
+  transform: translateX(50%);
+  max-height: calc(100vh - var(--navHeight));
+}
+
+@media (min-width: 768px) {
+  .home .me {
+    right: 0;
+    transform: translateX(0);
+  }
 }

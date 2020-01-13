@@ -143,7 +143,8 @@
     --neutral7: #cccccc;
     --neutral8: #efefef;
     --white: #ffffff;
-  /* default font variables */
+  
+    /* default font variables */
   --fontFamilyRegular: sans-serif;
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
@@ -151,7 +152,7 @@
   --fontWeightBold: 700;
   --fontWeightBlack: 900;
   --fontStyle: normal;
-  --fontColor: var(--secondary0);
+  --fontColor: var(--neutral5);
   --textMargins: 0 0 var(--fontLineHeight) 0;
 
   /* default font styles */
@@ -179,6 +180,7 @@
 
   /* navbar height */
   --navHeight: 100px;
+  --navPadding: 1rem;
 
   /* button */
   --buttonFontSize: 1em;
@@ -208,7 +210,7 @@ body {
 }
 
 body * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /*              */
@@ -296,6 +298,9 @@ button {
   box-shadow: var(--buttonShadow);
   cursor: pointer;
   transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
