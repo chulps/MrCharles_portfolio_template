@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
-// Nav.js
 import Logo from "./CHULPS_LOGO_ANIMATION_instagram.gif";
 import LogoWhite from "./CHULPS_LOGO_ANIMATION_WHITE_NO_BG_portfolio.gif";
 
@@ -14,6 +13,7 @@ class Nav extends React.Component {
   
   render() {
     return (
+      // Nav.js
 
       <nav>
 
@@ -23,11 +23,12 @@ class Nav extends React.Component {
             className="logo"
             src={Logo}
             alt="Mr. Charles"/>
-            <div 
+            <h4 
             style={{margin: 0}}
             className="hidden md-flex">
-                Mr. Charles</div>
+                Mr. Charles</h4>
           </span>
+
         {/* desktop nav menu */}
         <ul className="hidden md-flex">
           <li><Link to="/about">About</Link></li>
@@ -36,6 +37,7 @@ class Nav extends React.Component {
           <Link to="/contact"><button>Contact</button></Link>
         </ul>
 
+        {/* mobile nave */}
         <button
           id="mobile-nav-button"
           className={
@@ -52,7 +54,7 @@ class Nav extends React.Component {
         >
           {this.state.menuText}
         </button>
-
+        
         <div
           id="mobile-nav-links"
           className={

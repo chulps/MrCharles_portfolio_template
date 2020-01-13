@@ -4,7 +4,7 @@
 }
 
 .home section.site-home-section {
-  height: calc(100vh - var(--navHeight));
+  min-height: calc(100vh - var(--navHeight));
   margin-top: var(--navHeight);
 }
 
@@ -14,7 +14,7 @@
 
 .site-home-section {
   position: relative;
-  background: white;
+  background: var(--white);
   height: calc(100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2)));
 }
 

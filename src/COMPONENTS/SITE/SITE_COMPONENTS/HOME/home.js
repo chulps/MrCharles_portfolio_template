@@ -1,20 +1,19 @@
 // Home.js
 import React from "react";
 import "./home.css";
+import Me from '../../../../IMG/chuck.png'
 
 class Home extends React.Component {
   render() {
     return (
       <div className="home">
         <section className="site-home-section">
-          <h1>Lol</h1>
+          <h1 className="absolute">It's me, LOL!</h1>
+          <img className="fixed whole md-half" src={Me} alt="Mr. Charles" />
         </section>
 
         <section className="site-home-section">          
-          <div style={{background: "var(--primary0)", height: 100, width: 100}}>hello</div>
-          <div style={{background: "var(--secondary0)", height: 100, width: 100}}>hello</div>
-          <div style={{background: "var(--tertiary0)", height: 100, width: 100}}>hello</div>
-          <div style={{background: "var(--quaternary0)", height: 100, width: 100}}>hello</div>
+          <div>Project 1</div>
         </section>
 
       </div>

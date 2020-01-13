@@ -12,8 +12,8 @@
     /* For color changes, these three parameters should solve 
     most of your problems. */
     --hueSubPrimary: 0; /* choose a number between 1 and 360 */
-    --saturationSubPrimary: 50%; /* should not exceed 100% */
-    --lightnessSubPrimary: 50%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
+    --saturationSubPrimary: 100%; /* should not exceed 100% */
+    --lightnessSubPrimary: 69%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
 
           /* don't mess with these */
           --hue: 0;/* 360 degrees */
@@ -31,20 +31,11 @@
           --lightnessPrimary2: calc((var(--lightnessSubPrimary) / 100) * 140);
           --lightnessPrimary3: calc((var(--lightnessSubPrimary) / 100) * 160);
           --lightnessPrimary4: calc((var(--lightnessSubPrimary) / 100) * 180);
-          /* primary color variables dont mess with these but use them throughout your styles*/
-          --primaryD: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryD));
-          --primaryC: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryC));
-          --primaryB: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryB));
-          --primaryA: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryA));
-          --primary0: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary));
-          --primary1: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary1));
-          --primary2: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary2));
-          --primary3: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary3));
-          --primary4: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary4));
+
 
     /* theres no need to mess with these but you can if you want to  */
     --hueSubSecondary: calc(var(--hueSubPrimary) + 180); /* this is set to choose a color on the opposite side of the color wheel from primary1 */
-    --saturationSubSecondary: var(--saturationSubPrimary);
+    --saturationSubSecondary: calc(var(--saturationSubPrimary) - 50%);
     --lightnessSubSecondary: var(--lightnessSubPrimary);
           /* don't mess with these*/
           --hueSecondary: calc(var(--hue) + var(--hueSubSecondary));
@@ -59,17 +50,6 @@
           --lightnessSecondary2: calc((var(--lightnessSubSecondary) / 100) * 140);
           --lightnessSecondary3: calc((var(--lightnessSubSecondary) / 100) * 160);
           --lightnessSecondary4: calc((var(--lightnessSubSecondary) / 100) * 180);
-          /* Secondary color variables dont mess with these but use them throughout your styles*/
-          --secondaryD: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryD));
-          --secondaryC: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryC));
-          --secondaryB: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryB));
-          --secondaryA: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryA));
-          --secondary0: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary));
-          --secondary1: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary1));
-          --secondary2: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary2));
-          --secondary3: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary3));
-          --secondary4: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary4));
-
 
     /* theres no need to mess with these but you can if you want to  */
     --hueSubTertiary: calc(var(--hueSubPrimary) + 30); /* this is set to choose a color on the color wheel 60degrees from primary0 */
@@ -88,17 +68,6 @@
           --lightnessTertiary2: calc((var(--lightnessSubTertiary) / 100) * 140);
           --lightnessTertiary3: calc((var(--lightnessSubTertiary) / 100) * 160);
           --lightnessTertiary4: calc((var(--lightnessSubTertiary) / 100) * 180);
-          /* Tertiary color variables dont mess with these but use them throughout your styles*/
-          --tertiaryD: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryD));
-          --tertiaryC: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryC));
-          --tertiaryB: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryB));
-          --tertiaryA: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryA));
-          --tertiary0: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary));
-          --tertiary1: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary1));
-          --tertiary2: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary2));
-          --tertiary3: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary3));
-          --tertiary4: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary4));
-
     /* theres no need to mess with these but you can if you want to  */
     --hueSubQuaternary: calc(var(--hueSubTertiary) + 180); /* this is set to choose a color on the opposite side of the color wheel from secondary0 */
     --saturationSubQuaternary: var(--saturationSubPrimary);
@@ -116,17 +85,64 @@
           --lightnessQuaternary2: calc((var(--lightnessSubQuaternary) / 100) * 140);
           --lightnessQuaternary3: calc((var(--lightnessSubQuaternary) / 100) * 160);
           --lightnessQuaternary4: calc((var(--lightnessSubQuaternary) / 100) * 180);
-          /* Quaternary color variables dont mess with these but use them throughout your styles*/
-          --quaternaryD: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryD));
-          --quaternaryC: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryC));
-          --quaternaryB: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryB));
-          --quaternaryA: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryA));
-          --quaternary0: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary));
-          --quaternary1: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary1));
-          --quaternary2: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary2));
-          --quaternary3: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary3));
-          --quaternary4: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary4));
 
+    /* these are your actual color variables */
+    /* primary color variables dont mess with these but use them throughout your styles*/
+    --primaryD: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryD));
+    --primaryC: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryC));
+    --primaryB: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryB));
+    --primaryA: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimaryA));
+    --primary0: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary));
+    --primary1: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary1));
+    --primary2: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary2));
+    --primary3: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary3));
+    --primary4: hsl(var(--huePrimary), var(--saturationPrimary), var(--lightnessPrimary4));
+    
+    /* Secondary color variables dont mess with these but use them throughout your styles*/
+    --secondaryD: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryD));
+    --secondaryC: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryC));
+    --secondaryB: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryB));
+    --secondaryA: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondaryA));
+    --secondary0: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary));
+    --secondary1: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary1));
+    --secondary2: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary2));
+    --secondary3: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary3));
+    --secondary4: hsl(var(--hueSecondary), var(--saturationSecondary), var(--lightnessSecondary4));
+
+    /* Tertiary color variables dont mess with these but use them throughout your styles*/
+    --tertiaryD: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryD));
+    --tertiaryC: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryC));
+    --tertiaryB: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryB));
+    --tertiaryA: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiaryA));
+    --tertiary0: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary));
+    --tertiary1: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary1));
+    --tertiary2: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary2));
+    --tertiary3: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary3));
+    --tertiary4: hsl(var(--hueTertiary), var(--saturationTertiary), var(--lightnessTertiary4));            
+    
+    /* Quaternary color variables dont mess with these but use them throughout your styles*/
+    --quaternaryD: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryD));
+    --quaternaryC: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryC));
+    --quaternaryB: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryB));
+    --quaternaryA: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternaryA));
+    --quaternary0: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary));
+    --quaternary1: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary1));
+    --quaternary2: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary2));
+    --quaternary3: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary3));
+    --quaternary4: hsl(var(--hueQuaternary), var(--saturationQuaternary), var(--lightnessQuaternary4));
+
+    /* neutral colors */
+    --blackTrans: rgba(0, 0, 0, 0.16);
+    --black: #000000;
+    --neutral1: #333333;
+    --neutral2: #424242;
+    --neutral3: #666666;
+    --neutral4: #707070;
+    --neutral5: #999999;
+    --neutral6: #b2b2b2;
+    --neutral7: #cccccc;
+    --neutral8: #efefef;
+    --white: #ffffff;
   /* default font variables */
   --fontFamilyRegular: sans-serif;
   --fontWeightLight: 300;
@@ -147,7 +163,7 @@
   line-height: var(--fontLineHeight);
 
   /* default font sizes */
-  --fontSizeDefault: 62.5%;/*set font size to 62.5% = 10px = 1em = 1rem */
+  --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
   --fontSizeRatio: calc(1 + (1 / 3));
   --fontLineHeight: calc(1 + (1 / 3));
   --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
@@ -167,7 +183,7 @@
   /* button */
   --buttonFontSize: 1em;
   --buttonHeight: 2rem;
-  --buttonBgColor: white;
+  --buttonBgColor: var(--white);
   --buttonBorder: 1px solid var(--primary0);
   --buttonPadding:0.8rem 1.6rem;
   --buttonBorderRadius: 1.6em;
@@ -186,7 +202,7 @@ html {
 }
 
 body {
-  font-size: 1.4em; /* in this case 1.4 em is equal*/
+  font-size: 1.4em; /* in this case 1.4 em is equal to 14px */
   margin: 0;
   padding: 0;
 }
@@ -273,11 +289,19 @@ a {
 button {
   font-size: 1em;
   height: 2rem;
-  background: white;
+  background: var(--white);
   border: 1px solid var(--primary0);
   padding: 0.8rem 1.6rem;
   border-radius: 1.6em;
   box-shadow: var(--buttonShadow);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--primary1);
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 button.contact-button {
@@ -287,4 +311,24 @@ button.contact-button {
   bottom: 1em;
   right: 1em;
   background: var(--primary0);
+  color: var(--white);
 }
+
+/* text colors */
+.text-black {
+  color: var(--black);
+}
+
+/* background colors */
+.bg-black {
+  background: var(--black);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.bg-primary0 {
+  background: var(--primary0)
+}
+

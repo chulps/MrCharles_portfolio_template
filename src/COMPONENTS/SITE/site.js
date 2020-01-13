@@ -18,11 +18,11 @@ class Site extends React.Component {
     return (
     <Router>
       <div>
-        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
         </Switch>
+        <Navbar />
         <button className="contact-button">contact button</button>
         <Footer/>
       </div>

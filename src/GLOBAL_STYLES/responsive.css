@@ -43,7 +43,29 @@ hg screens
 } 
 */
 
+/* positioning */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.static {
+  position: static;
+}
+
 /* responsive margins */
+
 .m0 {
   margin: 0;
 }
@@ -86,6 +108,10 @@ hg screens
 }
 
 /* margin right */
+.mr-auto {
+  margin-right: auto;
+}
+
 .mr5 {
   margin-right: 0.5em;
 }
@@ -100,6 +126,27 @@ hg screens
 
 .mr30 {
   margin-right: 3em
+}
+
+/* margin left */
+.ml-auto {
+  margin-left: auto;
+}
+
+.ml5 {
+  margin-left: 0.5em;
+}
+
+.ml10 {
+  margin-left: 1em;
+}
+
+.ml20 {
+  margin-left: 2em;
+}
+
+.ml30 {
+  margin-left: 3em
 }
 
 /* margin bottom */
@@ -118,8 +165,6 @@ hg screens
 .mb30 {
   margin-bottom: 3em
 }
-
-
 
 
 /* find all elements with the word 
@@ -370,6 +415,123 @@ and set display to "grid" */
 
 @media only screen and (min-width: 320px) {
 
+  /* positioning */
+  .xs-relative {
+    position: relative;
+  }
+
+  .xs-absolute {
+    position: absolute;
+  }
+
+  .xs-sticky {
+    position: sticky;
+  }
+
+  .xs-fixed {
+    position: fixed;
+  }
+
+  .xs-static {
+    position: static;
+  }
+
+  .xs-m0 {
+    margin: 0;
+  }
+  
+  .xs-m-auto{
+    margin: 0 auto;
+  }
+  
+  .xs-m5 {
+    margin: 0.5em;
+  }
+  
+  .xs-m10 {
+    margin: 1em;
+  }
+  
+  .xs-m20 {
+    margin: 2em;
+  }
+  
+  .xs-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .xs-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .xs-mt10 {
+    margin-top: 1em;
+  }
+  
+  .xs-mt20 {
+    margin-top: 2em;
+  }
+  
+  .xs-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .xs-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .xs-mr10 {
+    margin-right: 1em;
+  }
+  
+  .xs-mr20 {
+    margin-right: 2em;
+  }
+  
+  .xs-mr30 {
+    margin-right: 3em
+  }
+
+  /* margin left */
+  .xs-ml-auto {
+    margin-left: auto;
+  }
+
+  .xs-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .xs-ml10 {
+    margin-left: 1em;
+  }
+
+  .xs-ml20 {
+    margin-left: 2em;
+  }
+
+  .xs-ml30 {
+    margin-left: 3em
+  }
+  
+  /* margin bottom */
+  .xs-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .xs-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .xs-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .xs-mb30 {
+    margin-bottom: 3em
+  }
+
   .xs-gap0 {
     grid-gap: 0;
   }
@@ -602,6 +764,125 @@ and set display to "grid" */
 /* sm screens */
 /* ---------- */
 @media only screen and (min-width: 480px) {
+
+  /* positioning */
+  .sm-relative {
+    position: relative;
+  }
+
+  .sm-absolute {
+    position: absolute;
+  }
+
+  .sm-sticky {
+    position: sticky;
+  }
+
+  .sm-fixed {
+    position: fixed;
+  }
+
+  .sm-static {
+    position: static;
+  }
+
+  /* margins */
+  .sm-m0 {
+    margin: 0;
+  }
+  
+  .sm-m-auto{
+    margin: 0 auto;
+  }
+  
+  .sm-m5 {
+    margin: 0.5em;
+  }
+  
+  .sm-m10 {
+    margin: 1em;
+  }
+  
+  .sm-m20 {
+    margin: 2em;
+  }
+  
+  .sm-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .sm-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .sm-mt10 {
+    margin-top: 1em;
+  }
+  
+  .sm-mt20 {
+    margin-top: 2em;
+  }
+  
+  .sm-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .sm-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .sm-mr10 {
+    margin-right: 1em;
+  }
+  
+  .sm-mr20 {
+    margin-right: 2em;
+  }
+  
+  .sm-mr30 {
+    margin-right: 3em
+  }
+
+  /* margin left */
+  .sm-ml-auto {
+    margin-left: auto;
+  }
+
+  .sm-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .sm-ml10 {
+    margin-left: 1em;
+  }
+
+  .sm-ml20 {
+    margin-left: 2em;
+  }
+
+  .sm-ml30 {
+    margin-left: 3em
+  }
+  
+  /* margin bottom */
+  .sm-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .sm-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .sm-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .sm-mb30 {
+    margin-bottom: 3em
+  }
+
   .sm-gap0 {
     grid-gap: 0;
   }
@@ -835,7 +1116,125 @@ and set display to "grid" */
 /* ---------- */
 @media only screen and (min-width: 768px) {
 
-  .md-gap0 {
+  /* positioning */
+  .md-relative {
+    position: relative;
+  }
+
+  .md-absolute {
+    position: absolute;
+  }
+
+  .md-sticky {
+    position: sticky;
+  }
+
+  .md-fixed {
+    position: fixed;
+  }
+
+  .md-static {
+    position: static;
+  }
+
+  /* margins */
+  .md-m0 {
+    margin: 0;
+  }
+  
+  .md-m-auto{
+    margin: 0 auto;
+  }
+  
+  .md-m5 {
+    margin: 0.5em;
+  }
+  
+  .md-m10 {
+    margin: 1em;
+  }
+  
+  .md-m20 {
+    margin: 2em;
+  }
+  
+  .md-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .md-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .md-mt10 {
+    margin-top: 1em;
+  }
+  
+  .md-mt20 {
+    margin-top: 2em;
+  }
+  
+  .md-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .md-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .md-mr10 {
+    margin-right: 1em;
+  }
+  
+  .md-mr20 {
+    margin-right: 2em;
+  }
+  
+  .md-mr30 {
+    margin-right: 3em
+  }
+  
+  /* margin left */
+  .md-ml-auto {
+    margin-left: auto;
+  }
+
+  .md-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .md-ml10 {
+    margin-left: 1em;
+  }
+
+  .md-ml20 {
+    margin-left: 2em;
+  }
+
+  .md-ml30 {
+    margin-left: 3em
+  }
+
+  /* margin bottom */
+  .md-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .md-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .md-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .md-mb30 {
+    margin-bottom: 3em
+  }
+
+  .md-md-gap0 {
     grid-gap: 0;
   }
   
@@ -1067,6 +1466,124 @@ and set display to "grid" */
 /* lg screens */
 /* ---------- */
 @media only screen and (min-width: 992px) {
+
+  /* positioning */
+  .lg-relative {
+    position: relative;
+  }
+
+  .lg-absolute {
+    position: absolute;
+  }
+
+  .lg-sticky {
+    position: sticky;
+  }
+
+  .lg-fixed {
+    position: fixed;
+  }
+
+  .lg-static {
+    position: static;
+  }
+
+  /* margins */
+  .lg-m0 {
+    margin: 0;
+  }
+  
+  .lg-m-auto{
+    margin: 0 auto;
+  }
+  
+  .lg-m5 {
+    margin: 0.5em;
+  }
+  
+  .lg-m10 {
+    margin: 1em;
+  }
+  
+  .lg-m20 {
+    margin: 2em;
+  }
+  
+  .lg-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .lg-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .lg-mt10 {
+    margin-top: 1em;
+  }
+  
+  .lg-mt20 {
+    margin-top: 2em;
+  }
+  
+  .lg-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .lg-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .lg-mr10 {
+    margin-right: 1em;
+  }
+  
+  .lg-mr20 {
+    margin-right: 2em;
+  }
+  
+  .lg-mr30 {
+    margin-right: 3em
+  }
+  
+  /* margin left */
+  .lg-ml-auto {
+    margin-left: auto;
+  }
+
+  .lg-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .lg-ml10 {
+    margin-left: 1em;
+  }
+
+  .lg-ml20 {
+    margin-left: 2em;
+  }
+
+  .lg-ml30 {
+    margin-left: 3em
+  }
+
+  /* margin bottom */
+  .lg-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .lg-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .lg-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .lg-mb30 {
+    margin-bottom: 3em
+  }
 
   .lg-gap0 {
     grid-gap: 0;
@@ -1302,6 +1819,124 @@ and set display to "grid" */
 /* ---------- */
 @media only screen and (min-width: 1280px) {
 
+  /* positioning */
+  .xl-relative {
+    position: relative;
+  }
+
+  .xl-absolute {
+    position: absolute;
+  }
+
+  .xl-sticky {
+    position: sticky;
+  }
+
+  .xl-fixed {
+    position: fixed;
+  }
+
+  .xl-static {
+    position: static;
+  }
+
+  /* margins */
+  .xl-m0 {
+    margin: 0;
+  }
+  
+  .xl-m-auto{
+    margin: 0 auto;
+  }
+  
+  .xl-m5 {
+    margin: 0.5em;
+  }
+  
+  .xl-m10 {
+    margin: 1em;
+  }
+  
+  .xl-m20 {
+    margin: 2em;
+  }
+  
+  .xl-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .xl-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .xl-mt10 {
+    margin-top: 1em;
+  }
+  
+  .xl-mt20 {
+    margin-top: 2em;
+  }
+  
+  .xl-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .xl-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .xl-mr10 {
+    margin-right: 1em;
+  }
+  
+  .xl-mr20 {
+    margin-right: 2em;
+  }
+  
+  .xl-mr30 {
+    margin-right: 3em
+  }
+  
+  /* margin left */
+  .xl-ml-auto {
+    margin-left: auto;
+  }
+
+  .xl-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .xl-ml10 {
+    margin-left: 1em;
+  }
+
+  .xl-ml20 {
+    margin-left: 2em;
+  }
+
+  .xl-ml30 {
+    margin-left: 3em
+  }
+
+  /* margin bottom */
+  .xl-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .xl-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .xl-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .xl-mb30 {
+    margin-bottom: 3em
+  }
+
   .xl-gap0 {
     grid-gap: 0;
   }
@@ -1520,6 +2155,123 @@ and set display to "grid" */
 /* hg screens */
 /* ---------- */
 @media only screen and (min-width: 1366px) {
+  /* positioning */
+  .hg-relative {
+    position: relative;
+  }
+
+  .hg-absolute {
+    position: absolute;
+  }
+
+  .hg-sticky {
+    position: sticky;
+  }
+
+  .hg-fixed {
+    position: fixed;
+  }
+
+  .hg-static {
+    position: static;
+  }
+
+  /* margins */
+  .hg-m0 {
+    margin: 0;
+  }
+  
+  .hg-m-auto{
+    margin: 0 auto;
+  }
+  
+  .hg-m5 {
+    margin: 0.5em;
+  }
+  
+  .hg-m10 {
+    margin: 1em;
+  }
+  
+  .hg-m20 {
+    margin: 2em;
+  }
+  
+  .hg-m30 {
+    margin: 3em
+  }
+  
+  /* margin top */
+  .hg-mt5 {
+    margin-top: 0.5em;
+  }
+  
+  .hg-mt10 {
+    margin-top: 1em;
+  }
+  
+  .hg-mt20 {
+    margin-top: 2em;
+  }
+  
+  .hg-mt30 {
+    margin-top: 3em
+  }
+  
+  /* margin right */
+  .hg-mr5 {
+    margin-right: 0.5em;
+  }
+  
+  .hg-mr10 {
+    margin-right: 1em;
+  }
+  
+  .hg-mr20 {
+    margin-right: 2em;
+  }
+  
+  .hg-mr30 {
+    margin-right: 3em
+  }
+
+  /* margin left */
+  .hg-ml-auto {
+    margin-left: auto;
+  }
+
+  .hg-ml5 {
+    margin-left: 0.5em;
+  }
+
+  .hg-ml10 {
+    margin-left: 1em;
+  }
+
+  .hg-ml20 {
+    margin-left: 2em;
+  }
+
+  .hg-ml30 {
+    margin-left: 3em
+  }
+  
+  /* margin bottom */
+  .hg-mb5 {
+    margin-bottom: 0.5em;
+  }
+  
+  .hg-mb10 {
+    margin-bottom: 1em;
+  }
+  
+  .hg-mb20 {
+    margin-bottom: 2em;
+  }
+  
+  .hg-mb30 {
+    margin-bottom: 3em
+  }
 
   .hg-gap0 {
     grid-gap: 0;
