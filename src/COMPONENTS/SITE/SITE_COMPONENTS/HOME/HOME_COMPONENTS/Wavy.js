@@ -1,6 +1,6 @@
 import React from "react"
 
-function SvgComponent(props) {
+function Wavy(props) {
   return (
     <svg
     overflow="visible"
@@ -67,4 +67,4 @@ function SvgComponent(props) {
   )
 }
 
-export default SvgComponent
+export default Wavy
