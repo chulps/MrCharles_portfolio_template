@@ -14,7 +14,7 @@ function SvgComponent(props) {
           <feTurbulence result="undulation" numOctaves={2}>
             <animate
               attributeName="baseFrequency"
-              dur="15s"
+              dur="10s"
               keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
               keyTimes="0; 0.5; 1"
               calcMode="spline"
