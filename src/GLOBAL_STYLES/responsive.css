@@ -235,19 +235,19 @@ hg screens
 }
 
 .pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -720,19 +720,19 @@ and set display to "grid" */
 }
 
 .xs-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .xs-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .xs-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .xs-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -1186,19 +1186,19 @@ and set display to "grid" */
 }
 
 .sm-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .sm-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .sm-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .sm-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -1649,19 +1649,19 @@ and set display to "grid" */
 }
 
 .md-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .md-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .md-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .md-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -2112,19 +2112,19 @@ and set display to "grid" */
 }
 
 .lg-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .lg-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .lg-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .lg-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -2577,19 +2577,19 @@ and set display to "grid" */
 }
 
 .xl-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .xl-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .xl-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .xl-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */
@@ -3025,19 +3025,19 @@ and set display to "grid" */
 }
 
 .hg-pl5 {
-  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .hg-pl10 {
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .hg-pl20 {
-  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .hg-pl30 {
-  padding-right: 3em;
+  padding-left: 3em;
 }
 
 /* padding bottom */

@@ -17,23 +17,29 @@ class Home extends React.Component {
         
         {/* top section */}
         <section className="flex-center">
-          <h1 className="absolute text-secondary0 two-thirds">Hi! <br/>I'm Chuck Howard</h1>
+          {/* <h1 className="absolute text-black two-thirds">Hi!</h1> */}
+          <h2 className="two-thirds text-center m-auto">I'm Chuck Howard</h2>
           <img className="me fixed whole md-half" src={Me} alt="Mr. Charles" />
         </section>
         
         {/* 'deseloper' */}
-        <section className="bg-tertiary0 flex-column flex-center text-center">
-          <div className="absolute two-thirds md-half flex-center">
+        <section className="home-about-section bg-main flex-column flex-center text-center">
+          <div className="absolute whole md-half flex-center hidden lg-flex">
             <Wavy />
           </div>
-          <h1 className="absolute">Designer<br/> + <br/>Developer</h1>
+          <h1 className="absolute text-shadow-out text-main flex lg-hidden">Deseloper</h1>
+          <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
+            <h4>I'm a generalist designer and front-end developer. </h4>
+            <h2>Designer<br/> + <br/>Developer</h2>
+            <h4>I can design anything, but I love making apps the most.</h4>
+          </div>
         </section>
         
         {/* project section */}
-        <section className="bg-secondary0 flex-center flex-column lg-flex-row">
-          
-          <div className="absolute whole flex-column flex-center">
-            <div className="whole md-two-thirds absolute">
+        <section className="relative bg-main flex-center flex-column lg-flex-row lg-pt30 lg-pb30">
+
+          <div className="absolute whole md-two-thirds flex-column flex-center" style={{transform: 'translateY(-50%)'}}>
+            <div className="whole absolute">
               <ClicktoolCity />
             </div>
             <div className="two-thirds mb30 relative" style={{transform: 'translateY(-100%)'}}>
@@ -46,12 +52,11 @@ class Home extends React.Component {
             <div class="relative laptop-project-video-container">
               <video className="laptop-project-video" controls loop src={Clicktool}/>
             </div>
+            <button className="clicktool-project-button">View Project</button>
           </div>
         </section>
 
-        <section>
-          
-        </section>
+
 
       </div>
     );

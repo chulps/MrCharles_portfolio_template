@@ -4,8 +4,13 @@
   min-height: 100vh;
   padding: var(--sitePadding);
   position: relative;
-  top: var(--navHeight);
-  background: grey;
+  padding-top: var(--navHeight);
+  background: var(--siteBackground);
 }
 
-
+button.contact-button {
+  position: fixed;
+  bottom: 2.5em;
+  right: 2.75em;
+  z-index: 1;
+}

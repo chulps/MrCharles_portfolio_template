@@ -17,13 +17,13 @@ class Site extends React.Component {
   render() {
     return (
     <Router>
-      <div>
+      <div className="site">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
         </Switch>
         <Navbar />
-        <button className="contact-button">contact button</button>
+        <button className="contact-button">contact</button>
         <Footer/>
       </div>
     </Router>

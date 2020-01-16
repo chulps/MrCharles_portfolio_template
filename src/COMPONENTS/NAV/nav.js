@@ -32,12 +32,11 @@ class Nav extends React.Component {
         {/* desktop nav menu */}
         <ul className="hidden md-flex">
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/clicktool">Clicktool</Link></li>
           <li><Link to="/works">Other Works</Link></li>
           {/* <Link to="/contact"><button>Contact</button></Link> */}
         </ul>
 
-        {/* mobile nave */}
+        {/* mobile nav */}
         <button
           id="mobile-nav-button"
           className={
@@ -63,51 +62,54 @@ class Nav extends React.Component {
               : "mobileNav mobileNav-hide"
           }
         >
-          <div className="overlay"              
+          <div className="overlay md-hidden"              
               onClick={() =>
                 this.setState({
                   displaymobileNav: !this.state.displaymobileNav,
                   menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                 })
               }>
-            <img src={LogoWhite} alt="" />
-            <div
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }>
-              <Link to="/">Home</Link>
+            <img src={LogoWhite} className="absolute" alt="" />
+            
+            <div className="mobile-nav-links flex-column absolute flex-space-around" style={{height: '50%'}}>
+              <div
+                onClick={() =>
+                  this.setState({
+                    displaymobileNav: !this.state.displaymobileNav,
+                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
+                  })
+                }>
+                <Link to="/">Home</Link>
+              </div>
+              <div
+                onClick={() =>
+                  this.setState({
+                    displaymobileNav: !this.state.displaymobileNav,
+                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
+                  })
+                }><Link to="/about">About</Link></div>
+              <div
+                onClick={() =>
+                  this.setState({
+                    displaymobileNav: !this.state.displaymobileNav,
+                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
+                  })
+                }><Link to="/clicktool">Clicktool</Link></div>
+              <div
+                onClick={() =>
+                  this.setState({
+                    displaymobileNav: !this.state.displaymobileNav,
+                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
+                  })
+                }><Link to="/works">Other Works</Link></div>
+              <div
+                onClick={() =>
+                  this.setState({
+                    displaymobileNav: !this.state.displaymobileNav,
+                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
+                  })
+                }>
             </div>
-            <div
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }><Link to="/about">About</Link></div>
-            <div
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }><Link to="/clicktool">Clicktool</Link></div>
-            <div
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }><Link to="/works">Other Works</Link></div>
-            <div
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }>
             {/* <button
               onClick={() =>
                 this.setState({

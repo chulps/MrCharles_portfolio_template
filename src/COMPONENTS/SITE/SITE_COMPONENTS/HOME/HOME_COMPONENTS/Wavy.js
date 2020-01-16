@@ -18,7 +18,7 @@ function Wavy(props) {
               keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
               keyTimes="0; 0.5; 1"
               calcMode="spline"
-              values="0.005,0.009; 0.009,0.005; 0.005,0.009"
+              values="0.005,0.01; 0.01,0.005; 0.005,0.01"
               repeatCount="indefinite"
             />
           </feTurbulence>
@@ -45,7 +45,7 @@ function Wavy(props) {
           <feDisplacementMap
             in="dist"
             in2="undulation"
-            scale={20}
+            scale={40}
             result="woah"
           />
         </filter>
@@ -59,7 +59,7 @@ function Wavy(props) {
         fontFamily="'Oswald',sans-serif"
       >
         {/* <rect width="90%" height="90%" fill="#2cb8d2" /> */}
-        <text fill="var(--secondaryA)" x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
+        <text fill="var(--white)" x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
           {'"Deseloper"'}
         </text>
       </g>

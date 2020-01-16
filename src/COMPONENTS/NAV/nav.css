@@ -93,8 +93,8 @@ nav span.logoWrapper {
 }
 
 nav .logo {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -220,7 +220,7 @@ nav .logo {
           align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fefefe;
   opacity: 1;
   position: fixed;
   border: none;
@@ -229,22 +229,31 @@ nav .logo {
 }
 
 #mobile-nav-button {
-  all: unset;
-  -webkit-transition: 1s;
-  transition: 1s;
-  outline: none;
   position: fixed;
-  z-index: 2;
+  transform-origin: right;
+  top: 2.75em;
   right: 0;
-  top:0;
-  padding: 0.5em 1em;
-  background-color: var(--white);
+  z-index: 2;
+  padding: 0.5em 1em 0.5em 2em;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 2em 0 0 2em;
 }
 
 #mobile-nav-links {
   z-index: 1;
+}
+
+#mobile-nav-links .overlay div {
+  width: 100%;
+}
+
+#mobile-nav-links .overlay .mobile-nav-links div {
+  padding: 2em;
+  width: 100%;
+  transition: 0.4s;
+}
+
+#mobile-nav-links .overlay .mobile-nav-links div:hover {
+  background: var(--neutral8);
+  transition: none;
 }
