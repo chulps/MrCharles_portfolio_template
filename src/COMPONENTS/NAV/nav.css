@@ -229,6 +229,7 @@ nav .logo {
 }
 
 #mobile-nav-button {
+  all: unset;
   -webkit-transition: 1s;
   transition: 1s;
   outline: none;
@@ -236,12 +237,12 @@ nav .logo {
   z-index: 2;
   right: 0;
   top:0;
-  padding: 0;
+  padding: 0.5em 1em;
   background-color: var(--white);
-  border: none;
-  width: 5em;
-  height: 5em;
-  background: var(--primary0);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #mobile-nav-links {

@@ -60,7 +60,7 @@ function Wavy(props) {
       >
         {/* <rect width="90%" height="90%" fill="#2cb8d2" /> */}
         <text fill="var(--secondaryA)" x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
-          {'"DESELOPER"'}
+          {'"Deseloper"'}
         </text>
       </g>
     </svg>

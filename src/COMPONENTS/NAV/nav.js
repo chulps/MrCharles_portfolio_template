@@ -108,13 +108,15 @@ class Nav extends React.Component {
                   menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                 })
               }>
-            <button
+            {/* <button
               onClick={() =>
                 this.setState({
                   displaymobileNav: !this.state.displaymobileNav,
                   menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                 })
-              }><Link to="/contact">Contact</Link></button></div>
+              }>
+              <Link to="/contact">Contact</Link></button> */}
+              </div>
           </div>
         </div>
       </nav>
