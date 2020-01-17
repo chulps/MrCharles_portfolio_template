@@ -48,9 +48,17 @@
   top: calc(100% + 12em);
 }
 
+.deseloper {
+  font-size: 15vw;
+}
+
 @media (min-width: 768px) {
   .home .me {
     right: 0;
     transform: translateX(0);
+  }
+
+  .deseloper {
+    font-size: 10vw;
   }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
-import Logo from "./CHULPS_LOGO_ANIMATION_instagram.gif";
-import LogoWhite from "./CHULPS_LOGO_ANIMATION_WHITE_NO_BG_portfolio.gif";
+import Logo from "../../IMG/CHULPS_LOGO_ANIMATION_instagram.gif";
+import LogoWhite from "../../IMG/CHULPS_LOGO_ANIMATION_WHITE_NO_BG_portfolio.gif";
 
 
 class Nav extends React.Component {
@@ -23,10 +23,10 @@ class Nav extends React.Component {
             className="logo"
             src={Logo}
             alt="Mr. Charles"/>
-            <h4 
+            <h5 
             style={{margin: 0}}
             className="hidden md-flex">
-                Mr. Charles</h4>
+                Chuck Howard</h5>
           </span>
 
         {/* desktop nav menu */}

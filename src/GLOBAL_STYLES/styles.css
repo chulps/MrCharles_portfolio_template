@@ -144,60 +144,61 @@
     --neutral8: #efefef;
     --white: #ffffff;
     --whiteTrans: rgba(255,255,255,.75);  
+
     /* default font variables */
-  --fontFamilyRegular: sans-serif;
-  --fontWeightLight: 300;
-  --fontWeightRegular: 400;
-  --fontMedium: 500;
-  --fontWeightBold: 700;
-  --fontWeightBlack: 900;
-  --fontStyle: normal;
-  --fontColor: var(--black);
-  --textMargins: 0 0 var(--fontLineHeight) 0;
+    --fontFamilyRegular: sans-serif;
+    --fontWeightLight: 300;
+    --fontWeightRegular: 400;
+    --fontMedium: 500;
+    --fontWeightBold: 700;
+    --fontWeightBlack: 900;
+    --fontStyle: normal;
+    --fontColor: var(--black);
+    --textMargins: 0 0 var(--fontLineHeight) 0;
 
-  /* default font styles */
-  color: var(--fontColor);
-  font-family: var(--fontFamilyRegular);
-  font-style: var(--fontStyle);
-  font-weight: var(--fontWeightRegular);
-  font-size: var(--fontSizeDefault);
-  line-height: var(--fontLineHeight);
+    /* default font styles */
+    color: var(--fontColor);
+    font-family: var(--fontFamilyRegular);
+    font-style: var(--fontStyle);
+    font-weight: var(--fontWeightRegular);
+    font-size: var(--fontSizeDefault);
+    line-height: var(--fontLineHeight);
 
-  /* default font sizes */
-  --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
-  --fontSizeRatio: calc(1 + (1 / 2));
-  --fontLineHeight: calc(1 + (1 / 3));
-  --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
-  --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
-  --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
-  --fontSizeH4: calc(var(--fontSizeH5) * var(--fontSizeRatio));
-  --fontSizeH5: calc(var(--fontSizeH6) * var(--fontSizeRatio));
-  --fontSizeH6: var(--fontSizeDefault);
-  --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
+    /* default font sizes */
+    --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
+    --fontSizeRatio: calc(1 + (1 / 3));
+    --fontLineHeight: calc(1 + (1 / 3));
+    --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
+    --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
+    --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
+    --fontSizeH4: calc(var(--fontSizeH5) * var(--fontSizeRatio));
+    --fontSizeH5: calc(var(--fontSizeH6) * var(--fontSizeRatio));
+    --fontSizeH6: var(--fontSizeDefault);
+    --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
 
-  /* site */
-  --siteBackground: var(--neutral8);
-  /* default site padding */
-  --sitePadding: 0;
+    /* site */
+    --siteBackground: var(--neutral8);
+    /* default site padding */
+    --sitePadding: 0;
 
-  /* navbar height */
-  --navHeight: 100px;
-  --navPadding: 1.6rem;
+    /* navbar height */
+    --navHeight: 100px;
+    --navPadding: 1.6rem;
 
-  /* shadow */
-  --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
-  --boxShadowIn: inset 3px 3px 6px var(--blackTrans), 3px 3px 6px var(--whiteTrans);
-  --textShadowOut: var(--boxShadowOut);
-  --textShadowIn: var(--boxShadowIn);
+    /* shadow */
+    --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
+    --boxShadowIn: inset 3px 3px 6px var(--blackTrans), 3px 3px 6px var(--whiteTrans);
+    --textShadowOut: var(--boxShadowOut);
+    --textShadowIn: var(--boxShadowIn);
 
-  /* button */
-  --buttonFontSize: 1em;
-  --buttonHeight: 2rem;
-  --buttonBgColor: var(--white);
-  --buttonBorder: 1px solid var(--primary0);
-  --buttonPadding:0.8rem 1.6rem;
-  --buttonBorderRadius: 1.6em;
-  --buttonShadow: var(--boxShadowOut);
+    /* button */
+    --buttonFontSize: 1em;
+    --buttonHeight: 2rem;
+    --buttonBgColor: var(--white);
+    --buttonBorder: 1px solid var(--primary0);
+    --buttonPadding:0.8rem 1.6rem;
+    --buttonBorderRadius: 1.6em;
+    --buttonShadow: var(--boxShadowOut);
 }
 
 /* dont mess with these */
@@ -300,7 +301,7 @@ button {
   background: var(--siteBackground);
   box-shadow: var(--boxShadowOut);
   height: 5em;
-  border-radius: 1em;
+  border-radius: 2em;
   display: flex;
   justify-content: center;
   align-items: center;

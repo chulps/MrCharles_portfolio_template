@@ -1,7 +1,12 @@
 /* footer.css */
 footer {
-  height: calc(var(--navHeight) + 8px);
+  padding: 3em;
   background: var(--black);
   color: var(--white);
   text-align: center;
+}
+
+footer .logo {
+  width: 4em;
+  height: 4em;
 }

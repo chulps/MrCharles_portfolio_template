@@ -24,10 +24,10 @@ class Home extends React.Component {
         
         {/* 'deseloper' */}
         <section className="home-about-section bg-main flex-column flex-center text-center">
-          <div className="absolute whole md-half flex-center hidden lg-flex">
+          {/* <div className="absolute whole md-half flex-center hidden lg-flex">
             <Wavy />
-          </div>
-          <h1 className="absolute text-shadow-out text-main flex lg-hidden">Deseloper</h1>
+          </div> */}
+          <h1 className="absolute text-shadow-out text-main deseloper">"Deseloper"</h1>
           <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
             <h4>I'm a generalist designer and front-end developer. </h4>
             <h2>Designer<br/> + <br/>Developer</h2>
@@ -47,7 +47,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="laptop-project-container flex-center whole md-two-thirds relative">        
+          <div className="laptop-project-container flex-center whole md-half relative">        
             <img  className='whole absolute' src={Laptop} />
             <div class="relative laptop-project-video-container">
               <video className="laptop-project-video" controls loop src={Clicktool}/>

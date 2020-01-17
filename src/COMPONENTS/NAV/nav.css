@@ -46,17 +46,19 @@ nav ul {
 
 nav ul li,
 .mobileNav div:not(.overlay) {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 4em;
   font-family: var(--font0);
   color: var(--neutral1);
+  text-transform: uppercase;
+  font-size: var(--fontSizeH6);
 }
 
-nav ul li:last-of-type {
+/* nav ul li:last-of-type {
   margin-right: 0 !important;
-}
+} */
 
 nav ul li:hover {
   color: var(--black);
@@ -93,33 +95,8 @@ nav span.logoWrapper {
 }
 
 nav .logo {
-  height: 60px;
-  width: 60px;
-}
-
-@media only screen and (min-width: 768px) {
-  nav span.logoWrapper {
-    position: relative;
-    background: transparent;
-    top: unset;
-    left: unset;
-    padding: unset;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  nav .logo {
-    height: 60px;
-    width: 60px;
-  }
+  height: 4em;
+  width: 4em;
 }
 
 .mobileNav {
@@ -231,7 +208,7 @@ nav .logo {
 #mobile-nav-button {
   position: fixed;
   transform-origin: right;
-  top: 2.75em;
+  top: 2.3em;
   right: 0;
   z-index: 2;
   padding: 0.5em 1em 0.5em 2em;
@@ -256,4 +233,29 @@ nav .logo {
 #mobile-nav-links .overlay .mobile-nav-links div:hover {
   background: var(--neutral8);
   transition: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav span.logoWrapper {
+    position: relative;
+    background: transparent;
+    top: unset;
+    left: unset;
+    padding: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  nav .logo {
+    height: 60px;
+    width: 60px;
+  }
 }
