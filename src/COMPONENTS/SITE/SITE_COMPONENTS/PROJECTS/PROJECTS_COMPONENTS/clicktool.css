@@ -1,0 +1,3 @@
+.clicktool section{
+    height: calc(100vh - var(--navHeight));
+}
