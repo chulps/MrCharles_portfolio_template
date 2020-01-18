@@ -1,6 +1,8 @@
 /* styles.css */
 /* default styles for all native html elements */
 
+/* import aktiv-grotesk from Adobe */
+@import url("https://use.typekit.net/ssy0pws.css");
 :root {
     /* 
     The main color here is "--primary0"
@@ -146,7 +148,7 @@
     --whiteTrans: rgba(255,255,255,.75);  
 
     /* default font variables */
-    --fontFamilyRegular: sans-serif;
+    --fontFamilyRegular: aktiv-grotesk, sans-serif;
     --fontWeightLight: 300;
     --fontWeightRegular: 400;
     --fontMedium: 500;

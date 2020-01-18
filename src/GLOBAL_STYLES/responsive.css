@@ -427,6 +427,23 @@ and set display to "grid" */
           justify-content: flex-end;
 }
 
+.flex-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-space-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .inline-flex {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
