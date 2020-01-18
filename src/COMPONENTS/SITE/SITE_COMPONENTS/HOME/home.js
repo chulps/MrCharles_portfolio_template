@@ -1,10 +1,10 @@
 // Home.js
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./home.css";
 import Laptop from '../../../../IMG/laptop.png'
 
-// just change the name 'chuck' in this import to make it be you instead
-import Me from '../../../../IMG/isaac\.png'
+import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 import Wavy from './HOME_COMPONENTS/Wavy.js'
 import Clicktool from '../../../../VIDEO/clicktool_dashboard.mp4'
 import ClicktoolLogo from './HOME_COMPONENTS/ClicktoolLogoHorizontal.js'
@@ -27,12 +27,12 @@ class Home extends React.Component {
           {/* <div className="absolute whole md-half flex-center hidden lg-flex">
             <Wavy />
           </div> */}
-          <h1 className="absolute text-shadow-out text-main deseloper">"Deseloper"</h1>
-          <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
+          <h1 className="absolute text-shadow-out text-main deseloper">Product Designer <br/> + <br/> Front-End Developer</h1>
+          {/* <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
             <h4>I'm a generalist designer and front-end developer. </h4>
             <h2>Designer<br/> + <br/>Developer</h2>
             <h4>I can design anything, but I love making apps the most.</h4>
-          </div>
+          </div> */}
         </section>
         
         {/* project section */}
@@ -52,15 +52,21 @@ class Home extends React.Component {
             <div class="relative laptop-project-video-container">
               <video className="laptop-project-video" controls loop src={Clicktool}/>
             </div>
-            <button className="clicktool-project-button">View Project</button>
+                       
+              <button className="clicktool-project-button">
+                <Link to="/projects/clicktool">View Project</Link>
+              </button>
+            
           </div>
         </section>
 
-          <section className="b-main">
-`            <div className="bg-primary0" style={{height: 100, width: 100}}></div>
-            <div className="bg-secondary0" style={{height: 100, width: 100}}></div>
-            <div className="bg-tertiary0" style={{height: 100, width: 100}}></div>
-            <div className="bg-quaternary0" style={{height: 100, width: 100}}></div>`
+          <section className="bg-main">
+            <div className="colors">
+  `           <div className="bg-primary0" style={{height: 100, width: 100}}></div>
+              <div className="bg-secondary0" style={{height: 100, width: 100}}></div>
+              <div className="bg-tertiary0" style={{height: 100, width: 100}}></div>
+              <div className="bg-quaternary0" style={{height: 100, width: 100}}></div>`
+            </div>
           </section>
 
       </div>

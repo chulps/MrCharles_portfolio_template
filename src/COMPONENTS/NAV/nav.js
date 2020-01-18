@@ -1,3 +1,4 @@
+// Nav.js
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./nav.css";
@@ -102,14 +103,6 @@ class Nav extends React.Component {
                     menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                   })
                 }><Link to="/works">Other Works</Link></div>
-              <div
-                onClick={() =>
-                  this.setState({
-                    displaymobileNav: !this.state.displaymobileNav,
-                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                  })
-                }>
-            </div>
             {/* <button
               onClick={() =>
                 this.setState({

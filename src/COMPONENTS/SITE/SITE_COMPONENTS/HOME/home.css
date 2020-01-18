@@ -14,6 +14,10 @@
   height:100vh;
 }
 
+.home section:last-of-type {
+  margin-bottom: -5em;
+}
+
 .home .me {
   bottom: 0;   /* position fixed using className 'fixed' */
   width: auto;
@@ -38,18 +42,19 @@
   top: 0;
 }
 
-.home-about-section {
-  border-top: 3px solid white;
-  border-top: 3px solid var(--neutral8);
-}
-
 .clicktool-project-button {
   position: absolute;
   top: calc(100% + 12em);
 }
 
 .deseloper {
-  font-size: 15vw;
+  font-size: 12vw;
+}
+
+.colors {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4.4em;
 }
 
 @media (min-width: 768px) {
@@ -59,6 +64,6 @@
   }
 
   .deseloper {
-    font-size: 10vw;
+    font-size: 5vw;
   }
 }

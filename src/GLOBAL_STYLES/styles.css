@@ -145,23 +145,25 @@
     --neutral7: #cccccc;
     --neutral8: #efefef;
     --white: #ffffff;
-    --whiteTrans: rgba(255,255,255,.2);  
+    --whiteTrans: rgba(255,255,255,.5);  
 
     /* default font variables */
+    --fontFamilyCondensed: aktiv-grotesk, sans-serif;
     --fontFamilyRegular: aktiv-grotesk, sans-serif;
-    --fontWeightLight: 300;
+    --fontFamilyExtended: aktiv-grotesk, sans-serif;
+
+    --fontWeightLight: 200;
     --fontWeightRegular: 400;
-    --fontMedium: 500;
-    --fontWeightBold: 700;
-    --fontWeightBlack: 900;
-    --fontStyle: normal;
+    --fontWeightMedium: 700;
+    --fontWeightBold: 900;
+    --fontStyleNormal: normal;
     --fontColor: var(--black);
     --textMargins: 0 0 var(--fontLineHeight) 0;
 
     /* default font styles */
     color: var(--fontColor);
     font-family: var(--fontFamilyRegular);
-    font-style: var(--fontStyle);
+    font-style: var(--fontStyleNormal);
     font-weight: var(--fontWeightRegular);
     font-size: var(--fontSizeDefault);
     line-height: var(--fontLineHeight);
@@ -169,7 +171,7 @@
     /* default font sizes */
     --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
     --fontSizeRatio: calc(1 + (1 / 2));
-    --fontLineHeight: calc(1 + (1 / 3));
+    --fontLineHeight: calc(1 + (1 / 6));
     --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
     --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
     --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
@@ -179,7 +181,7 @@
     --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
 
     /* site */
-    --siteBackground: var(--tertiary0);
+    --siteBackground: var(--neutral8);
     /* default site padding */
     --sitePadding: 0;
 
@@ -197,7 +199,7 @@
     --buttonFontSize: 1em;
     --buttonHeight: 2rem;
     --buttonBgColor: var(--white);
-    --buttonBorder: 1px solid var(--primary0);
+    --buttonBorder: 2px solid var(--whiteTrans);
     --buttonPadding:0.8rem 1.6rem;
     --buttonBorderRadius: 1.6em;
     --buttonShadow: var(--boxShadowOut);
@@ -207,7 +209,7 @@
 html {
   font-size: var(--fontSizeDefault);
   font-weight: var(--fontWeightRegular);
-  font-style: var(--fontStyle);
+  font-style: var(--fontStyleNormal);
   width: 100vw;
   box-sizing: border-box;
   margin: 0;
@@ -311,7 +313,7 @@ button {
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid white;
+  border: var(--buttonBorder);
   outline: none;
   transition: 0.2s;
 }
@@ -373,6 +375,10 @@ button:hover {
 
 .bg-black {
   background: var(--black);
+}
+
+.bg-neutral1 {
+  background: var(--neutral1);
 }
 
 .bg-white {
