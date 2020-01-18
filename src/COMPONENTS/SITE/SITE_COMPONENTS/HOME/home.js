@@ -4,7 +4,7 @@ import "./home.css";
 import Laptop from '../../../../IMG/laptop.png'
 
 // just change the name 'chuck' in this import to make it be you instead
-import Me from '../../../../IMG/chuck.png'
+import Me from '../../../../IMG/isaac\.png'
 import Wavy from './HOME_COMPONENTS/Wavy.js'
 import Clicktool from '../../../../VIDEO/clicktool_dashboard.mp4'
 import ClicktoolLogo from './HOME_COMPONENTS/ClicktoolLogoHorizontal.js'
@@ -56,7 +56,12 @@ class Home extends React.Component {
           </div>
         </section>
 
-
+          <section className="b-main">
+`            <div className="bg-primary0" style={{height: 100, width: 100}}></div>
+            <div className="bg-secondary0" style={{height: 100, width: 100}}></div>
+            <div className="bg-tertiary0" style={{height: 100, width: 100}}></div>
+            <div className="bg-quaternary0" style={{height: 100, width: 100}}></div>`
+          </section>
 
       </div>
     );
