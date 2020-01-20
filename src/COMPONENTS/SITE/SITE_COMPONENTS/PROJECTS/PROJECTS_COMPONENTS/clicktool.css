@@ -1,3 +1,26 @@
-.clicktool section{
-    height: calc(100vh - var(--navHeight));
+/* clicktool.css */
+
+.clicktool section {
+    min-height: calc(100vh - var(--navHeight));
+    margin: var(--navHeight) 0;
+}
+
+.clicktool section + section {
+    min-height: 100vh;
+}
+.clicktool .geometry {
+    transform: rotate(90deg);
+    width: 100vw;
+}
+
+@media (min-width: 992px) {
+    .clicktool .geometry {
+        transform: rotate(0deg);
+        min-height: unset;
+    }
+
+    .clicktool section {
+        min-height: calc(100vh - var(--navHeight));
+        margin: unset;
+    }
 }

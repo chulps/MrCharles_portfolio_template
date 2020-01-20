@@ -13,7 +13,7 @@
 
     /* For color changes, these three parameters should solve 
     most of your problems. */
-    --hueSubPrimary: 0; /* choose a number between 1 and 360 */
+    --hueSubPrimary: 40; /* choose a number between 1 and 360 */
     --saturationSubPrimary: 100%; /* should not exceed 100% */
     --lightnessSubPrimary: 69%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
 
@@ -54,7 +54,7 @@
           --lightnessSecondary4: calc((var(--lightnessSubSecondary) / 100) * 180);
 
     /* theres no need to mess with these but you can if you want to  */
-    --hueSubTertiary: calc(var(--hueSubPrimary) + 30); /* this is set to choose a color on the color wheel 60degrees from primary0 */
+    --hueSubTertiary: calc(var(--hueSubPrimary) - 30); /* this is set to choose a color on the color wheel 60degrees from primary0 */
     --saturationSubTertiary: var(--saturationSubPrimary);
     --lightnessSubTertiary: var(--lightnessSubPrimary);
           /* don't mess with these*/
@@ -148,9 +148,9 @@
     --whiteTrans: rgba(255,255,255,.5);  
 
     /* default font variables */
-    --fontFamilyCondensed: aktiv-grotesk, sans-serif;
+    --fontFamilyCondensed: aktiv-grotesk-condensed, sans-serif;
     --fontFamilyRegular: aktiv-grotesk, sans-serif;
-    --fontFamilyExtended: aktiv-grotesk, sans-serif;
+    --fontFamilyExtended: aktiv-grotesk-extended, sans-serif;
 
     --fontWeightLight: 200;
     --fontWeightRegular: 400;
@@ -171,7 +171,7 @@
     /* default font sizes */
     --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
     --fontSizeRatio: calc(1 + (1 / 2));
-    --fontLineHeight: calc(1 + (1 / 6));
+    --fontLineHeight: calc(1 + (1 / 2));
     --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
     --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
     --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
@@ -245,6 +245,19 @@ body * {
   font-weight: var(--fontWeightBold);
 }
 
+/* font widths */
+.font-condensed {
+  font-family: var(--fontFamilyCondensed);
+}
+
+.font-regular {
+  font-family: var(--fontFamilyRegular);
+}
+
+.font-extended {
+  font-family: var(--fontFamilyExtended);
+}
+
 /*         */
 /* heading */
 /*         */
@@ -257,6 +270,7 @@ h6,
 p,
 label {
   margin: var(--textMargins);
+  line-height: var(--fontLineHeight);
 }
 
 h1 {

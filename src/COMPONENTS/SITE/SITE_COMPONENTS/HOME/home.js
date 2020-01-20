@@ -7,7 +7,7 @@ import Laptop from '../../../../IMG/laptop.png'
 import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 import Wavy from './HOME_COMPONENTS/Wavy.js'
 import Clicktool from '../../../../VIDEO/clicktool_dashboard.mp4'
-import ClicktoolLogo from './HOME_COMPONENTS/ClicktoolLogoHorizontal.js'
+import ClicktoolLogo from '../../../../IMG/ClicktoolLogoHorizontal.js'
 import ClicktoolCity from './HOME_COMPONENTS/ClicktoolCity.js'
 
 class Home extends React.Component {
