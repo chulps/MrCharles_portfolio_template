@@ -2,11 +2,11 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "../NAV/Nav.js";
-import Footer from "../FOOTER/Footer.js";
+import Navbar from "../NAV/nav.js";
+import Footer from "../FOOTER/footer.js";
 import "./site.css";
-import Home from './SITE_COMPONENTS/HOME/Home.js';
-import About from './SITE_COMPONENTS/ABOUT/About.js';
+import Home from './SITE_COMPONENTS/HOME/home.js';
+import About from './SITE_COMPONENTS/ABOUT/about.js';
 import Clicktool from './SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/Clicktool.js'
 
 class Site extends React.Component {
@@ -14,7 +14,7 @@ class Site extends React.Component {
   //   displaymobileNav: false,
   //   menuText: "Menu"
   // };
-  
+
   render() {
     return (
     <Router>

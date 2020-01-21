@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
 
-const User = require("./models/user.js");
+// const User = require("./models/user.js");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -12,14 +12,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Serve up static assets
-app.use(express.static("client/build"));
+app.use(express.static("front-end-client/build"));
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 
 // Connect to the Mongo DB
 mongoose.connect(
-	process.env.MONGODB_URI,
+	process.env.MONGODB_URI || "mongodb://localhost/portfolio_template",
 	{
 		useMongoClient: true
 	}
