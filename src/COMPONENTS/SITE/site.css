@@ -27,7 +27,7 @@ button.contact-button:active {
           box-shadow: var(--boxShadowIn);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   button.contact-button {
     width: auto;
     margin: 0 2em 2em auto;

@@ -18,7 +18,7 @@ class Home extends React.Component {
         {/* top section */}
         <section className="flex-center">
           {/* <h1 className="absolute text-black two-thirds">Hi!</h1> */}
-          <h2 className="two-thirds text-center m-auto">I'm Chuck Howard</h2>
+          <h1 className="two-thirds text-center m-auto">I'm Chuck Howard</h1>
           <img className="me fixed whole md-half" src={Me} alt="Mr. Charles" />
         </section>
         

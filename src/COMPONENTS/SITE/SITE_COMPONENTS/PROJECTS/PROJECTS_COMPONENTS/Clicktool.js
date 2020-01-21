@@ -25,7 +25,7 @@ class Clicktool extends React.Component {
                     <h6 className="mb10">Project:</h6>
                     <h5>Clicktool</h5>
                     <p className="whole sm-two-thirds md-half lg-third xl-fourth">
-                        Clicktool is a marketing analytics app designed for digital marketers. Using our app, users can track clicks, phone calls, conversions, and many other types of metrics that help marketers make better decisions about where to spend theier money.                        
+                        Clicktool is a marketing analytics app designed for digital marketers. Using our app, users can track clicks, phone calls, conversions, and many other types of metrics that help marketers make better decisions about where to spend their marketing dollars.                        
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@ class Clicktool extends React.Component {
             <section className="roles pt30">
                 <div className="sticky-top pl30 pr30 pb30">
                     <h6 className="mb10">MY ROLES FOR THIS PROJECT:</h6>
-                    <div className="whole sm-two-thirds one-column lg-four-columns gap10">
+                    <div className="whole sm-half one-column lg-four-columns gap10">
                         <div>
                             <h5>PRODUCT DESIGNER</h5>
                             <p>Understand business objectives and architect solutions based on direction from the CEO and user research</p>
@@ -60,18 +60,13 @@ class Clicktool extends React.Component {
 
             {/* team section */}
             <section className="team p30">
-                <div className="sticky-top">
+                <div className="sticky-top xl-two-thirds">
                     
                     <h6 className="mb10">the team</h6>
-                    <div className="one-column sm-two-columns">
+                    <div className="one-column sm-two-columns md-three-columns lg-four-columns gap30">
                         <div>
                             <h5>Carlos Cruz</h5>
                             <p>CEO</p>
-                        </div>
-
-                        <div>
-                            <h5>Voranon Chumnansiri</h5>
-                            <p>Team Leader/Scrum Master/Manager</p>
                         </div>
 
                         <div>
@@ -94,11 +89,6 @@ class Clicktool extends React.Component {
                             <p>Software Engineer</p>
                         </div>
 
-                        <div>
-                            <h5>Jamie Su</h5>
-                            <p>Back-End Developer</p>
-                        </div>
-                        
                         <div>
                             <h5>Jamie Su</h5>
                             <p>Back-End Developer</p>

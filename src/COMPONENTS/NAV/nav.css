@@ -8,6 +8,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: var(--navHeight);
+  padding: var(--navPadding);
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,7 +27,6 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: var(--navPadding);
     height: var(--navHeight);
     position: fixed;
     top: 0;
@@ -49,7 +49,7 @@ nav ul li,
   font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
-  margin-right: 4em;
+  margin-left: 4em;
   font-family: var(--font0);
   text-transform: uppercase;
   font-size: var(--fontSizeH6);
@@ -85,9 +85,6 @@ nav span.logoWrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
   background: transparent;
   width: var(--navHeight);
   height: var(--navHeight);
@@ -256,10 +253,5 @@ nav .logo {
             justify-content: flex-start;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-
-  nav .logo {
-    height: 60px;
-    width: 60px;
   }
 }

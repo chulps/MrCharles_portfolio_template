@@ -170,7 +170,7 @@
 
     /* default font sizes */
     --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
-    --fontSizeRatio: calc(1 + (1 / 2));
+    --fontSizeRatio: calc(1 + (1 / 3));
     --fontLineHeight: calc(1 + (1 / 2));
     --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
     --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
@@ -186,8 +186,8 @@
     --sitePadding: 0;
 
     /* navbar height */
-    --navHeight: 100px;
-    --navPadding: 1.6rem;
+    --navHeight: 6em;
+    --navPadding: calc(var(--navHeight) / 2) calc(var(--navHeight) / 3);
 
     /* shadow */
     --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);

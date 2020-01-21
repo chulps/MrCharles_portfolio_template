@@ -21,10 +21,12 @@ class Nav extends React.Component {
         {/* wrapper for the logo and logo text, hidden on small screens */}
         <Link to="/">
           <span className="logoWrapper">
-            <img
-            className="logo"
-            src={Logo}
-            alt="Mr. Charles"/>
+            <div style={{width: '4em', height: '4em'}}>
+              <img
+              className="logo"
+              src={Logo}
+              alt="Mr. Charles" style={{objectFit:'contain'}}/>
+            </div>
             <h5 
             style={{margin: 0}}
             className="hidden md-flex font-condensed font-weight-regular">
@@ -33,8 +35,8 @@ class Nav extends React.Component {
           </Link>
         {/* desktop nav menu */}
         <ul className="hidden md-flex">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/works">Other Works</Link></li>
+          <li><Link to="/about">WORK</Link></li>
+          <li><Link to="/works">RESUME</Link></li>
           {/* <Link to="/contact"><button>Contact</button></Link> */}
         </ul>
 
@@ -89,29 +91,15 @@ class Nav extends React.Component {
                     displaymobileNav: !this.state.displaymobileNav,
                     menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                   })
-                }><Link to="/about">About</Link></div>
+                }><Link to="/about">WORK</Link></div>
               <div
                 onClick={() =>
                   this.setState({
                     displaymobileNav: !this.state.displaymobileNav,
                     menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
                   })
-                }><Link to="/clicktool">Clicktool</Link></div>
-              <div
-                onClick={() =>
-                  this.setState({
-                    displaymobileNav: !this.state.displaymobileNav,
-                    menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                  })
-                }><Link to="/works">Other Works</Link></div>
-            {/* <button
-              onClick={() =>
-                this.setState({
-                  displaymobileNav: !this.state.displaymobileNav,
-                  menuText: `${this.state.displaymobileNav === false ? "Close":"Menu"}`
-                })
-              }>
-              <Link to="/contact">Contact</Link></button> */}
+                }><Link to="/clicktool">RESUME</Link></div>
+
               </div>
           </div>
         </div>
