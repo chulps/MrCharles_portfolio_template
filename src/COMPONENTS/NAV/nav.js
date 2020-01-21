@@ -26,7 +26,7 @@ class Nav extends React.Component {
             alt="Mr. Charles"/>
             <h5 
             style={{margin: 0}}
-            className="hidden md-flex font-condensed">
+            className="hidden md-flex font-condensed font-weight-regular">
                 Chuck Howard</h5>
           </span>
 

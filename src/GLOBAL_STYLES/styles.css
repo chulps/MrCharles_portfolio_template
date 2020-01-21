@@ -229,19 +229,19 @@ body * {
 /*              */
 /* font weights */
 /*              */
-.fontWeightLight {
+.font-weight-light {
   font-weight: var(--fontWeightLight);
 }
 
-.fontWeightRegular {
+.font-weight-regular {
   font-weight: var(--fontWeightRegular);
 }
 
-.fontMedium {
+.font-weight-medium {
   font-weight: var(--fontMedium);
 }
 
-.fontWeightBold {
+.font-weight-bold {
   font-weight: var(--fontWeightBold);
 }
 
