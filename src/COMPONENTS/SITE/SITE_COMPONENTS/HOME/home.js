@@ -27,7 +27,7 @@ class Home extends React.Component {
           {/* <div className="absolute whole md-half flex-center hidden lg-flex">
             <Wavy />
           </div> */}
-          <h1 className="absolute text-shadow-out text-main deseloper">Product Designer <br/> + <br/> Front-End Developer</h1>
+          <h1 className="absolute text-shadow-out text-main deseloper">Designer <br/> + <br/>Developer</h1>
           {/* <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
             <h4>I'm a generalist designer and front-end developer. </h4>
             <h2>Designer<br/> + <br/>Developer</h2>
@@ -36,6 +36,7 @@ class Home extends React.Component {
         </section>
         
         {/* project section */}
+
         <section className="relative bg-main flex-center flex-column lg-flex-row lg-pt30 lg-pb30">
 
           <div className="absolute whole md-two-thirds flex-column flex-center" style={{transform: 'translateY(-50%)'}}>

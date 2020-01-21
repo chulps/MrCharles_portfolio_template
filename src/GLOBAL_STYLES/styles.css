@@ -15,7 +15,7 @@
     most of your problems. */
     --hueSubPrimary: 40; /* choose a number between 1 and 360 */
     --saturationSubPrimary: 100%; /* should not exceed 100% */
-    --lightnessSubPrimary: 69%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
+    --lightnessSubPrimary: 50%; /* should not exceed 100% */  /* initialize hsl color values: don't mess with these */
 
           /* don't mess with these */
           --hue: 0;/* 360 degrees */
@@ -157,7 +157,7 @@
     --fontWeightMedium: 700;
     --fontWeightBold: 900;
     --fontStyleNormal: normal;
-    --fontColor: var(--black);
+    --fontColor: var(--neutral3);
     --textMargins: 0 0 var(--fontLineHeight) 0;
 
     /* default font styles */
@@ -191,7 +191,7 @@
 
     /* shadow */
     --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
-    --boxShadowIn: inset 3px 3px 6px var(--blackTrans), 3px 3px 6px var(--tertiary1);
+    --boxShadowIn: inset 3px 3px 6px var(--blackTrans), inset -3px -3px 6px var(--white);
     --textShadowOut: var(--boxShadowOut);
     --textShadowIn: var(--boxShadowIn);
 
@@ -267,10 +267,11 @@ h3,
 h4,
 h5,
 h6,
-p,
 label {
   margin: var(--textMargins);
   line-height: var(--fontLineHeight);
+  font-family: var(--fontFamilyCondensed);
+  text-transform: uppercase;
 }
 
 h1 {
@@ -305,13 +306,8 @@ label {
   font-weight: var(--fontWeightLight);
 }
 
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
 a {
-  color: inherit;
+  color: var(--fontColor);
   text-decoration: none;
 }
 
@@ -334,8 +330,13 @@ button {
 
 button:hover {
   background: var(--neutral8);
-  transform: scale(1.1);
+  transform: scale(1.025);
   transition: 0.2s;
+  box-shadow: var(--boxShadowOut);
+}
+
+button:active {
+  box-shadow: var(--boxShadowIn);
 }
 
 /* text alignment */

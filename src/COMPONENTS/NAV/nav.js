@@ -19,6 +19,7 @@ class Nav extends React.Component {
       <nav>
 
         {/* wrapper for the logo and logo text, hidden on small screens */}
+        <Link to="/">
           <span className="logoWrapper">
             <img
             className="logo"
@@ -29,7 +30,7 @@ class Nav extends React.Component {
             className="hidden md-flex font-condensed font-weight-regular">
                 Chuck Howard</h5>
           </span>
-
+          </Link>
         {/* desktop nav menu */}
         <ul className="hidden md-flex">
           <li><Link to="/about">About</Link></li>

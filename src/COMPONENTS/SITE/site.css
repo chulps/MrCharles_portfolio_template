@@ -6,12 +6,30 @@
   position: relative;
   padding-top: var(--navHeight);
   background: var(--siteBackground);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 button.contact-button {
+    position: -webkit-sticky;
     position: sticky;
     bottom: 2em;
-    left: calc(100% - 14em);
+    width: calc(100% - 8em);
     z-index: 1;
-    margin-bottom: 2em;
+    margin: 0 4em 2em 4em;
+    background: var(--whiteTrans);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+}
+
+button.contact-button:active {
+  -webkit-box-shadow: var(--boxShadowIn);
+          box-shadow: var(--boxShadowIn);
+}
+
+@media (min-width: 768px) {
+  button.contact-button {
+    width: auto;
+    margin: 0 2em 2em auto;
+  }
 }

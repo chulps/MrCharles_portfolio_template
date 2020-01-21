@@ -2,7 +2,7 @@ import React from "react"
 
 function ClicktoolLogoGeometry(props) {
   return (
-    <svg viewBox="0 0 3295.582 1402.5" {...props}>
+    <svg viewBox="0 0 3295.582 1402.5" width={'100%'} {...props}>
       <title>{"CLICKTOOL_LOGO_MASTER_GEOMETRY"}</title>
       <path fill="transparent" d="M.011 0h3295.571v1402.5H.011z" />
       <path

@@ -26,7 +26,7 @@ class Site extends React.Component {
 
         </Switch>
         <Navbar />
-        <button className="contact-button">contact</button>
+          <button className="contact-button">contact</button>
         <Footer/>
       </div>
     </Router>

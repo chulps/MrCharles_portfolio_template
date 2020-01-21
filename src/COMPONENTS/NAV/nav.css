@@ -51,7 +51,6 @@ nav ul li,
   cursor: pointer;
   margin-right: 4em;
   font-family: var(--font0);
-  color: var(--neutral1);
   text-transform: uppercase;
   font-size: var(--fontSizeH6);
 }
@@ -92,11 +91,14 @@ nav span.logoWrapper {
   background: transparent;
   width: var(--navHeight);
   height: var(--navHeight);
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 nav .logo {
   height: 4em;
   width: 4em;
+  opacity: .55;
 }
 
 .mobileNav {
@@ -209,7 +211,7 @@ nav .logo {
   position: fixed;
   transform-origin: right;
   top: 2em;
-  right: 0;
+  right: -2px;
   z-index: 2;
   padding: 0.5em 1em 0.5em 2em;
   box-sizing: border-box;

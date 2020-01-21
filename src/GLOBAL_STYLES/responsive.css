@@ -415,6 +415,20 @@ and set display to "grid" */
   align-items: center;
 }
 
+.flex-center-y {
+  /* centers things along y axis */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-center-x {
+  /* centers things along x axis */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
 .flex-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -903,6 +917,20 @@ and set display to "grid" */
         -ms-flex-align: center;
             align-items: center;
   }
+  
+  .xs-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .xs-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+  }
 
   .xs-flex-start {
     -webkit-box-pack: start;
@@ -1367,6 +1395,20 @@ and set display to "grid" */
             align-items: center;
   }
 
+  .sm-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .sm-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+  }
+
   .sm-flex-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1828,6 +1870,20 @@ and set display to "grid" */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .md-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .md-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
 
   .md-flex-start {
@@ -2295,6 +2351,20 @@ and set display to "grid" */
             align-items: center;
   }
 
+  .lg-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .lg-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+  }
+
   .lg-flex-start {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2742,6 +2812,20 @@ and set display to "grid" */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .xl-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .xl-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
 
   .xl-flex-start {
@@ -3205,6 +3289,20 @@ and set display to "grid" */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .hg-flex-center-y {
+    /* centers things along y axis */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hg-flex-center-x {
+    /* centers things along x axis */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
 
   .hg-flex-start {

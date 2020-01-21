@@ -2,25 +2,33 @@
 
 .clicktool section {
     min-height: calc(100vh - var(--navHeight));
-    margin: var(--navHeight) 0;
+    /* margin: 0 var(--navHeight); */
 }
 
 .clicktool section + section {
     min-height: 100vh;
 }
-.clicktool .geometry {
-    transform: rotate(90deg);
-    width: 100vw;
+
+.clicktool .sticky-top {
+    position: sticky;
+    top: var(--navHeight);
 }
 
-@media (min-width: 992px) {
-    .clicktool .geometry {
-        transform: rotate(0deg);
-        min-height: unset;
-    }
+.clicktool .geometry {
+    height: 100%;
+}
 
-    .clicktool section {
-        min-height: calc(100vh - var(--navHeight));
-        margin: unset;
+.clicktool .geometry svg {
+    transform: rotate(90deg);
+    min-width: calc(100vh - var(--navHeight));
+}
+
+.clicktool p {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .clicktool .geometry svg {
+        transform: rotate(0deg);
     }
 }
