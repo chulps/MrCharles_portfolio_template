@@ -9,34 +9,34 @@
     font-size: 11pt;
 }
 
-.resume .skills-section {
+.about .skills-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 -6pt;
 }
 
-.resume .skills-section .skill {
+.about .skills-section .skill {
     margin: 6pt;
 }
-.resume .skills-section .skill,
-.resume .university-logo {
+.about .skills-section .skill,
+.about .university-logo {
     height: 36pt;
     width: 36pt;
     border-radius: 24pt;
     background: var(--neutral7);
 }
 
-.resume .university-logo {
+.about .university-logo {
     margin-right: 12pt;
 }
 
-.resume label {
+.about label {
     font-size: 8pt;
     padding-top: 4pt;
     margin-right: 12pt;
 }
 
-.resume p {
+.about p {
     margin: 0;
 }
