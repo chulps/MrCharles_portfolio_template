@@ -2,6 +2,7 @@
   "name": "new",
   "version": "1.0.0",
   "description": "",
+  "proxy": "http://localhost:3001",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
