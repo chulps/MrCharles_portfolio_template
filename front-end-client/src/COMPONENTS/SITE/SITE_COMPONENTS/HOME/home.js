@@ -150,9 +150,9 @@ class Home extends React.Component {
                   <div className="relative laptop-project-video-container">
                     <video className="laptop-project-video" controls loop src={Clicktool}/>
                   </div>
-                    <button className="clicktool-project-button">
-                      <Link to="/projects/clicktool">View Project</Link>
-                    </button>
+                    <Link className="clicktool-project-button" to="/projects/clicktool">
+                      <button>View Project</button>
+                    </Link>
                 </div>
               </section>
                 <section className="bg-main">

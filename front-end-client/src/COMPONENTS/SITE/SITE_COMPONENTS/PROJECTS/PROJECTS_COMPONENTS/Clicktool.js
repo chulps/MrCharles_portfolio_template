@@ -9,6 +9,10 @@ class Clicktool extends React.Component {
     //   displaymobileNav: false,
     //   menuText: "Menu"
     // };
+
+    componentDidMount(){
+        window.scrollTo({top: 0, behavior: "smooth"})
+    }
     
     render() {
       return (
