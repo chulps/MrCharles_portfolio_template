@@ -210,7 +210,7 @@ html {
   font-size: var(--fontSizeDefault);
   font-weight: var(--fontWeightRegular);
   font-style: var(--fontStyleNormal);
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
