@@ -2,11 +2,12 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "../NAV/nav.js";
-import Footer from "../FOOTER/footer.js";
+import Navbar from "../NAV/Nav.js";
+import Footer from "../FOOTER/Footer.js";
 import "./site.css";
-import Home from './SITE_COMPONENTS/HOME/home.js';
-import About from './SITE_COMPONENTS/ABOUT/about.js';
+import Home from './SITE_COMPONENTS/HOME/Home.js';
+import Register from './SITE_COMPONENTS/REGISTER/Register.js';
+import About from './SITE_COMPONENTS/ABOUT/About.js';
 import Clicktool from './SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/Clicktool.js'
 
 class Site extends React.Component {
@@ -21,6 +22,7 @@ class Site extends React.Component {
       <div className="site">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/register" component={Register} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects/clicktool" component={Clicktool} />
 
