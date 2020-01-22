@@ -21,8 +21,8 @@
 }
 .resume .skills-section .skill,
 .resume .university-logo {
-    height: 48pt;
-    width: 48pt;
+    height: 36pt;
+    width: 36pt;
     border-radius: 24pt;
     background: var(--neutral7);
 }

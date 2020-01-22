@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 // import global styles
 import "./GLOBAL_STYLES/styles.css";
 import "./GLOBAL_STYLES/responsive.css";
-import Site from "./COMPONENTS/SITE/site"
+import Site from "./COMPONENTS/SITE/site.js"
 
 function App() {
   return (
