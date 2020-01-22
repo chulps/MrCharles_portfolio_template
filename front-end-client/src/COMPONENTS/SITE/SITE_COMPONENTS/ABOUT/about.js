@@ -11,7 +11,7 @@ class About extends React.Component {
       <div className="about">
         
         {/* mobile resume */}
-        <section className="mobileResume md-hidden p30">
+        <section className="mobileResume md-hidden pr30 pb30 pl30">
         <div className="flex-column flex-space-between">
             <div className="general-info mb20">
               <h4 className="name">CHUCK HOWARD</h4>
@@ -33,7 +33,7 @@ class About extends React.Component {
             </div>
           </div>
 
-          <div className="intro mt20 mb20">
+          <div className="intro mb20">
             Hello, I'm Chuck, I'm a designer, developer, and generally very handy when you're trying to make something;
             Especially if you're making an app! I'm looking for a new role where I lead the design of digital products from top to bottom.
           </div>

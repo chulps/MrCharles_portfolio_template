@@ -251,6 +251,5 @@ nav .logo {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-transform: uppercase;
-    letter-spacing: 1px;
   }
 }
