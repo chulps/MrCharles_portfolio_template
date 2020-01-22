@@ -170,7 +170,7 @@
 
     /* default font sizes */
     --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
-    --fontSizeRatio: calc(1 + (1 / 3));
+    --fontSizeRatio: calc(1 + (1 / 2));
     --fontLineHeight: calc(1 + (1 / 2));
     --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
     --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
@@ -267,7 +267,8 @@ h3,
 h4,
 h5,
 h6,
-label {
+label,
+p {
   margin: var(--textMargins);
   line-height: var(--fontLineHeight);
   font-family: var(--fontFamilyCondensed);
