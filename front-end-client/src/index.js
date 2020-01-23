@@ -4,13 +4,13 @@ import ReactDOM from "react-dom";
 // import global styles
 import "./GLOBAL_STYLES/styles.css";
 import "./GLOBAL_STYLES/responsive.css";
-import Site from "./COMPONENTS/SITE/Site.js"
+import Site from "./COMPONENTS/SITE/Site"
 
 function App() {
-  return (
-    <Site/>
+  return ( <
+    Site / >
   );
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render( < App / > , rootElement);
