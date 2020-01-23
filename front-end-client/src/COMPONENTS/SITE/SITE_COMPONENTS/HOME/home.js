@@ -32,6 +32,23 @@ class Home extends React.Component {
     userNotFound: false
   }
 
+  componentDidMount() {
+    axios.get(`getUser/chuck`).then(data => {
+      this.setState(
+        {
+          profile: data.data
+        },
+        () => {
+          if (!this.state.profile) {
+            this.setState({
+              userNotFound: true
+            })
+          }
+        }
+      )
+    })
+  }
+
   handleUserInput = e => {
     this.setState({
       name: e.target.value

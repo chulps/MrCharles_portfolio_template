@@ -25,12 +25,16 @@ class Register extends React.Component {
   }
 
   handleSave = () => {
-    axios.post("http://localhost:3001/save", {
-      userName: this.state.fullName.split(" ")[0].toLowerCase(),
-      fullName: this.state.fullName,
-      role: this.state.role,
-      picture: `${this.state.fullName.split(" ")[0].toLowerCase()}.png`
-    })
+    axios
+      .post("http://localhost:3001/save", {
+        userName: this.state.fullName.split(" ")[0].toLowerCase(),
+        fullName: this.state.fullName,
+        role: this.state.role,
+        picture: `${this.state.fullName.split(" ")[0].toLowerCase()}.png`
+      })
+      .then(data => {
+        console.log(data)
+      })
   }
 
   handleUserInput = e => {
@@ -90,7 +94,7 @@ class Register extends React.Component {
           />
         </section>
 
-        <section className="flex-column flex-center">
+        <section className="flex-column flex-center disabled">
           <h2 className="whole text-center m-auto">Add a picture</h2>
           {/* <input
             style={styles.userInput}

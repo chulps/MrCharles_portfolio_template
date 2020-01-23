@@ -44,8 +44,8 @@ app.get("/getUser/:id", function(req, res) {
 
 app.post("/save", function(req, res) {
   User.create(req.body)
-    .then(() => {
-      console.log("success")
+    .then(data => {
+      console.log(data)
       res.json(true)
     })
     .catch(err => {
