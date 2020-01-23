@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // Serve up static assets
-app.use(express.static("front-end-client/build"))
+app.use(express.static("client/build"))
 
 //Adding CORS
 app.use(function(req, res, next) {
