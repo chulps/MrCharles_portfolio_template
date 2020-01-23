@@ -10,7 +10,7 @@
     "client": "cd front-end-client && npm run start",
     "install": "cd front-end-client && npm install",
     "build": "cd front-end-client && npm run build",
-    "heroku-postbuild": "cd front-end-client && npm run build && npm run build"
+    "heroku-postbuild": "cd front-end-client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
