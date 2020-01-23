@@ -26,7 +26,7 @@ class Register extends React.Component {
 
   handleSave = () => {
     axios
-      .post("http://localhost:3001/save", {
+      .post("/save", {
         userName: this.state.fullName.split(" ")[0].toLowerCase(),
         fullName: this.state.fullName,
         role: this.state.role,
