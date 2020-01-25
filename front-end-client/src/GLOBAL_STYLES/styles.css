@@ -340,7 +340,7 @@
 
   /* navbar height */
   --navHeight: 6em;
-  --navPadding: calc(var(--navHeight) / 2) calc(var(--navHeight) / 3);
+  --navPadding: calc(var(--navHeight) / 2) calc(var(--navHeight) / 6);
 
   /* shadow */
   --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
