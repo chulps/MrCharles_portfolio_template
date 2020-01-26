@@ -85,8 +85,6 @@ nav span.logoWrapper {
   -ms-flex-direction: column;
   flex-direction: column;
   background: transparent;
-  width: var(--navHeight);
-  height: var(--navHeight);
   white-space: nowrap;
   cursor: pointer;
 }

@@ -323,8 +323,8 @@
 
   /* default font sizes */
   --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
-  --fontSizeRatio: calc(1 + (1 / 2));
-  --fontLineHeight: calc(1 + (1 / 2));
+  --fontSizeRatio: calc(1 + (1 / 3));
+  --fontLineHeight: calc(1 + (1 / 3));
   --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
   --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
   --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
@@ -340,7 +340,7 @@
 
   /* navbar height */
   --navHeight: 6em;
-  --navPadding: calc(var(--navHeight) / 2) calc(var(--navHeight) / 6);
+  --navPadding: 0 2em;
 
   /* shadow */
   --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
@@ -420,8 +420,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-label {
+h6 {
   margin: var(--textMargins);
   line-height: var(--fontLineHeight);
   font-family: var(--fontFamilyCondensed);
@@ -458,6 +457,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: var(--fontWeightLight);
+  margin-bottom: var(--fontLineHeight);
 }
 
 a {

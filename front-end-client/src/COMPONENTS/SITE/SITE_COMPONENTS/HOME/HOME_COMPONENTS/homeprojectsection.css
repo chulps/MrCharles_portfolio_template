@@ -1,0 +1,22 @@
+/* homeprojectsection.css */
+
+.laptop-project-video-container {
+  padding-top: 38%;
+  width: 61.75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.laptop-project-video {
+  height: 102%;
+  width: auto;
+  position: absolute;
+  top: 0;
+}
+
+.clicktool-project-button {
+  position: absolute;
+  top: calc(100% - 10em);
+}

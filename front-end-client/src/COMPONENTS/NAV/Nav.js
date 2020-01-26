@@ -13,9 +13,8 @@ class Nav extends React.Component {
 
   render() {
     return (
-      // Nav.js
-
       <nav>
+        {/* Nav.js */}
         {/* wrapper for the logo and logo text, hidden on small screens */}
         <Link to="/">
           <span className="logoWrapper">
@@ -27,12 +26,17 @@ class Nav extends React.Component {
                 style={{ objectFit: "contain" }}
               />
             </div>
-            <h5
-              style={{ margin: 0 }}
-              className="hidden md-flex font-condensed font-weight-regular"
+            <h4
+              style={{
+                margin: 0,
+                textTransform: "none"
+              }}
+              className="hidden md-flex font-regular font-weight-bold"
             >
-              Chuck Howard
-            </h5>
+              Chuck
+              <br />
+              Howard
+            </h4>
           </span>
         </Link>
         {/* desktop nav menu */}

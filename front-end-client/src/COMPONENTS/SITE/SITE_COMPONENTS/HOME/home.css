@@ -6,12 +6,14 @@
 .home section {
   min-height: calc(100vh - var(--navHeight));
   position: relative;
-  height: calc(100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2)));
+  height: calc(
+    100vh - (var(--sitePadding) + var(--navHeight) + (var(--navPadding) / 2))
+  );
 }
 
 .home section + section {
   margin-top: 0;
-  height:100vh;
+  height: 100vh;
 }
 
 .home section:last-of-type {
@@ -19,32 +21,11 @@
 }
 
 .home .me {
-  bottom: 0;   /* position fixed using className 'fixed' */
+  bottom: 0; /* position fixed using className 'fixed' */
   width: auto;
   right: 50%;
   transform: translateX(50%);
   max-height: calc(100vh - var(--navHeight));
-}
-
-.home .laptop-project-video-container {
-  padding-top: 38%;
-  width: 61.75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.home .laptop-project-video {
-  height: 102%;
-  width: auto;
-  position: absolute;
-  top: 0;
-}
-
-.clicktool-project-button {
-  position: absolute;
-  top: calc(100% + 10em);
 }
 
 .deseloper {

@@ -1,15 +1,12 @@
 // Home.js
 import React from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "./home.css";
-import Laptop from "../../../../IMG/laptop.png";
+import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
 
 // import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 import Wavy from "./HOME_COMPONENTS/Wavy";
-import Clicktool from "../../../../VIDEO/clicktool_dashboard.mp4";
-import ClicktoolLogo from "../../../../IMG/ClicktoolLogoHorizontal";
-import ClicktoolCity from "./HOME_COMPONENTS/ClicktoolCity";
 
 const images = require.context("../../../../IMG/USERS", true);
 const styles = {
@@ -17,9 +14,7 @@ const styles = {
     marginBottom: "10px",
     height: "50px",
     width: "300px",
-    padding: "10px",
-    fontSize: "24px",
-    fontFamily: "cursive",
+    padding: "var(--buttonPadding)",
     textAlign: "center"
   }
 };
@@ -122,68 +117,21 @@ class Home extends React.Component {
                 })
               : this.state.profile.role}
           </h1>
-          {/* <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
-                            <h4>I'm a generalist designer and front-end developer. </h4>
-                            <h2>Designer<br/> + <br/>Developer</h2>
-                            <h4>I can design anything, but I love making apps the most.</h4>
-                          </div> */}
+          <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
+            <h4>I'm a designer and front-end developer. </h4>
+            <h2>
+              Designer
+              <br /> + <br />
+              Developer
+            </h2>
+            <h4>I can design anything, but I love making apps the most.</h4>
+          </div>
         </section>
-        {/* project section */}
         <section className="relative bg-main flex-center flex-column lg-flex-row lg-pt30 lg-pb30">
-          <div
-            className="absolute whole md-two-thirds flex-column flex-center"
-            style={{
-              transform: "translateY(-50%)"
-            }}
-          >
-            <div className="whole absolute">
-              <ClicktoolCity />
-            </div>
-            <div
-              className="two-thirds mb30 relative"
-              style={{
-                transform: "translateY(-100%)"
-              }}
-            >
-              <ClicktoolLogo />
-            </div>
-          </div>
-          <div className="laptop-project-container flex-center whole md-half relative">
-            <img className="whole absolute" src={Laptop} />
-            <div className="relative laptop-project-video-container">
-              <video
-                className="laptop-project-video"
-                controls
-                loop
-                src={Clicktool}
-              />
-            </div>
-            <Link className="clicktool-project-button" to="/projects/clicktool">
-              <button> View Project </button>
-            </Link>
-          </div>
-        </section>
-        <section className="bg-main">
-          <div className="colors">
-            `
-            <div
-              className="bg-primary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            <div
-              className="bg-secondary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            <div
-              className="bg-tertiary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            {/* <div
-              className="bg-quaternary0"
-              style={{ height: 100, width: 100 }}
-            ></div> */}
-            `
-          </div>
+          <HomeProjectSection />
+          <Link className="clicktool-project-button" to="/projects/clicktool">
+            <button> View Project </button>
+          </Link>
         </section>
       </div>
     ) : (
