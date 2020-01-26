@@ -17,10 +17,6 @@ button.contact-button {
   width: calc(100% - 8em);
   z-index: 1;
   margin: 0 4em 2em 4em;
-  background: var(--whiteTrans);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border: 1px solid var(--blackTrans);
 }
 
 button.contact-button:active {
