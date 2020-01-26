@@ -19,12 +19,17 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
+    "@progress/kendo-drawing": "^1.6.0",
+    "@progress/kendo-react-pdf": "^3.10.1",
+    "@react-pdf/renderer": "^1.6.8",
     "axios": "^0.19.1",
     "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "mongoose": "^5.8.9",
-    "react-sound": "^1.0.0",
     "concurrently": "^3.5.0",
-    "nodemon": "^1.19.4"
+    "express": "^4.15.4",
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
+    "mongoose": "^5.8.9",
+    "nodemon": "^1.19.4",
+    "react-sound": "^1.0.0"
   }
 }
