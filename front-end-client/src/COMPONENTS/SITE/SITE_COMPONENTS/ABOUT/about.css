@@ -43,7 +43,7 @@
 
 .printing {
   display: none;
-  max-width: 612px;
-  max-height: 792px;
-  padding: 20px;
+  max-width: 612pt;
+  max-height: 792pt;
+  padding: 72pt;
 }
