@@ -1,25 +1,31 @@
 // about.js
-import React from "react"
-import "./about.css"
-import { PDFExport, savePDF } from "@progress/kendo-react-pdf"
+import React from "react";
+import "./about.css";
+import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
 class About extends React.Component {
   printDocument = async () => {
-    document.getElementById("myResume").style.display = "block"
+    document.getElementById("myResume").style.display = "block";
     await new Promise(resolve => {
-      this.resume.save()
+      this.resume.save();
       setTimeout(() => {
-        resolve()
-      }, 30)
-    })
-    document.getElementById("myResume").style.display = "none"
-  }
+        resolve();
+      }, 30);
+    });
+    document.getElementById("myResume").style.display = "none";
+  };
 
   render() {
     return (
       <div className="about">
-        <button onClick={this.printDocument}>Download PDF</button>
         {/* mobile resume */}
+        <button
+          className="bg-primary0 m-auto mb30"
+          onClick={this.printDocument}
+        >
+          Download PDF
+        </button>
+
         <section className="mobileResume md-hidden pr30 pb30 pl30">
           <div className="flex-column flex-space-between">
             <div className="general-info mb20">
@@ -346,8 +352,8 @@ class About extends React.Component {
           </section>
         </PDFExport>
       </div>
-    )
+    );
   }
 }
 
-export default About
+export default About;

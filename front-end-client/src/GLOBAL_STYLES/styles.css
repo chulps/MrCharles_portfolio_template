@@ -477,7 +477,7 @@ button {
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: var(--buttonBorder);
+  /* border: var(--buttonBorder); */
   outline: none;
   transition: 0.2s;
 }
@@ -549,6 +549,14 @@ button:active {
 
 .bg-neutral1 {
   background: var(--neutral1);
+}
+
+.bg-neutral6 {
+  background: var(--neutral6);
+}
+
+.bg-neutral7 {
+  background: var(--neutral7);
 }
 
 .bg-white {

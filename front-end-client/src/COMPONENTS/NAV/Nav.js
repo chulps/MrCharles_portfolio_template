@@ -40,12 +40,15 @@ class Nav extends React.Component {
           </span>
         </Link>
         {/* desktop nav menu */}
-        <ul className="hidden md-flex">
+        <ul className="hidden lg-flex">
           <li>
             <Link to="/about">RESUME</Link>
           </li>
           <li>
             <Link to="/works">WORK</Link>
+          </li>
+          <li className="mr0">
+            <button className="contact-button m0">contact</button>
           </li>
           {/* <Link to="/contact"><button>Contact</button></Link> */}
         </ul>

@@ -16,7 +16,7 @@ button.contact-button {
   bottom: 2em;
   width: calc(100% - 8em);
   z-index: 1;
-  margin: 0 4em 2em 4em;
+  margin: 0 auto 2em auto;
 }
 
 button.contact-button:active {
@@ -27,6 +27,6 @@ button.contact-button:active {
 @media (min-width: 992px) {
   button.contact-button {
     width: auto;
-    margin: 0 2em 2em auto;
+    margin: 0;
   }
 }

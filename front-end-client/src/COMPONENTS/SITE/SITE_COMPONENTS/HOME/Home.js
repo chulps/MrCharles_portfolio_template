@@ -2,6 +2,7 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import logo from "./HOME_COMPONENTS/logo.json";
 import "./home.css";
 import Laptop from "../../../../IMG/laptop.png";
 import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
@@ -10,6 +11,8 @@ import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
 import Wavy from "./HOME_COMPONENTS/Wavy";
 
 const images = require.context("../../../../IMG/USERS", true);
+const logoImages = require.context("../../../../IMG/SKILLS", true);
+
 const styles = {
   userInput: {
     marginBottom: "10px",
@@ -82,7 +85,7 @@ class Home extends React.Component {
   };
 
   render() {
-    if (this.state.profile) console.log(this.state.profile.role.split(","));
+    if (this.state.profile) console.log(this.state.profile.picture);
     return this.state.profile ? (
       <div className="home">
         {/* top section */}
@@ -99,9 +102,6 @@ class Home extends React.Component {
         </section>
         {/* 'deseloper' */}
         <section className="home-about-section bg-main flex-column flex-center text-center">
-          {/* <div className="absolute whole md-half flex-center hidden lg-flex">
-                            <Wavy />
-                          </div> */}
           <h1 className="absolute text-shadow-out text-main deseloper">
             {this.state.profile.role.split(",").length > 1
               ? this.state.profile.role.split(",").map((item, i) => {
@@ -118,13 +118,31 @@ class Home extends React.Component {
               : this.state.profile.role}
           </h1>
           <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
-            <h4>I'm a designer and front-end developer. </h4>
-            <h2>
-              Designer
-              <br /> + <br />
-              Developer
-            </h2>
-            <h4>I can design anything, but I love making apps the most.</h4>
+            <p>
+              I'm a generalist designer and front-end developer. I can design
+              anything, but I love making apps the most.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div
+            className="flex-row flex-space-around-around p30"
+            style={{ flexWrap: "wrap" }}
+          >
+            {logo.map(element => {
+              console.log(element.image);
+              return (
+                <div key={element.id} className="text-center m30 flex-column">
+                  <img
+                    height={60}
+                    src={logoImages("./" + element.image)}
+                    alt=""
+                  />
+                  {element.title}
+                </div>
+              );
+            })}
           </div>
         </section>
         <section className="relative bg-main flex-center flex-column lg-flex-row lg-pt30 lg-pb30">
@@ -132,11 +150,6 @@ class Home extends React.Component {
           <Link className="clicktool-project-button" to="/projects/clicktool">
             <button> View Project </button>
           </Link>
-          {/* <div className="absolute two-thirds md-half lg-third m-auto flex-center flex-column">
-                            <h4>I'm a generalist designer and front-end developer. </h4>
-                            <h2>Designer<br/> + <br/>Developer</h2>
-                            <h4>I can design anything, but I love making apps the most.</h4>
-                          </div> */}
         </section>
         {/* project section */}
 
