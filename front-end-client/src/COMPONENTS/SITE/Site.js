@@ -15,6 +15,16 @@ class Site extends React.Component {
   //   displaymobileNav: false,
   //   menuText: "Menu"
   // };
+  //    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  componentDidMount() {
+    let viewportMeta = document.createElement("meta");
+    viewportMeta.setAttribute("name", "viewport");
+    viewportMeta.content(
+      "width=device-width, initial-scale=1, shrink-to-fit=no"
+    );
+    document.getElementsByTagName("head")[0].appendChild(viewportMeta);
+  }
 
   render() {
     return (
