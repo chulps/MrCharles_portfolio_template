@@ -629,7 +629,7 @@ button:active {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   :root {
     /* default font sizes */
-    --fontSizeDefault: 100%; /*set font size to 100% = 16px = 1em = 1rem */
+    --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
     --fontSizeRatio: calc(1 + (1 / 3));
     --fontLineHeight: calc(1 + (1 / 3));
     --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
@@ -646,8 +646,8 @@ button:active {
     --sitePadding: 0;
 
     /* navbar height */
-    --navHeight: 6rem;
-    --navPadding: 0 2rem;
+    --navHeight: 6em;
+    --navPadding: 0 2em;
 
     /* shadow */
     --boxShadowOut: -3px -3px 6px var(--whiteTrans),
@@ -658,12 +658,15 @@ button:active {
     --textShadowIn: var(--boxShadowIn);
 
     /* button */
-    --buttonFontSize: 1rem;
+    --buttonFontSize: 1em;
     --buttonHeight: 2rem;
     --buttonBgColor: var(--white);
     --buttonBorder: 2px solid var(--whiteTrans);
-    --buttonPadding: 1rem 2rem;
-    --buttonBorderRadius: 2em;
+    --buttonPadding: 0.8rem 1.6rem;
+    --buttonBorderRadius: 1.6em;
     --buttonShadow: var(--boxShadowOut);
+
+    /* main icon color */
+    --iconColor: var(--fontColor);
   }
 }
