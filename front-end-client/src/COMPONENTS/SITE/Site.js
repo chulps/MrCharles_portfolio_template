@@ -11,16 +11,11 @@ import Resume from "./SITE_COMPONENTS/RESUME/Resume.js";
 import Clicktool from "./SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/Clicktool.js";
 
 class Site extends React.Component {
-  // state = {
-  //   displaymobileNav: false,
-  //   menuText: "Menu"
-  // };
-  //    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
   componentDidMount() {
     let viewportMeta = document.createElement("meta");
     viewportMeta.setAttribute("name", "viewport");
-    viewportMeta.content(
+    viewportMeta.setAttribute(
+      "content",
       "width=device-width, initial-scale=1, shrink-to-fit=no"
     );
     document.getElementsByTagName("head")[0].appendChild(viewportMeta);
