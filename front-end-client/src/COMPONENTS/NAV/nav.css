@@ -104,7 +104,7 @@ nav span.logoWrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  /* flex-direction: column; */
   background: transparent;
   white-space: nowrap;
   cursor: pointer;

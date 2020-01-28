@@ -17,7 +17,7 @@ class Nav extends React.Component {
         {/* Nav.js */}
         {/* wrapper for the logo and logo text, hidden on small screens */}
         <Link to="/">
-          <span className="logoWrapper">
+          <span className="logoWrapper flex-row">
             <div style={{ width: "4em", height: "4em" }}>
               <img
                 className="logo"
@@ -31,7 +31,7 @@ class Nav extends React.Component {
                 margin: 0,
                 textTransform: "none"
               }}
-              className="hidden md-flex font-regular font-weight-bold"
+              className="font-regular font-weight-bold"
             >
               Chuck
               <br />
@@ -45,7 +45,7 @@ class Nav extends React.Component {
             <Link to="/Resume">RESUME</Link>
           </li>
           <li>
-            <Link to="/PROJECTSs">PROJECTS</Link>
+            <Link to="/projects/clicktool">PROJECTS</Link>
           </li>
           <li className="mr0">
             <a href="mailto:chuckoward@gmail.com">
