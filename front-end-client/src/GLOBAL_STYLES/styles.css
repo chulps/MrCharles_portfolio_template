@@ -646,8 +646,8 @@ button:active {
     --sitePadding: 0;
 
     /* navbar height */
-    --navHeight: 6em;
-    --navPadding: 0 2em;
+    --navHeight: 6rem;
+    --navPadding: 0 2rem;
 
     /* shadow */
     --boxShadowOut: -3px -3px 6px var(--whiteTrans),
@@ -658,15 +658,12 @@ button:active {
     --textShadowIn: var(--boxShadowIn);
 
     /* button */
-    --buttonFontSize: 1em;
+    --buttonFontSize: 1rem;
     --buttonHeight: 2rem;
     --buttonBgColor: var(--white);
     --buttonBorder: 2px solid var(--whiteTrans);
-    --buttonPadding: 0.8rem 1.6rem;
-    --buttonBorderRadius: 1.6em;
+    --buttonPadding: 1rem 2rem;
+    --buttonBorderRadius: 2em;
     --buttonShadow: var(--boxShadowOut);
-
-    /* main icon color */
-    --iconColor: var(--fontColor);
   }
 }
