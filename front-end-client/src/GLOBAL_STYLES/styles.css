@@ -623,50 +623,6 @@ button:active {
   pointer-events: none;
 }
 
-/* ------------------- */
-/* for retina displays */
-/* ------------------- */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  :root {
-    /* default font sizes */
-    --fontSizeDefault: 62.5%; /*set font size to 62.5% = 10px = 1em = 1rem */
-    --fontSizeRatio: calc(1 + (1 / 3));
-    --fontLineHeight: calc(1 + (1 / 3));
-    --fontSizeH1: calc(var(--fontSizeH2) * var(--fontSizeRatio));
-    --fontSizeH2: calc(var(--fontSizeH3) * var(--fontSizeRatio));
-    --fontSizeH3: calc(var(--fontSizeH4) * var(--fontSizeRatio));
-    --fontSizeH4: calc(var(--fontSizeH5) * var(--fontSizeRatio));
-    --fontSizeH5: calc(var(--fontSizeH6) * var(--fontSizeRatio));
-    --fontSizeH6: var(--fontSizeDefault);
-    --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
-
-    /* site */
-    --siteBackground: var(--neutral8);
-    /* default site padding */
-    --sitePadding: 0;
-
-    /* navbar height */
-    --navHeight: 6em;
-    --navPadding: 0 2em;
-
-    /* shadow */
-    --boxShadowOut: -3px -3px 6px var(--whiteTrans),
-      3px 3px 6px var(--blackTrans);
-    --boxShadowIn: inset 3px 3px 6px var(--blackTrans),
-      inset -3px -3px 6px var(--white);
-    --textShadowOut: var(--boxShadowOut);
-    --textShadowIn: var(--boxShadowIn);
-
-    /* button */
-    --buttonFontSize: 1em;
-    --buttonHeight: 2rem;
-    --buttonBgColor: var(--white);
-    --buttonBorder: 2px solid var(--whiteTrans);
-    --buttonPadding: 0.8rem 1.6rem;
-    --buttonBorderRadius: 1.6em;
-    --buttonShadow: var(--boxShadowOut);
-
-    /* main icon color */
-    --iconColor: var(--fontColor);
-  }
+  /* Retina-specific stuff here */
 }
