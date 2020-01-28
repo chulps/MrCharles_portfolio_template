@@ -26,7 +26,7 @@ class Clicktool extends React.Component {
               Clicktool is a marketing analytics app designed for digital
               marketers. Using our app, users can track clicks, phone calls,
               conversions, and many other types of metrics that help marketers
-              make better decisions about where to spend their marketing
+              make better decisions Resume where to spend their marketing
               dollars.
             </p>
           </div>
@@ -154,14 +154,19 @@ class Clicktool extends React.Component {
           <div className="sticky-top relative pl30 pr30 pb30">
             <h5>THE THING ABOUT SVG...</h5>
             <p className="whole sm-four-fifths md-half lg-third xl-fourth">
-              This was essential to establish consistency in the design of the
-              app across a team of designers and developers. To achieve this we
-              used Zeplin to as our source of truth for the design of the app.
-              In here I documented the styles for all components. I also wrote a
-              customized CSS framework, and collaborated with other developers
-              to create a library of React components using Storybook to
-              document them.
+              Since EVERYTHING needs to be animated for the home page, and it's
+              all flat illustration style, that means:
             </p>
+            <ul>
+              <li>We're gonna have performance issues if we use all gifs.</li>
+              <li>We're gonna have problems making it responsive.</li>
+              <li>
+                Since we're using React, it would be nice if we could make these
+                images into components
+              </li>
+              <li>Hmmm... what if we could pass data through them!?</li>
+              <li>We're gonna need to visualize some data!</li>
+            </ul>
           </div>
         </section>
 

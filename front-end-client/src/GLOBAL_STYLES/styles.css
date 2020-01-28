@@ -357,6 +357,9 @@
   --buttonPadding: 0.8rem 1.6rem;
   --buttonBorderRadius: 1.6em;
   --buttonShadow: var(--boxShadowOut);
+
+  /* main icon color */
+  --iconColor: var(--fontColor);
 }
 
 /* dont mess with these */
@@ -543,8 +546,20 @@ button:active {
   background: var(--siteBackground);
 }
 
+.bg-blur {
+  backdrop-filter: blur(5px);
+}
+
 .bg-black {
   background: var(--black);
+}
+
+.bg-blackTrans {
+  background: var(--blackTrans);
+}
+
+.bg-whiteTrans {
+  background: var(--whiteTrans);
 }
 
 .bg-neutral1 {

@@ -1,8 +1,8 @@
 // Register.js
-import React from "react"
-import axios from "axios"
-import { Link } from "react-router-dom"
-import "./register.css"
+import React from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import "./register.css";
 
 const styles = {
   userInput: {
@@ -14,7 +14,7 @@ const styles = {
     fontFamily: "cursive",
     textAlign: "center"
   }
-}
+};
 
 class Register extends React.Component {
   state = {
@@ -22,7 +22,7 @@ class Register extends React.Component {
     role: "",
     userName: "",
     picutre: "placehold.jpg"
-  }
+  };
 
   handleSave = () => {
     axios
@@ -33,15 +33,15 @@ class Register extends React.Component {
         picture: `${this.state.fullName.split(" ")[0].toLowerCase()}.png`
       })
       .then(data => {
-        console.log(data)
-      })
-  }
+        console.log(data);
+      });
+  };
 
   handleUserInput = e => {
     this.setState({
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
 
   // submitUserInput = () => {
   //   this.setState(
@@ -80,7 +80,7 @@ class Register extends React.Component {
         className="flex-column flex-center"
       >
         <h1 className="two-thirds text-center m-auto">
-          Welcome! Let's learn about you
+          Welcome! Let's learn Resume you
         </h1>
 
         <section className="flex-column flex-center">
@@ -128,8 +128,8 @@ class Register extends React.Component {
 
         <button onClick={this.handleSave}>Submit</button>
       </div>
-    )
+    );
   }
 }
 
-export default Register
+export default Register;

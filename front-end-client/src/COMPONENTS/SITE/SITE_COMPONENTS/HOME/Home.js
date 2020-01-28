@@ -2,16 +2,14 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import logo from "./HOME_COMPONENTS/logo.json";
+import skills from "./HOME_COMPONENTS/skills.json";
 import "./home.css";
-import Laptop from "../../../../IMG/laptop.png";
 import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
 
 // import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
-import Wavy from "./HOME_COMPONENTS/Wavy";
 
 const images = require.context("../../../../IMG/USERS", true);
-const logoImages = require.context("../../../../IMG/SKILLS", true);
+const skillsImages = require.context("../../../../IMG/SKILLS", true);
 
 const styles = {
   userInput: {
@@ -101,7 +99,7 @@ class Home extends React.Component {
           />
         </section>
         {/* 'deseloper' */}
-        <section className="home-about-section bg-main flex-column flex-center text-center">
+        <section className="home-Resume-section bg-main flex-column flex-center text-center">
           <h1 className="absolute text-shadow-out text-main deseloper">
             {this.state.profile.role.split(",").length > 1
               ? this.state.profile.role.split(",").map((item, i) => {
@@ -125,18 +123,24 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <section>
+        <section
+          className="home-skills-section bg-blur"
+          style={{ background: "#efefefaa" }}
+        >
           <div
-            className="flex-row flex-space-around-around p30"
+            className="flex-row flex-space-around p30"
             style={{ flexWrap: "wrap" }}
           >
-            {logo.map(element => {
+            {skills.map(element => {
               console.log(element.image);
               return (
-                <div key={element.id} className="text-center m30 flex-column">
+                <div
+                  key={element.id}
+                  className="text-center m10 md-m20 flex-column"
+                >
                   <img
                     height={60}
-                    src={logoImages("./" + element.image)}
+                    src={skillsImages("./" + element.image)}
                     alt=""
                   />
                   {element.title}

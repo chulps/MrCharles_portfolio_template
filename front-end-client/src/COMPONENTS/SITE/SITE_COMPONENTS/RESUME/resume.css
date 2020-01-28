@@ -1,0 +1,51 @@
+/*.resume.css */
+.resume {
+  width: 612pt;
+  height: 792pt;
+  background: var(--siteBackground);
+  margin: 3rem auto;
+  padding: 72pt;
+  box-shadow: var(--boxShadowOut);
+  font-size: 11pt;
+}
+
+.resume .skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -6pt;
+}
+
+.resume .skills-section .skill {
+  margin: 6pt;
+}
+.resume .skills-section .skill,
+.resume .university-logo {
+  height: 36pt;
+  width: 36pt;
+  border-radius: 24pt;
+  background: var(--neutral7);
+}
+
+.resume .university-logo {
+  margin-right: 12pt;
+}
+
+.resume label {
+  font-size: 8pt;
+  padding-top: 4pt;
+}
+
+.resume p {
+  margin: 0;
+}
+
+.printing {
+  display: none;
+  max-width: 612px;
+  max-height: 792px;
+  padding: 72px;
+  box-sizing: border-box;
+  font-size: 10px;
+  background: white;
+}

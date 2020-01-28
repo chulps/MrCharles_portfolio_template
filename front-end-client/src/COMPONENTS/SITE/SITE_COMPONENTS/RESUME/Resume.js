@@ -1,9 +1,12 @@
-// about.js
+// Resume.js
 import React from "react";
-import "./about.css";
+import "./resume.css";
+import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
-class About extends React.Component {
+const skillsImages = require.context("../../../../IMG/SKILLS", true);
+
+class Resume extends React.Component {
   printDocument = async () => {
     document.getElementById("myResume").style.display = "block";
     await new Promise(resolve => {
@@ -17,15 +20,14 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about">
+      <div className="resume-page">
         {/* mobile resume */}
         <button
-          className="bg-primary0 m-auto mb30"
+          className="bg-blackTrans m-auto mb30"
           onClick={this.printDocument}
         >
           Download PDF
         </button>
-
         <section className="mobileResume md-hidden pr30 pb30 pl30">
           <div className="flex-column flex-space-between">
             <div className="general-info mb20">
@@ -51,6 +53,7 @@ class About extends React.Component {
           </div>
 
           <div className="intro mb20">
+            <label>statement</label>
             Hello, I'm Chuck, I'm a designer, developer, and generally very
             handy when you're trying to make something; Especially if you're
             making an app! I'm looking for a new role where I lead the design of
@@ -59,23 +62,26 @@ class About extends React.Component {
 
           <div className="mb20">
             <label>SKILLS</label>
-            <div className="skills-section">
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              {/* map skills logos here from the skills folder*/}
+            <div
+              className="flex-row flex-space-around"
+              style={{ flexWrap: "wrap" }}
+            >
+              {skills.map(element => {
+                console.log(element.image);
+                return (
+                  <div
+                    key={element.id}
+                    className="text-center m5 flex-column flex-center mt30"
+                  >
+                    <img
+                      height={36}
+                      src={skillsImages("./" + element.image)}
+                      alt=""
+                    />
+                    <label className="mt10">{element.title}</label>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -97,7 +103,7 @@ class About extends React.Component {
               <label>EDUCATION</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-logo">univ. logo</div>
+                <div className="university-skills">univ. skills</div>
                 <div className="flex-column">
                   <h5 className="university-name">University of Memphis</h5>
                   <div className="degree-description">
@@ -111,7 +117,7 @@ class About extends React.Component {
               <label>AWARDS</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-logo">award icon</div>
+                <div className="university-skills">award icon</div>
                 <div className="flex-column">
                   <h5 className="university-name">Gold Addy 2015</h5>
                   <div className="degree-description">description</div>
@@ -157,31 +163,34 @@ class About extends React.Component {
           </div>
 
           <div className="intro mt20 mb20">
-            Hello, I'm Chuck, I'm a designer, developer, and generally very
-            handy when you're trying to make something; Especially if you're
-            making an app! I'm looking for a new role where I lead the design of
-            digital products from top to bottom.
+            <label>statement</label>
+            <div>
+              Hello, I'm Chuck, I'm a designer, developer, and generally very
+              handy when you're trying to make something; Especially if you're
+              making an app! I'm looking for a new role where I lead the design
+              of digital products from top to bottom.
+            </div>
           </div>
 
           <div className="mb20">
             <label>SKILLS</label>
-            <div className="skills-section">
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              <div className="skill flex-center">skill</div>
-              {/* map skills logos here from the skills folder*/}
+            <div
+              className="flex-row flex-space-around"
+              style={{ flexWrap: "wrap" }}
+            >
+              {skills.map(element => {
+                console.log(element.image);
+                return (
+                  <div key={element.id} className="m10 flex-column flex-center">
+                    <img
+                      height={36}
+                      src={skillsImages("./" + element.image)}
+                      alt=""
+                    />
+                    <label className="mt10">{element.title}</label>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -203,7 +212,7 @@ class About extends React.Component {
               <label>EDUCATION</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-logo">university logo</div>
+                <div className="university-skills">university skills</div>
                 <div className="flex-column">
                   <h5 className="university-name">University of Memphis</h5>
                   <div className="degree-description">
@@ -217,7 +226,7 @@ class About extends React.Component {
               <label>AWARDS</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-logo">award icon</div>
+                <div className="university-skills">award icon</div>
                 <div className="flex-column">
                   <h5 className="university-name">Gold Addy 2015</h5>
                   <div className="degree-description">description</div>
@@ -279,23 +288,26 @@ class About extends React.Component {
 
             <div className="mb20">
               <label>SKILLS</label>
-              <div className="skills-section">
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                <div className="skill flex-center">skill</div>
-                {/* map skills logos here from the skills folder*/}
+              <div
+                className="flex-row flex-space-around p30"
+                style={{ flexWrap: "wrap" }}
+              >
+                {skills.map(element => {
+                  console.log(element.image);
+                  return (
+                    <div
+                      key={element.id}
+                      className="text-center m30 flex-column"
+                    >
+                      <img
+                        height={60}
+                        src={skillsImages("./" + element.image)}
+                        alt=""
+                      />
+                      {element.title}
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -317,7 +329,7 @@ class About extends React.Component {
                 <label>EDUCATION</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
-                  <div className="university-logo">university logo</div>
+                  <div className="university-skills">university skills</div>
                   <div className="flex-column">
                     <h5 className="university-name">University of Memphis</h5>
                     <div className="degree-description">
@@ -331,7 +343,7 @@ class About extends React.Component {
                 <label>AWARDS</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
-                  <div className="university-logo">award icon</div>
+                  <div className="university-skills">award icon</div>
                   <div className="flex-column">
                     <h5 className="university-name">Gold Addy 2015</h5>
                     <div className="degree-description">description</div>
@@ -356,4 +368,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Resume;

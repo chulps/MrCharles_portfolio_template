@@ -7,7 +7,7 @@ import Footer from "../FOOTER/Footer.js";
 import "./site.css";
 import Home from "./SITE_COMPONENTS/HOME/Home.js";
 import Register from "./SITE_COMPONENTS/REGISTER/Register.js";
-import About from "./SITE_COMPONENTS/ABOUT/About.js";
+import Resume from "./SITE_COMPONENTS/RESUME/Resume.js";
 import Clicktool from "./SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/Clicktool.js";
 
 class Site extends React.Component {
@@ -23,11 +23,13 @@ class Site extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/Resume" component={Resume} />
             <Route exact path="/projects/clicktool" component={Clicktool} />
           </Switch>
           <Navbar />
-          <button className="contact-button lg-hidden">contact</button>
+          <a className="lg-hidden" href="mailto:chuckoward@gmail.com">
+            <button className="contact-button m0">contact</button>
+          </a>
           <Footer />
         </div>
       </Router>

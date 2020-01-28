@@ -42,13 +42,15 @@ class Nav extends React.Component {
         {/* desktop nav menu */}
         <ul className="hidden lg-flex">
           <li>
-            <Link to="/about">RESUME</Link>
+            <Link to="/Resume">RESUME</Link>
           </li>
           <li>
-            <Link to="/works">WORK</Link>
+            <Link to="/PROJECTSs">PROJECTS</Link>
           </li>
           <li className="mr0">
-            <button className="contact-button m0">contact</button>
+            <a href="mailto:someone@yoursite.com">
+              <button className="contact-button m0">contact</button>
+            </a>
           </li>
           {/* <Link to="/contact"><button>Contact</button></Link> */}
         </ul>
@@ -58,8 +60,8 @@ class Nav extends React.Component {
           id="mobile-nav-button"
           className={
             this.state.displaymobileNav
-              ? "fixed block md-hidden"
-              : "absolute block md-hidden"
+              ? "fixed block lg-hidden"
+              : "absolute block lg-hidden"
           }
           onClick={() =>
             this.setState({
@@ -92,13 +94,23 @@ class Nav extends React.Component {
               })
             }
           >
-            <img src={LogoWhite} className="absolute" alt="" />
+            <img
+              src={Logo}
+              className="absolute"
+              style={{
+                height: 120,
+                top: "25%",
+                transform: " translate(-50% 0)",
+                opacity: "50%"
+              }}
+              alt=""
+            />
 
-            <div
+            <ul
               className="mobile-nav-links flex-column absolute flex-space-around"
-              style={{ height: "50%" }}
+              style={{ height: "25%" }}
             >
-              <div
+              <li
                 onClick={() =>
                   this.setState({
                     displaymobileNav: !this.state.displaymobileNav,
@@ -109,8 +121,8 @@ class Nav extends React.Component {
                 }
               >
                 <Link to="/">Home</Link>
-              </div>
-              <div
+              </li>
+              <li
                 onClick={() =>
                   this.setState({
                     displaymobileNav: !this.state.displaymobileNav,
@@ -120,9 +132,9 @@ class Nav extends React.Component {
                   })
                 }
               >
-                <Link to="/about">RESUME</Link>
-              </div>
-              <div
+                <Link to="/Resume">RESUME</Link>
+              </li>
+              <li
                 onClick={() =>
                   this.setState({
                     displaymobileNav: !this.state.displaymobileNav,
@@ -132,9 +144,9 @@ class Nav extends React.Component {
                   })
                 }
               >
-                <Link to="/clicktool">WORK</Link>
-              </div>
-            </div>
+                <Link to="/projects/clicktool">PROJECTS</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
