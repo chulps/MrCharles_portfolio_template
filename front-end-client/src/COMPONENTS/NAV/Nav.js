@@ -48,7 +48,7 @@ class Nav extends React.Component {
             <Link to="/PROJECTSs">PROJECTS</Link>
           </li>
           <li className="mr0">
-            <a href="mailto:someone@yoursite.com">
+            <a href="mailto:chuckoward@gmail.com">
               <button className="contact-button m0">contact</button>
             </a>
           </li>
