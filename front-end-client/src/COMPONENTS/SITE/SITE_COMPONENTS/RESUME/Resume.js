@@ -23,7 +23,7 @@ class Resume extends React.Component {
       <div className="resume-page">
         {/* mobile resume */}
         <button
-          className="bg-blackTrans m-auto mb30"
+          className="bg-blackTrans m-auto mt30 mb30"
           onClick={this.printDocument}
         >
           Download PDF
@@ -52,7 +52,7 @@ class Resume extends React.Component {
             </div>
           </div>
 
-          <div className="intro mb20">
+          <div className="intro mb20 flex-column">
             <label>statement</label>
             Hello, I'm Chuck, I'm a designer, developer, and generally very
             handy when you're trying to make something; Especially if you're
@@ -63,7 +63,7 @@ class Resume extends React.Component {
           <div className="mb20">
             <label>SKILLS</label>
             <div
-              className="flex-row flex-space-around"
+              className="flex-row flex-space-between"
               style={{ flexWrap: "wrap" }}
             >
               {skills.map(element => {
@@ -76,6 +76,7 @@ class Resume extends React.Component {
                     <img
                       height={36}
                       src={skillsImages("./" + element.image)}
+                      style={{ opacity: ".5" }}
                       alt=""
                     />
                     <label className="mt10">{element.title}</label>
@@ -175,17 +176,18 @@ class Resume extends React.Component {
           <div className="mb20">
             <label>SKILLS</label>
             <div
-              className="flex-row flex-space-around"
+              className="flex-row flex-space-between"
               style={{ flexWrap: "wrap" }}
             >
               {skills.map(element => {
                 console.log(element.image);
                 return (
-                  <div key={element.id} className="m10 flex-column flex-center">
+                  <div key={element.id} className="m5 flex-column flex-center">
                     <img
-                      height={36}
+                      height={24}
                       src={skillsImages("./" + element.image)}
                       alt=""
+                      style={{ opacity: ".5" }}
                     />
                     <label className="mt10">{element.title}</label>
                   </div>
@@ -289,7 +291,7 @@ class Resume extends React.Component {
             <div className="mb20">
               <label>SKILLS</label>
               <div
-                className="flex-row flex-space-around p30"
+                className="flex-row flex-space-between p30"
                 style={{ flexWrap: "wrap" }}
               >
                 {skills.map(element => {
@@ -297,10 +299,10 @@ class Resume extends React.Component {
                   return (
                     <div
                       key={element.id}
-                      className="text-center m30 flex-column"
+                      className="text-center m5 flex-column"
                     >
                       <img
-                        height={60}
+                        height={24}
                         src={skillsImages("./" + element.image)}
                         alt=""
                       />

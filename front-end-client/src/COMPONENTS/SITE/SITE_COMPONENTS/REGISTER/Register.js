@@ -11,7 +11,6 @@ const styles = {
     width: "300px",
     padding: "10px",
     fontSize: "24px",
-    fontFamily: "cursive",
     textAlign: "center"
   }
 };
@@ -43,36 +42,6 @@ class Register extends React.Component {
     });
   };
 
-  // submitUserInput = () => {
-  //   this.setState(
-  //     {
-  //       user: this.state.name.toLowerCase()
-  //     },
-  //     () => {
-  //       this.setState(
-  //         {
-  //           profile: USERS.find(user => {
-  //             return user.id === this.state.user
-  //           })
-  //         },
-  //         () => {
-  //           if (!this.state.profile) {
-  //             this.setState({
-  //               userNotFound: true
-  //             })
-  //           }
-  //         }
-  //       )
-  //     }
-  //   )
-  // }
-
-  // handleUserInputSubmit = e => {
-  //   if (e.keyCode === 13) {
-  //     this.submitUserInput()
-  //   }
-  // }
-
   render() {
     return (
       <div
@@ -96,12 +65,6 @@ class Register extends React.Component {
 
         <section className="flex-column flex-center disabled">
           <h2 className="whole text-center m-auto">Add a picture</h2>
-          {/* <input
-            style={styles.userInput}
-            type="text"
-            value={this.state.fullName}
-            onChange={this.handleUserInput}
-          /> */}
         </section>
 
         <section className="flex-column flex-center">
@@ -114,17 +77,6 @@ class Register extends React.Component {
             onChange={this.handleUserInput}
           />
         </section>
-
-        {/* <section className="flex-column flex-center">
-          <h2 className="whole text-center m-auto">What's your name?</h2>
-          <input
-            name="fullName"
-            style={styles.userInput}
-            type="text"
-            value={this.state.fullName}
-            onChange={this.handleUserInput}
-          />
-        </section> */}
 
         <button onClick={this.handleSave}>Submit</button>
       </div>
