@@ -44,13 +44,13 @@ class Clicktool extends React.Component {
               document them.
             </p>
           </div>
-          <div className="whole md-half lg-two-thirds ml-auto">
+          <div className="whole md-half lg-two-thirds ml-auto md-pl30">
             <div className="logo">
               <div className="shadow-out rounded p10 flex-center flex-column">
                 <Geometry />
                 <label className="mt30">CONTRUCTION_GEOMETRY.AI</label>
               </div>
-              <div className="one-column lg-three-columns gap10 mt10">
+              <div className="one-column xl-three-columns gap10 mt10">
                 <div className="rounded shadow-out p10 flex-center flex-column">
                   <LogoHorizontal />
                   <label className="mt30">HORIZONTAL_LOCKUP.SVG</label>
@@ -69,9 +69,15 @@ class Clicktool extends React.Component {
               Helvetica Neue Regular & Helvetica Neue Condensed Bold &
               Antarctican Mono
             </div>
-
-            <label className="mt30">colors</label>
-
+            <br />
+            <label className="whole">colors</label>
+            <p className="md-half">
+              I created a color system using CSS variables for my team so nobody
+              would have to ever remember any hex values! This made
+              communication across the team much simpler when questions arose
+              about what color things should be. 90% of the time, the answer was
+              "cyan0", otherwise known as "Clicktool Blue".
+            </p>
             <div>
               {/* begin black */}
               <div className="rounded shadow-out flex-start flex-row mb10">
@@ -99,14 +105,17 @@ class Clicktool extends React.Component {
 
                   <div
                     className="clicktool-color rounded shadow out flex-center"
-                    style={{ background: "var(--grey3)" }}
+                    style={{
+                      background: "var(--grey3)",
+                      color: "var(--grey5)"
+                    }}
                   >
                     <label>"grey3"</label>
                   </div>
 
                   <div
                     className="clicktool-color rounded shadow out flex-center"
-                    style={{ background: "var(--grey4)" }}
+                    style={{ background: "var(--grey4)", color: "var(--grey5" }}
                   >
                     <label>"grey4"</label>
                   </div>
@@ -182,14 +191,14 @@ class Clicktool extends React.Component {
 
                   <div
                     className="clicktool-color rounded shadow out flex-center"
-                    style={{ background: "var(--navy0" }}
+                    style={{ background: "var(--navy0", color: "var(--grey5)" }}
                   >
                     <label>"navy0"</label>
                   </div>
 
                   <div
                     className="clicktool-color rounded shadow out flex-center"
-                    style={{ background: "var(--navy1" }}
+                    style={{ background: "var(--navy1", color: "var(--grey5)" }}
                   >
                     <label>"navy1"</label>
                   </div>
@@ -235,15 +244,15 @@ class Clicktool extends React.Component {
                   </div>
                   <div
                     className="clicktool-color rounded shadow out flex-center"
-                    style={{ background: "var(--cyanB" }}
+                    style={{ background: "var(--cyanB", color: "var(--grey5" }}
                   >
-                    <label>"cyan0"</label>
+                    <label>"cyanB"</label>
                   </div>
                   <div
                     className="clicktool-color rounded shadow out flex-center"
                     style={{ background: "var(--cyanA" }}
                   >
-                    <label>"cyan0"</label>
+                    <label>"cyanA"</label>
                   </div>
                   <div
                     className="clicktool-color rounded shadow out flex-center"
@@ -274,7 +283,7 @@ class Clicktool extends React.Component {
                     style={{ background: "var(--cyan4" }}
                   >
                     <label>"cyan4"</label>
-                  </div>{" "}
+                  </div>
                   <div
                     className="clicktool-color rounded shadow out flex-center"
                     style={{ background: "var(--cyan5" }}
@@ -284,6 +293,128 @@ class Clicktool extends React.Component {
                 </div>
               </div>
               {/* end cyan */}
+
+              {/* begin gold */}
+              <div className="rounded shadow-out flex-start flex-row mb10">
+                <div className="colors flex-row flex-start whole">
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--goldD" }}
+                  >
+                    <label>"goldD"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--goldC" }}
+                  >
+                    <label>"goldC"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--goldB" }}
+                  >
+                    <label>"gold0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--goldA" }}
+                  >
+                    <label>"gold0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--gold0" }}
+                  >
+                    <label>"gold0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--gold1" }}
+                  >
+                    <label>"gold1"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--gold2" }}
+                  >
+                    <label>"gold2"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--gold3" }}
+                  >
+                    <label>"gold3"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--gold4" }}
+                  >
+                    <label>"gold4"</label>
+                  </div>
+                </div>
+              </div>
+              {/* end gold */}
+
+              {/* begin coral */}
+              <div className="rounded shadow-out flex-start flex-row mb10">
+                <div className="colors flex-row flex-start whole">
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coralD" }}
+                  >
+                    <label>"coralD"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coralC" }}
+                  >
+                    <label>"coralC"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coralB" }}
+                  >
+                    <label>"coral0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coralA" }}
+                  >
+                    <label>"coral0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coral0" }}
+                  >
+                    <label>"coral0"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coral1" }}
+                  >
+                    <label>"coral1"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coral2" }}
+                  >
+                    <label>"coral2"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coral3" }}
+                  >
+                    <label>"coral3"</label>
+                  </div>
+                  <div
+                    className="clicktool-color rounded shadow out flex-center"
+                    style={{ background: "var(--coral4" }}
+                  >
+                    <label>"coral4"</label>
+                  </div>
+                </div>
+              </div>
+              {/* end coral */}
             </div>
             <div className="illustrations">illustrations</div>
             <div className="components">components</div>
