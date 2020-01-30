@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
 function ClicktoolLogoHorizontal(props) {
   return (
-    <svg viewBox="0 0 610 150" {...props}>
+    <svg viewBox="0 0 610 150" width="100%" height="auto" {...props}>
       <defs>
         <style>{".prefix__cls-1{fill:#fff}.prefix__cls-3{fill:#424242}"}</style>
       </defs>
@@ -41,7 +41,7 @@ function ClicktoolLogoHorizontal(props) {
         />
       </g>
     </svg>
-  )
+  );
 }
 
-export default ClicktoolLogoHorizontal
+export default ClicktoolLogoHorizontal;

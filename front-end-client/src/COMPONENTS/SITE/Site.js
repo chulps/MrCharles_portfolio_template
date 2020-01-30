@@ -8,7 +8,7 @@ import "./site.css";
 import Home from "./SITE_COMPONENTS/HOME/Home.js";
 import Register from "./SITE_COMPONENTS/REGISTER/Register.js";
 import Resume from "./SITE_COMPONENTS/RESUME/Resume.js";
-import Clicktool from "./SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/Clicktool.js";
+import Clicktool from "./SITE_COMPONENTS/PROJECTS/PROJECTS_COMPONENTS/CLICKTOOL/Clicktool.js";
 
 class Site extends React.Component {
   componentDidMount() {

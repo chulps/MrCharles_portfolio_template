@@ -333,8 +333,21 @@
   --fontSizeH6: var(--fontSizeDefault);
   --fontSizeLabel: calc(var(--fontSizeDefault) / var(--fontSizeRatio));
 
-  /* site */
+  /* fractions */
+  --whole: 100%;
+  --half: 50%;
+  --third: calc(100% / 3);
+  --two-thirds: calc((100% / 3) * 2);
+  --quarter: 25%;
+  --fourth: var(--quarter);
+  --three-quarters: calc((100% / 4) * 3);
+  --three-fourths: var(--three-quarters);
+  --fifth: 20%;
+  --five-sixths: calc((100% / 6) * 5);
+
+  /* site background color*/
   --siteBackground: var(--neutral8);
+
   /* default site padding */
   --sitePadding: 0;
 
@@ -345,7 +358,7 @@
   /* shadow */
   --boxShadowOut: -3px -3px 6px var(--whiteTrans), 3px 3px 6px var(--blackTrans);
   --boxShadowIn: inset 3px 3px 6px var(--blackTrans),
-    inset -3px -3px 6px var(--white);
+    inset -3px -3px 6px var(--whiteTrans);
   --textShadowOut: var(--boxShadowOut);
   --textShadowIn: var(--boxShadowIn);
 
@@ -353,7 +366,7 @@
   --buttonFontSize: 1em;
   --buttonHeight: 2rem;
   --buttonBgColor: var(--white);
-  --buttonBorder: 2px solid var(--whiteTrans);
+  --buttonBorder: 1px solid var(--blackTrans);
   --buttonPadding: 0.8rem 1.6rem;
   --buttonBorderRadius: 1.6em;
   --buttonShadow: var(--boxShadowOut);
@@ -480,7 +493,7 @@ button {
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 1px;
-  /* border: var(--buttonBorder); */
+  border: var(--buttonBorder);
   outline: none;
   transition: 0.2s;
 }
@@ -621,6 +634,21 @@ button:active {
 .disabled {
   opacity: 0.2;
   pointer-events: none;
+}
+
+/* shadow */
+
+.shadow-out {
+  box-shadow: var(--boxShadowOut);
+}
+
+.shadow-in {
+  box-shadow: var(--boxShadowIn);
+}
+
+/* rounded corners  */
+.rounded {
+  border-radius: 2em;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
