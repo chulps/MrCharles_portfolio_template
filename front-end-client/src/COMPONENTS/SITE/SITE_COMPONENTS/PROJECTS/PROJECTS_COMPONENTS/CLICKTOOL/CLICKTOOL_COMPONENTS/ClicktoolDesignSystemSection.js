@@ -4,6 +4,12 @@ import Geometry from "./SVG/ClicktoolLogoGeometry.js";
 import LogoHorizontal from "../../../../../../../IMG/ClicktoolLogoHorizontal.js";
 import LogoStacked from "../../../../../../../IMG/ClictoolLogoStacked.js";
 import LogoMark from "../../../../../../../IMG/ClicktoolLogoMark.js";
+import HelveticaNeueCondensedBold from "./SVG/HelveticaNeueCondensedBold.js";
+import HelveticaNeueBold from "./SVG/HelveticaNeueBold.js";
+import HelveticaNeueRegular from "./SVG/HelveticaNeueRegular.js";
+import AntarcticanMonoRegular from "./SVG/AntarcticanMonoRegular.js";
+import AntarcticanMonoMedium from "./SVG/AntarcticanMonoMedium.js";
+import AntarcticanMonoBold from "./SVG/AntarcticanMonoBold.js";
 
 class ClicktoolDesignSystemSection extends React.Component {
   render() {
@@ -43,9 +49,41 @@ class ClicktoolDesignSystemSection extends React.Component {
               </div>
             </div>
           </div>
-          <div className="fonts">
-            Helvetica Neue Regular & Helvetica Neue Condensed Bold & Antarctican
-            Mono
+          <div className="fonts flex-column mt30">
+            <label>fonts</label>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <HelveticaNeueRegular />
+              <p>
+                Primary font used for links, buttons, paragraphs, inputs, and
+                almost everything{" "}
+              </p>
+            </div>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <HelveticaNeueBold />
+              <p>
+                For headers and subheaders. Sometimes to emphasize text in
+                paragraphs.
+              </p>
+            </div>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <HelveticaNeueCondensedBold />
+              <p>For labels and H1 headers only.</p>
+            </div>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <AntarcticanMonoRegular />
+              <p>For representing data in a table.</p>
+            </div>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <AntarcticanMonoMedium />
+              <p>
+                For emphasizing data shown somewhere on the UI but not in a
+                table
+              </p>
+            </div>
+            <div className="shadow-out p30 rounded flex-column mb10">
+              <AntarcticanMonoBold />
+              <p>For emphasizing data even more, possibly in a table</p>
+            </div>
           </div>
           <br />
           <label className="whole">colors</label>

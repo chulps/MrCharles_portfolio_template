@@ -11,14 +11,14 @@ class ClicktoolRolesSection extends React.Component {
     return (
       <section className="relative roles pt30 mt30">
         <div className="whole flex-start flex-grow" style={{ height: "100%" }}>
-          <div className="sticky-top half pl30 pr30 pb30 lg-ml-auto flex-column">
+          <div className="sticky-top half pl30 pr30 pb30 lg-ml-auto">
             <img
               className="whole"
               src={Hat}
               alt="hat"
               style={{ objectFit: "contain" }}
             />
-            <label className="text-center">(actual hat)</label>
+            <label className="whole flex-center">this is really my hat</label>
           </div>
 
           <div className="half lg-fourth flex-column pr20 xl-p30">
