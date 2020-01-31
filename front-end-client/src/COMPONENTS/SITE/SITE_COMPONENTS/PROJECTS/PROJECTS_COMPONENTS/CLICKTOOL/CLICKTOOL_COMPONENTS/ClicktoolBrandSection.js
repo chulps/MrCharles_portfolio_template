@@ -32,12 +32,16 @@ class ClicktoolBrandSection extends React.Component {
               <li>Lots of lines</li>
             </ul>
           </p>
-          <div className="whole md-half m-auto flex-center lg-hidden">
+          <div className="whole md-half m-auto flex-center lg-hidden flex-column mt30">
             <img className="whole" src={Sketchy} alt="" />
+            <label>this is where everything starts</label>
           </div>
         </div>
-        <div className="half lg-third m-auto flex-center hidden lg-flex">
+        <div className="relative half lg-third m-auto flex-center hidden lg-flex">
           <img className="whole" src={Sketchy} alt="" />
+          <label className="design-bible-label">
+            this is where everything starts
+          </label>
         </div>
       </section>
     );

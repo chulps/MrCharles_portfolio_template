@@ -110,11 +110,6 @@
   min-height: 100vh;
 }
 
-.clicktool .sticky-top {
-  position: sticky;
-  top: var(--navHeight);
-}
-
 .clicktool .geometry {
   height: 100%;
   opacity: 0.5;
@@ -142,6 +137,17 @@
   justify-content: center;
   align-items: center;
   margin: 0 1em 1em 0;
+}
+
+.design-bible-label {
+  position: absolute;
+  left: 100%;
+}
+
+.hat-label {
+  position: absolute;
+  top: 100%;
+  left: var(--half);
 }
 
 @media (min-width: 992px) {

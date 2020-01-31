@@ -9,21 +9,20 @@ class ClicktoolRolesSection extends React.Component {
 
   render() {
     return (
-      <section className="relative roles pt30">
-        <div
-          className="absolute whole flex-end flex-grow"
-          style={{ height: "100%" }}
-        >
-          <img
-            className="half"
-            src={Hat}
-            alt="hat"
-            style={{ objectFit: "contain" }}
-          />
-        </div>
-        <div className="sticky-top pl30 pr30 pb30">
-          <h3 className="mb5">MY ROLE:</h3>
-          <div className="half one-column lg-two-columns gap30">
+      <section className="relative roles pt30 mt30">
+        <div className="whole flex-start flex-grow" style={{ height: "100%" }}>
+          <div className="sticky-top half pl30 pr30 pb30 lg-ml-auto flex-column">
+            <img
+              className="whole"
+              src={Hat}
+              alt="hat"
+              style={{ objectFit: "contain" }}
+            />
+            <label className="text-center">(actual hat)</label>
+          </div>
+
+          <div className="half lg-fourth flex-column pr20 xl-p30">
+            <h3 className="mb5">MY ROLE:</h3>
             <div>
               <h5>PRODUCT DESIGNER</h5>
               <p>
@@ -35,8 +34,8 @@ class ClicktoolRolesSection extends React.Component {
             <div>
               <h5>CREATIVE DIRECTOR</h5>
               <p>
-                Lead the creation of this from top to bottom while collaborating
-                with other designers, developers, and copywriters.
+                Lead the creation of this app from top to bottom while
+                collaborating with other designers, developers, and copywriters.
               </p>
             </div>
 
@@ -50,7 +49,8 @@ class ClicktoolRolesSection extends React.Component {
             <div>
               <h5>FRONT-END DEVELOPER</h5>
               <p>
-                Work closely with other developers to achieve the right look and
+                Create a customized responsive CSS framework and work closely
+                with other developers to achieve the right look and
                 functionality.
               </p>
             </div>
