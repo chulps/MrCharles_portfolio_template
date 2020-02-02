@@ -451,7 +451,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             </div>
             {/* end coral */}
           </div>
-          <div className="illustrations">illustrations</div>
+          <div className="illustrations"></div>
           <div className="components">components</div>
           <div className="tools">design tools</div>
         </div>

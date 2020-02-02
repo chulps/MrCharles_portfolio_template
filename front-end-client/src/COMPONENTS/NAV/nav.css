@@ -55,6 +55,12 @@ nav ul li {
   font-size: var(--fontSizeH6);
 }
 
+nav ul li a {
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+
 .mobileNav ul {
   width: 100%;
 }

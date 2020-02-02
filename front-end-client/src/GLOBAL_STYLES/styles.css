@@ -496,6 +496,7 @@ button {
   border: var(--buttonBorder);
   outline: none;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 button:hover {

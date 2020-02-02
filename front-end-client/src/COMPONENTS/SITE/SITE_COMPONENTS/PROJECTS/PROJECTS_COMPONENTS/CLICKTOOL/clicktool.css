@@ -101,6 +101,10 @@
   --uiData: antarctican-mono, sans-serif;
 }
 
+.clicktool * {
+  box-sizing: border-box;
+}
+
 .clicktool section {
   min-height: calc(100vh - var(--navHeight));
   /* margin: 0 var(--navHeight); */
@@ -148,6 +152,22 @@
   position: absolute;
   top: 100%;
   left: var(--half);
+}
+
+.font-bg {
+  -webkit-filter: drop-shadow(-3px -3px 6px var(--whiteTrans)),
+    drop-shadow(3px 3px 6px var(--blackTrans));
+  filter: drop-shadow(3px 3px 2px var(--blackTrans))
+    drop-shadow(-3px -3px 6px var(--whiteTrans));
+}
+
+.font-bg {
+  fill: var(--siteBackground);
+}
+
+.visit-clicktool {
+  position: relative;
+  margin-top: 10rem;
 }
 
 @media (min-width: 992px) {

@@ -7,6 +7,12 @@ import ClicktoolChallengesSection from "./CLICKTOOL_COMPONENTS/ClicktoolChalleng
 import ClicktoolBrandSection from "./CLICKTOOL_COMPONENTS/ClicktoolBrandSection.js";
 import ClicktoolDesignSystemSection from "./CLICKTOOL_COMPONENTS/ClicktoolDesignSystemSection.js";
 import ClicktoolTeamSection from "./CLICKTOOL_COMPONENTS/ClicktoolTeamSection.js";
+import NonRedirectTracking from "./CLICKTOOL_COMPONENTS/SVG/NonRedirectTracking.js";
+import ClicktoolCity from "../../../HOME/HOME_COMPONENTS/ClicktoolCity.js";
+import MagnifyingGlass from "./CLICKTOOL_COMPONENTS/SVG/magnifying_glass_animation.svg";
+import OnePlace from "./CLICKTOOL_COMPONENTS/SVG/ONE_PLACE.svg";
+import RotateLanders from "./CLICKTOOL_COMPONENTS/SVG/RotateLandingPages.svg";
+import Laptop from "../../../HOME/HOME_COMPONENTS/HomeProjectSection.js";
 
 class Clicktool extends React.Component {
   componentDidMount() {
@@ -30,23 +36,65 @@ class Clicktool extends React.Component {
 
         {/* design system section */}
         <ClicktoolDesignSystemSection />
-        <section className="challenges pt30">
-          <div className="sticky-top relative pl30 pr30 pb30">
+        <section className="challenges p30">
+          <div className="relative md-sticky-top">
             <h5>THE THING ABOUT SVG...</h5>
             <p className="whole sm-four-fifths md-half lg-third xl-fourth">
-              Since EVERYTHING needs to be animated, and it's all flat
-              illustration style, that means we will need images that are:
+              Since EVERYTHING needs to be animated flat, that means we will
+              need images that are:
             </p>
-            <ul>
+            <ul className="whole sm-four-fifths md-half lg-third xl-fourth">
               <li>Programable</li>
               <li>Scalable</li>
               <li>Interactive</li>
               <li>Performant</li>
-              <li>Can be made into reusable components</li>
+              <li>
+                Can be made into reusable components that take in props and
+                state
+              </li>
               <li>Look nice!</li>
               <li>PLUS! We can pass data through these things!!!</li>
             </ul>
+            <p className="whole sm-four-fifths md-half lg-third xl-fourth">
+              Seems like the right choice for this project so I became an expert
+              in SVG animation!
+            </p>
           </div>
+
+          <div className="whole md-half lg-two-thirds ml-auto md-pl30">
+            <div className="rounded shadow-out p30 flex-center flex-column">
+              <ClicktoolCity />
+              <label className="mt30">clicktool_city.svg</label>
+            </div>
+            <div className="one-column lg-two-columns gap10">
+              <div className="rounded shadow-out p30 flex-center flex-column">
+                <NonRedirectTracking />
+                <label className="mt30">clicktool_city.svg</label>
+              </div>{" "}
+              <div className="rounded shadow-out p30 flex-center flex-column">
+                <img src={MagnifyingGlass} alt="" />
+                <label className="mt30">magnifying_glass.svg</label>
+              </div>{" "}
+              <div className="rounded shadow-out p30 flex-center flex-column">
+                <img src={OnePlace} alt="" />
+                <label className="mt30">one-place.svg</label>
+              </div>{" "}
+              <div className="rounded shadow-out p30 flex-center flex-column">
+                <img src={RotateLanders} alt="" />
+                <label className="mt30">clicktool_city.svg</label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="p30 flex-center flex-column">
+          <div className="relative whole flex-center">
+            <Laptop />
+          </div>
+          <a href="https://clicktool.com/">
+            <button target="_blank" className="visit-clicktool">
+              visit
+            </button>
+          </a>
         </section>
 
         {/* team section */}
