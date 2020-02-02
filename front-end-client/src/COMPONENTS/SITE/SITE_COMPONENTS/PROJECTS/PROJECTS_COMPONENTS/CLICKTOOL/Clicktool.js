@@ -40,7 +40,7 @@ class Clicktool extends React.Component {
           <div className="relative md-sticky-top">
             <h5>THE THING ABOUT SVG...</h5>
             <p className="whole sm-four-fifths md-half lg-third xl-fourth">
-              Since EVERYTHING needs to be animated flat, that means we will
+              Since EVERYTHING needs to be animated and flat, that means we will
               need images that are:
             </p>
             <ul className="whole sm-four-fifths md-half lg-third xl-fourth">
@@ -62,24 +62,24 @@ class Clicktool extends React.Component {
           </div>
 
           <div className="whole md-half lg-two-thirds ml-auto md-pl30">
-            <div className="rounded shadow-out p30 flex-center flex-column">
+            <div className="rounded shadow-out p10 md-p30 flex-center flex-column mb10">
               <ClicktoolCity />
               <label className="mt30">clicktool_city.svg</label>
             </div>
             <div className="one-column lg-two-columns gap10">
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <NonRedirectTracking />
                 <label className="mt30">clicktool_city.svg</label>
               </div>{" "}
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={MagnifyingGlass} alt="" />
                 <label className="mt30">magnifying_glass.svg</label>
               </div>{" "}
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={OnePlace} alt="" />
                 <label className="mt30">one-place.svg</label>
               </div>{" "}
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={RotateLanders} alt="" />
                 <label className="mt30">clicktool_city.svg</label>
               </div>
@@ -92,7 +92,7 @@ class Clicktool extends React.Component {
           </div>
           <a href="https://clicktool.com/">
             <button target="_blank" className="visit-clicktool">
-              visit
+              See it in action
             </button>
           </a>
         </section>

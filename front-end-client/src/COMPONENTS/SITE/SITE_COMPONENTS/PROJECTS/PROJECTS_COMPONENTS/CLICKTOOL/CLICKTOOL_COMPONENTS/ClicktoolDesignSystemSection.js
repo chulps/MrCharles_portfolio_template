@@ -35,15 +35,15 @@ class ClicktoolDesignSystemSection extends React.Component {
               <label className="mt30">CONTRUCTION_GEOMETRY.AI</label>
             </div>
             <div className="one-column xl-three-columns gap10 mt10">
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <LogoHorizontal />
                 <label className="mt30">HORIZONTAL_LOCKUP.SVG</label>
               </div>
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <LogoMark />
                 <label className="mt30">MARK.SVG</label>
               </div>
-              <div className="rounded shadow-out p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <LogoStacked />
                 <label className="mt30">VERTICAL_LOCKUP.SVG</label>
               </div>
@@ -51,36 +51,36 @@ class ClicktoolDesignSystemSection extends React.Component {
           </div>
           <div className="fonts flex-column mt30">
             <label>fonts</label>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <HelveticaNeueRegular />
               <p>
                 Primary font used for links, buttons, paragraphs, inputs, and
                 almost everything{" "}
               </p>
             </div>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <HelveticaNeueBold />
               <p>
                 For headers and subheaders. Sometimes to emphasize text in
                 paragraphs.
               </p>
             </div>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <HelveticaNeueCondensedBold />
               <p>For labels and H1 headers only.</p>
             </div>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <AntarcticanMonoRegular />
               <p>For representing data in a table.</p>
             </div>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <AntarcticanMonoMedium />
               <p>
                 For emphasizing data shown somewhere on the UI but not in a
                 table
               </p>
             </div>
-            <div className="shadow-out p30 rounded flex-column mb10">
+            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
               <AntarcticanMonoBold />
               <p>For emphasizing data even more, possibly in a table</p>
             </div>
