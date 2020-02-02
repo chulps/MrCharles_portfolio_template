@@ -37,8 +37,7 @@ class Resume extends React.Component {
 
             <div className="contact-info mb20">
               <label>CONTACT</label>
-              <div className="email">chuckoward@gmail.com</div>
-              <div className="phone">+1 (901) 275-66428</div>
+
               <div className="website">www.chuck-howard.com</div>
               <div className="linkedIn-url">
                 www.linkedin.com/in/chuck-howard/
@@ -148,8 +147,7 @@ class Resume extends React.Component {
 
             <div className="contact-info">
               <label>CONTACT</label>
-              <div className="email">chuckoward@gmail.com</div>
-              <div className="phone">+1 (901) 275-66428</div>
+
               <div className="website">www.chuck-howard.com</div>
               <div className="linkedIn-url">
                 www.linkedin.com/in/chuck-howard/
@@ -266,8 +264,7 @@ class Resume extends React.Component {
 
               <div className="contact-info">
                 <label>CONTACT</label>
-                <div className="email">chuckoward@gmail.com</div>
-                <div className="phone">+1 (901) 275-66428</div>
+
                 <div className="website">www.chuck-howard.com</div>
                 <div className="linkedIn-url">
                   www.linkedin.com/in/chuck-howard/
