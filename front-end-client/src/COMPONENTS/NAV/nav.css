@@ -55,11 +55,6 @@ nav ul li {
   font-size: var(--fontSizeH6);
 }
 
-nav ul li a {
-  height: 100%;
-  width: 100%;
-}
-
 .mobileNav ul {
   width: 100%;
 }
@@ -69,7 +64,12 @@ nav ul li a {
   margin: 0;
   text-align: center;
   width: 100%;
-  padding: 2rem;
+  display: flex;
+}
+
+.mobileNav ul li a {
+  margin: 2rem;
+  width: 100%;
 }
 
 .mobileNav ul li:hover {
