@@ -1,43 +1,10 @@
-/*.resume.css */
-.resume {
-  width: 612pt;
-  height: 792pt;
-  background: var(--siteBackground);
-  margin: 3rem auto;
-  padding: 72pt;
-  box-shadow: var(--boxShadowOut);
-  font-size: 11pt;
+/*.main-resume.css */
+.main-resume {
+  padding: 3rem;
 }
 
-.resume .skills-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 -6pt;
-}
-
-.resume .skills-section .skill {
-  margin: 6pt;
-}
-.resume .skills-section .skill,
-.resume .university-logo {
-  height: 36pt;
-  width: 36pt;
-  border-radius: 24pt;
-  background: var(--neutral7);
-}
-
-.resume .university-logo {
-  margin-right: 12pt;
-}
-
-.resume label {
-  font-size: 8pt;
-  padding-top: 4pt;
-}
-
-.resume p {
-  margin: 0;
+.main-resume .name {
+  font-family: var(--fontFamilyCondendsed);
 }
 
 .printing {
@@ -48,4 +15,26 @@
   box-sizing: border-box;
   font-size: 10px;
   background: white;
+}
+
+.experience .experience-item {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .main-resume {
+    width: 612px;
+    height: 792px;
+    background: var(--siteBackground);
+    margin: 30px auto;
+    padding: 72px;
+    box-shadow: var(--boxShadowOut);
+    font-size: 11px;
+  }
+
+  .experience .experience-item {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
