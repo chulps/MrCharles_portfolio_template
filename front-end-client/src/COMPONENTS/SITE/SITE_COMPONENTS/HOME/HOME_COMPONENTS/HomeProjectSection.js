@@ -12,12 +12,7 @@ class HomeProjectsSection extends React.Component {
       <div className="whole flex-center">
         {/* project section */}
 
-        <div
-          className="absolute whole md-two-thirds flex-column flex-center"
-          style={{
-            transform: "translateY(-50%)"
-          }}
-        >
+        <div className="absolute whole md-two-thirds flex-column flex-center">
           <div className="whole absolute">
             <ClicktoolCity />
           </div>

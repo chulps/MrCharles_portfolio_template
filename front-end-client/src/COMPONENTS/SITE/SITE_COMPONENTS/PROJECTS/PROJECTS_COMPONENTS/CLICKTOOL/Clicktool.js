@@ -61,24 +61,24 @@ class Clicktool extends React.Component {
             </p>
           </div>
 
-          <div className="whole md-half lg-two-thirds ml-auto md-pl30">
+          <div className="whole md-two-thirds lg-two-thirds xl-three-fourths ml-auto md-pl30">
             <div className="rounded shadow-out p10 md-p30 flex-center flex-column mb10">
               <ClicktoolCity />
               <label className="mt30">clicktool_city.svg</label>
             </div>
             <div className="one-column lg-two-columns gap10">
-              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
+              <div className="rounded shadow-out p10 md-p30 flex-center flex-column flex">
                 <NonRedirectTracking />
                 <label className="mt30">clicktool_city.svg</label>
-              </div>{" "}
+              </div>
               <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={MagnifyingGlass} alt="" />
                 <label className="mt30">magnifying_glass.svg</label>
-              </div>{" "}
+              </div>
               <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={OnePlace} alt="" />
                 <label className="mt30">one-place.svg</label>
-              </div>{" "}
+              </div>
               <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
                 <img src={RotateLanders} alt="" />
                 <label className="mt30">clicktool_city.svg</label>
@@ -87,7 +87,7 @@ class Clicktool extends React.Component {
           </div>
         </section>
         <section className="p30 flex-center flex-column">
-          <div className="relative whole flex-center">
+          <div className="whole flex-center">
             <Laptop />
           </div>
           <a href="https://clicktool.com/">

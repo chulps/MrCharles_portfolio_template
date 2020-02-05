@@ -31,7 +31,7 @@ class Resume extends React.Component {
         <section className="main-resume">
           <div className="one-column md-three-columns lg-gap10">
             <div className="general-info mb20">
-              <h5 className="name font-condensed">CHUCK HOWARD</h5>
+              <h4 className="name font-condensed">CHUCK HOWARD</h4>
               <div className="title">Designer + Developer</div>
             </div>
 
@@ -69,7 +69,7 @@ class Resume extends React.Component {
                     className="text-center m5 flex-column flex-center"
                   >
                     <img
-                      height={24}
+                      height={20}
                       src={skillsImages("./" + element.image)}
                       style={{ opacity: ".5" }}
                       alt=""
@@ -105,7 +105,7 @@ class Resume extends React.Component {
               <label>EDUCATION</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-skills">univ. skills</div>
+                <div className="university-skills">univ. logo</div>
                 <div className="flex-column">
                   <h5 className="university-name">University of Memphis</h5>
                   <div className="degree-description">
@@ -119,7 +119,7 @@ class Resume extends React.Component {
               <label>AWARDS</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-skills">award icon</div>
+                <div className="awards">award icon</div>
                 <div className="flex-column">
                   <h5 className="university-name">Gold Addy 2015</h5>
                   <div className="degree-description">description</div>
@@ -139,7 +139,10 @@ class Resume extends React.Component {
           </div>
         </section>
 
+        {/*            */}
         {/* PDF resume */}
+        {/*            */}
+
         <PDFExport
           paperSize={"Letter"}
           fileName="chuck-howard.pdf"
@@ -149,13 +152,13 @@ class Resume extends React.Component {
           ref={r => (this.resume = r)}
         >
           <section id="myResume" className="resume hidden md-block printing">
-            <div className="whole flex-row flex-space-between">
-              <div className="general-info">
-                <h5 className="name">CHUCK HOWARD</h5>
+            <div className="one-column md-three-columns lg-gap10">
+              <div className="general-info mb20">
+                <h4 className="name font-condensed">CHUCK HOWARD</h4>
                 <div className="title">Designer + Developer</div>
               </div>
 
-              <div className="contact-info">
+              <div className="contact-info mb20">
                 <label>CONTACT</label>
 
                 <div className="website">www.chuck-howard.com</div>
@@ -164,50 +167,48 @@ class Resume extends React.Component {
                 </div>
               </div>
 
-              <div className="location-info">
+              <div className="location-info mb20">
                 <label>LOCATION</label>
                 <div className="city">Los Angeles,</div>
                 <div className="state">California</div>
               </div>
             </div>
 
-            <div className="intro mt20 mb20">
+            <div className="intro mb20 flex-column whole">
+              <label>statement</label>
               I'm a digital product designer, creative director and front-end
               developer. I'm seeking a role where I can use the sum of my
               talents to build apps, brands,software, and websites from top to
               bottom.
             </div>
 
-            {/* <div className="mb20">
+            <div className="mb20">
               <label>SKILLS</label>
-              <div
-                className="flex-row flex-space-between p30"
-                style={{ flexWrap: "wrap" }}
-              >
+              <div className="flex-row flex-start" style={{ flexWrap: "wrap" }}>
                 {skills.map(element => {
                   console.log(element.image);
                   return (
                     <div
                       key={element.id}
-                      className="text-center m5 flex-column"
+                      className="text-center m5 flex-column flex-center"
                     >
                       <img
                         height={24}
                         src={skillsImages("./" + element.image)}
+                        style={{ opacity: ".5" }}
                         alt=""
                       />
-                      {element.title}
+                      <label className="mt10">{element.title}</label>
                     </div>
                   );
                 })}
               </div>
-            </div> */}
+            </div>
 
+            <label>experience</label>
             <div className="experience mb20">
-              <label>experience</label>
-
               {/* begin experience-item */}
-              <div className="experience-item whole three-columns gap20">
+              <div className="experience-item whole one-column md-three-columns md-gap10">
                 <h5 className="employer">Clicktool</h5>
                 <div className="job-title">
                   Creative Director/Product Designer
@@ -216,29 +217,29 @@ class Resume extends React.Component {
               </div>
 
               {/* begin exp item */}
-              <div className="experience-item whole three-columns gap20">
-                <div className="employer">BTFL</div>
+              <div className="experience-item whole">
+                <h5 className="employer">BTFL</h5>
                 <div className="job-title">Designer</div>
                 <div className="job-duration">Mar 2017 - Aug 2018</div>
               </div>
             </div>
 
-            <div className="whole three-columns gap20">
-              <div>
+            <div className="whole">
+              <div className="mb20">
                 <label>EDUCATION</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
-                  <div className="university-skills">university skills</div>
+                  <div className="university-skills">univ. logo</div>
                   <div className="flex-column">
                     <h5 className="university-name">University of Memphis</h5>
                     <div className="degree-description">
-                      Bachelor degree: graphic design
+                      BFA: Graphic Design
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="contact-info">
+              <div className="contact-info mb20">
                 <label>AWARDS</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}

@@ -27,7 +27,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             them.
           </p>
         </div>
-        <div className="whole md-half lg-two-thirds ml-auto md-pl30">
+        <div className="whole md-half lg-two-thirds xl-three-fourths ml-auto md-pl30">
           <div className="logo">
             <label>logo</label>
             <div className="shadow-out rounded p10 sm-p20  md-p30 flex-center flex-column mt10">
