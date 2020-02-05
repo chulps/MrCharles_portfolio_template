@@ -68,8 +68,9 @@ nav ul li {
 }
 
 .mobileNav ul li a {
-  margin: 2rem;
   width: 100%;
+  padding: 2rem;
+  cursor: pointer;
 }
 
 .mobileNav ul li:hover {

@@ -3,18 +3,24 @@
   padding: 3rem;
 }
 
-.main-resume .name {
+.resume-page * {
   font-family: var(--fontFamilyRegular);
+}
+
+.resume-page label + div,
+.resume-page label + p {
+  margin-top: 0.5em;
 }
 
 .printing {
   display: none;
-  max-width: 612px;
-  max-height: 792px;
+  width: 612px;
+  height: 792px;
   padding: 72px;
   box-sizing: border-box;
   font-size: 10px;
   background: white;
+  color: black;
 }
 
 .experience .experience-item {
@@ -31,7 +37,7 @@
     margin: 30px auto;
     padding: 72px;
     box-shadow: var(--boxShadowOut);
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .experience .experience-item {

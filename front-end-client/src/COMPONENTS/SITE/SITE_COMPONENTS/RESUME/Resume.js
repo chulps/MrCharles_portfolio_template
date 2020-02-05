@@ -4,6 +4,8 @@ import "./resume.css";
 import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
+import poop from "../../../../IMG/SKILLS/aftereffects-01.svg";
+
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
 
 class Resume extends React.Component {
@@ -193,11 +195,11 @@ class Resume extends React.Component {
                       className="text-center m5 flex-column flex-center"
                     >
                       <img
-                        height={24}
+                        height={20}
                         src={skillsImages("./" + element.image)}
-                        style={{ opacity: ".5" }}
                         alt=""
                       />
+
                       <label className="mt10">{element.title}</label>
                     </div>
                   );
