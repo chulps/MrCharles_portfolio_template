@@ -123,7 +123,7 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <section
+        {/* <section
           className="home-skills-section bg-blur"
           style={{ background: "#efefefaa" }}
         >
@@ -148,8 +148,9 @@ class Home extends React.Component {
               );
             })}
           </div>
-        </section>
-        <section className="relative bg-main flex-center flex-column lg-flex-row lg-pt30 lg-pb30">
+        </section> */}
+
+        <section className="relative bg-main flex-center flex-column lg-pt30 lg-pb30">
           <HomeProjectSection />
           <Link className="clicktool-project-button" to="/projects/clicktool">
             <button> View Project </button>

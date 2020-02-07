@@ -93,14 +93,21 @@ class Resume extends React.Component {
             </div>
 
             {/* begin exp item */}
-            <div className="experience-item whole">
+            <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">BTFL</h5>
               <div className="job-title">Designer</div>
               <div className="job-duration">Mar 2017 - Aug 2018</div>
             </div>
+
+            {/* begin exp item */}
+            <div className="experience-item whole one-column md-three-columns md-gap10">
+              <h5 className="employer">Sullivan Branding</h5>
+              <div className="job-title">Art Director/Graphic Designer</div>
+              <div className="job-duration">Mar 2016 - Mar 2017</div>
+            </div>
           </div>
 
-          <div className="whole">
+          <div className="whole one-column md-two-columns">
             <div className="mb20">
               <label>EDUCATION</label>
               <div className="education-info flex-row">
@@ -193,8 +200,8 @@ class Resume extends React.Component {
                       className="text-center m5 flex-column flex-center"
                     >
                       <img
-                        height={24}
-                        src={skillsImages("./" + element.image)}
+                        height={20}
+                        src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231413/Labrador-Retriever-MP.jpg"
                         style={{ opacity: ".5" }}
                         alt=""
                       />

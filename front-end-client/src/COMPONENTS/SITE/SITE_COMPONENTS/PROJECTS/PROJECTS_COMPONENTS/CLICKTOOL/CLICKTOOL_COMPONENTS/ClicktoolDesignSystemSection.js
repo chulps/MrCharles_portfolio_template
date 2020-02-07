@@ -28,7 +28,7 @@ class ClicktoolDesignSystemSection extends React.Component {
           </p>
         </div>
         <div className="whole md-half lg-two-thirds xl-three-fourths ml-auto md-pl30">
-          <div className="logo">
+          <div className="logo mb30">
             <label>logo</label>
             <div className="shadow-out rounded p10 sm-p20  md-p30 flex-center flex-column mt10">
               <Geometry />
@@ -49,45 +49,46 @@ class ClicktoolDesignSystemSection extends React.Component {
               </div>
             </div>
           </div>
-          <div className="fonts flex-column mt30">
+          <div className="fonts flex-column mb30">
             <label>fonts</label>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <HelveticaNeueRegular />
-              <p>
-                Primary font used for links, buttons, paragraphs, inputs, and
-                almost everything{" "}
-              </p>
-            </div>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <HelveticaNeueBold />
-              <p>
-                For headers and subheaders. Sometimes to emphasize text in
-                paragraphs.
-              </p>
-            </div>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <HelveticaNeueCondensedBold />
-              <p>For labels and H1 headers only.</p>
-            </div>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <AntarcticanMonoRegular />
-              <p>For representing data in a table.</p>
-            </div>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <AntarcticanMonoMedium />
-              <p>
-                For emphasizing data shown somewhere on the UI but not in a
-                table
-              </p>
-            </div>
-            <div className="shadow-out p10 md-p30 rounded flex-column mb10">
-              <AntarcticanMonoBold />
-              <p>For emphasizing data even more, possibly in a table</p>
+            <div className="xl-three-columns gap10">
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <HelveticaNeueRegular />
+                <p>
+                  Primary font used for links, buttons, paragraphs, inputs, and
+                  almost everything{" "}
+                </p>
+              </div>
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <HelveticaNeueBold />
+                <p>
+                  For headers and subheaders. Sometimes to emphasize text in
+                  paragraphs.
+                </p>
+              </div>
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <HelveticaNeueCondensedBold />
+                <p>For labels and H1 headers only.</p>
+              </div>
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <AntarcticanMonoRegular />
+                <p>For representing data in a table.</p>
+              </div>
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <AntarcticanMonoMedium />
+                <p>
+                  For emphasizing data shown somewhere on the UI but not in a
+                  table
+                </p>
+              </div>
+              <div className="shadow-out p10 md-p30 rounded flex-column">
+                <AntarcticanMonoBold />
+                <p>For emphasizing data even more, possibly in a table</p>
+              </div>
             </div>
           </div>
-          <br />
           <label className="whole">colors</label>
-          <div className="whole one-column xl-two-columns gap10 mb10">
+          <div className="whole one-column xl-two-columns gap10 md-gap30 mb10">
             <p className="whole">
               I created a color system using CSS variables for my team so nobody
               would have to ever remember any hex values! This made

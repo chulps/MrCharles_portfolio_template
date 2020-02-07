@@ -11,7 +11,7 @@ class ClicktoolBrandSection extends React.Component {
 
           <p className="whole sm-four-fifths md-half lg-third xl-fourth">
             This was my first task when I started working here. There were a few
-            rules given by the CEO...
+            limitations given by the CEO...
             <ul>
               <li>Flat illustration style</li>
               <li>

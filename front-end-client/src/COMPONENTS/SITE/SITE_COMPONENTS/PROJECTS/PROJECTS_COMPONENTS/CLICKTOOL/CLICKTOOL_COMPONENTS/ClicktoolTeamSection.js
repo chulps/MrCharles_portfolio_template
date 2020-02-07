@@ -6,7 +6,7 @@ class ClicktoolTeamSection extends React.Component {
     return (
       <section className="team p30">
         <div className="sticky-top xl-two-thirds">
-          <h3 className="mb5">the team</h3>
+          <h3 className="mb5">Team Members</h3>
           <div className="one-column sm-two-columns md-three-columns lg-four-columns gap30">
             <div>
               <h5>Carlos Cruz</h5>

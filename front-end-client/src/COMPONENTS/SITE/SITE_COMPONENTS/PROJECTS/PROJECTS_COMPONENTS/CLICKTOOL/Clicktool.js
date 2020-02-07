@@ -61,7 +61,7 @@ class Clicktool extends React.Component {
             </p>
           </div>
 
-          <div className="whole md-two-thirds lg-two-thirds xl-three-fourths ml-auto md-pl30">
+          <div className="whole md-half lg-two-thirds xl-three-fourths ml-auto md-pl30">
             <div className="rounded shadow-out p10 md-p30 flex-center flex-column mb10">
               <ClicktoolCity />
               <label className="mt30">clicktool_city.svg</label>
