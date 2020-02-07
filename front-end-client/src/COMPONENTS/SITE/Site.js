@@ -21,6 +21,21 @@ class Site extends React.Component {
     document.getElementsByTagName("head")[0].appendChild(viewportMeta);
   }
 
+  setUser = user => {
+    this.setState(
+      {
+        profile: user
+      },
+      () => {
+        if (!this.state.profile) {
+          this.setState({
+            userNotFound: true
+          });
+        }
+      }
+    );
+  };
+
   render() {
     return (
       <Router>
@@ -28,7 +43,11 @@ class Site extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
-            <Route exact path="/Resume" component={Resume} />
+            <Route
+              exact
+              path="/Resume"
+              render={() => <Resume setUser={this.setUser} />}
+            />
             <Route exact path="/projects/clicktool" component={Clicktool} />
           </Switch>
           <Navbar />

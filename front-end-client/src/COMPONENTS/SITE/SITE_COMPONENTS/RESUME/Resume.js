@@ -3,11 +3,17 @@ import React from "react";
 import "./resume.css";
 import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
+import axios from "axios";
 
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
 const printImages = require.context("../../../../IMG/PNGSKILLS", true);
 
 class Resume extends React.Component {
+  componentDidMount() {
+    axios.get("getUser/chuck").then(data => {
+      this.props.setUser(data.data);
+    });
+  }
   printDocument = async () => {
     document.getElementById("myResume").style.display = "block";
     await new Promise(resolve => {
