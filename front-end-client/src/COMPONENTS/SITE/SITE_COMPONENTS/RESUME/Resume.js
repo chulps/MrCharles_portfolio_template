@@ -191,17 +191,14 @@ class Resume extends React.Component {
 
             <div className="mb20">
               <label>SKILLS</label>
-              <div className="flex-row flex-start" style={{ flexWrap: "wrap" }}>
+              <div style={{ flexWrap: "wrap" }}>
                 {skills.map(element => {
                   console.log(element.image);
                   return (
-                    <div
-                      key={element.id}
-                      className="text-center m5 flex-column flex-center"
-                    >
+                    <div key={element.id} className="text-center m5">
                       <img
                         height={20}
-                        src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231413/Labrador-Retriever-MP.jpg"
+                        src={skillsImages("./" + element.image)}
                         style={{ opacity: ".5" }}
                         alt=""
                       />
