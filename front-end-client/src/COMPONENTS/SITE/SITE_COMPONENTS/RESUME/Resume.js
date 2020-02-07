@@ -5,18 +5,18 @@ import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
-const printImages = require.context("../../../../IMG/SKILLS", true);
+const printImages = require.context("../../../../IMG/PNGSKILLS", true);
 
 class Resume extends React.Component {
   printDocument = async () => {
     document.getElementById("myResume").style.display = "block";
-    // await new Promise(resolve => {
-    //   this.resume.save();
-    //   setTimeout(() => {
-    //     resolve();
-    //   }, 30);
-    // });
-    // document.getElementById("myResume").style.display = "none";
+    await new Promise(resolve => {
+      this.resume.save();
+      setTimeout(() => {
+        resolve();
+      }, 30);
+    });
+    document.getElementById("myResume").style.display = "none";
   };
 
   render() {
@@ -202,7 +202,9 @@ class Resume extends React.Component {
                     >
                       <img
                         height={20}
-                        src={printImages("./" + element.image)}
+                        src={printImages(
+                          "./" + element.image.replace(".svg", ".png")
+                        )}
                         style={{ opacity: ".5" }}
                         alt=""
                       />
