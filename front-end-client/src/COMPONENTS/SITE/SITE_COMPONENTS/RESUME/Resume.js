@@ -5,17 +5,18 @@ import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
+const printImages = require.context("../../../../IMG/SKILLS", true);
 
 class Resume extends React.Component {
   printDocument = async () => {
     document.getElementById("myResume").style.display = "block";
-    await new Promise(resolve => {
-      this.resume.save();
-      setTimeout(() => {
-        resolve();
-      }, 30);
-    });
-    document.getElementById("myResume").style.display = "none";
+    // await new Promise(resolve => {
+    //   this.resume.save();
+    //   setTimeout(() => {
+    //     resolve();
+    //   }, 30);
+    // });
+    // document.getElementById("myResume").style.display = "none";
   };
 
   render() {
@@ -191,14 +192,17 @@ class Resume extends React.Component {
 
             <div className="mb20">
               <label>SKILLS</label>
-              <div style={{ flexWrap: "wrap" }}>
+              <div className="flex-row flex-start" style={{ flexWrap: "wrap" }}>
                 {skills.map(element => {
                   console.log(element.image);
                   return (
-                    <div key={element.id} className="text-center m5">
+                    <div
+                      key={element.id}
+                      className="text-center m5 flex-column flex-center"
+                    >
                       <img
                         height={20}
-                        src={skillsImages("./" + element.image)}
+                        src={printImages("./" + element.image)}
                         style={{ opacity: ".5" }}
                         alt=""
                       />

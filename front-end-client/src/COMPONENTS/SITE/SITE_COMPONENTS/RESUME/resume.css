@@ -9,8 +9,8 @@
 
 .printing {
   display: none;
-  max-width: 612px;
-  max-height: 792px;
+  width: 612px;
+  height: 792px;
   padding: 72px;
   box-sizing: border-box;
   font-size: 10px;
