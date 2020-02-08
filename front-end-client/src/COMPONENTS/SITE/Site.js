@@ -51,7 +51,10 @@ class Site extends React.Component {
             <Route exact path="/projects/clicktool" component={Clicktool} />
           </Switch>
           <Navbar />
-          <a className="lg-hidden" href="mailto:chuckoward@gmail.com">
+          <a
+            className="lg-hidden contact-wrapper"
+            href="mailto:chuckoward@gmail.com"
+          >
             <button className="contact-button m0">contact</button>
           </a>
           <Footer />

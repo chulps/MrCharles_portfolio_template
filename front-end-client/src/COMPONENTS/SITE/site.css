@@ -17,7 +17,6 @@ button.contact-button {
   width: calc(100% - 8em);
   z-index: 1;
   margin: 0 auto 2em auto;
-  -webkit-backface-visibility: hidden;
 }
 
 button.contact-button:active {

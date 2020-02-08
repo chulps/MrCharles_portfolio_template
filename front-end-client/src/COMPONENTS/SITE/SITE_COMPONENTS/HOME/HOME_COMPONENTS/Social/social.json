@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "type": "behance",
+    "image": "./svg/behance.svg",
+    "href": "https://www.behance.net/chuckhoward"
+  },
+  {
+    "id": 2,
+    "type": "github",
+    "image": "./svg/github-icon-1.svg",
+    "href": "https://github.com/chulps"
+  },
+  {
+    "id": 3,
+    "type": "gmail",
+    "image": "../../../images/SocialIcons/gmail.png",
+    "href": "#contact"
+  },
+  {
+    "id": 4,
+    "type": "instagram",
+    "image": "../../../images/SocialIcons/instagram-01.svg",
+    "href": "https://www.instagram.com/chulps"
+  },
+  {
+    "id": 5,
+    "type": "linkedin",
+    "image": "../../../images/SocialIcons/linkedin-01.svg",
+    "href": "https://www.linkedin.com/in/chuck-howard/"
+  },
+  {
+    "id": 6,
+    "type": "pinterest",
+    "image": "../../../images/SocialIcons/pinterest-01.svg",
+    "href": "https://www.pinterest.com/chuckoward/"
+  },
+  {
+    "id": 7,
+    "type": "stack_overflow",
+    "image": "../../../images/SocialIcons/stack_overflow-01.svg",
+    "href": "https://stackoverflow.com/users/2146031/chulps"
+  },
+  {
+    "id": 8,
+    "type": "jsfiddle",
+    "image": "../../../images/SocialIcons/jsfiddle-01.svg",
+    "href": "https://jsfiddle.net/user/chulps/fiddles/"
+  },
+  {
+    "id": 9,
+    "type": "codepen",
+    "image": "../../../images/SocialIcons/codepen-01.svg",
+    "href": "https://codepen.io/chulps/"
+  }
+]

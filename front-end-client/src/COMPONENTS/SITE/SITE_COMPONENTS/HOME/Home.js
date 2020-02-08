@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import skills from "./HOME_COMPONENTS/skills.json";
 import "./home.css";
 import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
+import Social from "./HOME_COMPONENTS/Social/Social.js";
 
 // import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 
@@ -88,6 +89,9 @@ class Home extends React.Component {
       <div className="home">
         {/* top section */}
         <section className="flex-center">
+          <div className="hidden lg-flex">
+            <Social />
+          </div>
           {/* <h1 className="absolute text-black two-thirds">Hi!</h1> */}
           <h1 className="two-thirds text-center m-auto">
             I 'm {this.state.profile.fullName}

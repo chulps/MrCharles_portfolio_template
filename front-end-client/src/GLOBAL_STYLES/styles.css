@@ -652,6 +652,11 @@ button:active {
   border-radius: 2em;
 }
 
+label + div,
+label + p {
+  margin-top: 0.5em;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* Retina-specific stuff here */
 }

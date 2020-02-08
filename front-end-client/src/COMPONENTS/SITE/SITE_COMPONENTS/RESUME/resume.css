@@ -17,11 +17,6 @@
   background: white;
 }
 
-.resume-page label + div,
-.resume-page label + p {
-  margin-top: 0.5em;
-}
-
 .experience .experience-item {
   margin-bottom: 1rem;
   display: grid;

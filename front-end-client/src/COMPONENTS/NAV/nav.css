@@ -126,10 +126,6 @@ nav .logo {
   transform: scale(10);
 }
 
-.mobileNav div:not(.overlay) + div {
-  border: none;
-}
-
 .mobileNav-hide {
   position: fixed;
   left: 0;
@@ -222,7 +218,7 @@ nav .logo {
   z-index: 1;
 }
 
-#mobile-nav-links .overlay div {
+#mobile-nav-links .overlay > div {
   width: 100%;
 }
 
@@ -237,6 +233,16 @@ nav .logo {
   background: var(--neutral8);
   -webkit-transition: none;
   transition: none;
+}
+
+.nav-hide-onScrollDown {
+  transform: translateY(calc(0px - var(--navHeight)));
+  transition: 0.4s;
+}
+
+.nav-show-onScrollUp {
+  transform: var(--navHeight);
+  transition: 0.4s;
 }
 
 @media only screen and (min-width: 768px) {

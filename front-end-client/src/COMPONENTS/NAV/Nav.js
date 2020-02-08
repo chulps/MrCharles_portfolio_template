@@ -4,16 +4,46 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 import Logo from "../../IMG/CHULPS_LOGO_ANIMATION_instagram.gif";
 import LogoWhite from "../../IMG/CHULPS_LOGO_ANIMATION_WHITE_NO_BG_portfolio.gif";
+import Social from "../SITE/SITE_COMPONENTS/HOME/HOME_COMPONENTS/Social/Social.js";
 
 class Nav extends React.Component {
   state = {
     displaymobileNav: false,
-    menuText: "Menu"
+    menuText: "Menu",
+    prevScrollpos: window.pageYOffset,
+    visible: true
+  };
+
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  // Remove the event listener when the component is unmount.
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  // Hide or show the menu.
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible
+    });
   };
 
   render() {
     return (
-      <nav>
+      <nav
+        className={
+          this.state.visible ? ".nav-show-onScrollUp" : "nav-hide-onScrollDown"
+        }
+      >
         {/* Nav.js */}
         {/* wrapper for the logo and logo text, hidden on small screens */}
         <Link to="/">
@@ -54,7 +84,6 @@ class Nav extends React.Component {
           </li>
           {/* <Link to="/contact"><button>Contact</button></Link> */}
         </ul>
-
         {/* mobile nav */}
         <button
           id="mobile-nav-button"
@@ -74,7 +103,6 @@ class Nav extends React.Component {
         >
           {this.state.menuText}
         </button>
-
         <div
           id="mobile-nav-links"
           className={
@@ -94,6 +122,9 @@ class Nav extends React.Component {
               })
             }
           >
+            <div className="lg-hidden">
+              <Social />
+            </div>
             <img
               src={Logo}
               className="absolute"
@@ -105,7 +136,6 @@ class Nav extends React.Component {
               }}
               alt=""
             />
-
             <ul
               className="mobile-nav-links flex-column absolute flex-space-around"
               style={{ height: "25%" }}

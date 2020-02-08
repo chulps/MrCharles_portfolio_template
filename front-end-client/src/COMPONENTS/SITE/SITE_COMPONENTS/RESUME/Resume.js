@@ -212,7 +212,7 @@ class Resume extends React.Component {
           <div className="references">
             <label>REFERENCES</label>
             <div className="column gap10">
-              <div className="references-info three-columns gap10 whole">
+              <div className="references-info one-columnthree-columns gap10 whole">
                 <h5 className="name">Elton Hsu</h5>
                 <div className="relationship">Colleague</div>
                 <div className="linkedin">
@@ -424,21 +424,21 @@ class Resume extends React.Component {
             <div className="references">
               <label>REFERENCES</label>
               <div className="column gap10">
-                <div className="references-info four-columns gap10 whole">
+                <div className="references-info three-columns gap10 whole">
                   <h5 className="name">Elton Hsu</h5>
                   <div className="relationship">Colleague</div>
                   <div className="linkedin">
                     https://www.linkedin.com/in/elthsu/
                   </div>
                 </div>
-                <div className="references-info four-columns gap10 whole">
+                <div className="references-info three-columns gap10 whole">
                   <h5 className="name">Isaac Grey</h5>
                   <div className="relationship">Former Colleague</div>
                   <div className="linkedin">
                     https://www.linkedin.com/in/isaacgrey/
                   </div>
                 </div>
-                <div className="references-info four-columns gap10 whole">
+                <div className="references-info three-columns gap10 whole">
                   <h5 className="name">William Ha</h5>
                   <div className="relationship">Former Colleague</div>
                   <div className="linkedin">

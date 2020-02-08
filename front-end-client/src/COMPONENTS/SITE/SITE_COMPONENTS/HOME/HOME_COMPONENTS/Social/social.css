@@ -1,0 +1,56 @@
+/* social.css */
+
+.social {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  border: 1px solid var(--whiteTrans);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-box-shadow: var(--boxShadowIn);
+  box-shadow: var(--boxShadowIn);
+  background: var(--siteBackground);
+}
+
+.social-wrapper a {
+  transform: scale(1);
+}
+.social-wrapper a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.social-wrapper {
+  position: relative;
+  margin: 0.5rem 1rem;
+  -webkit-box-shadow: var(--boxShadowOut);
+  box-shadow: var(--boxShadowOut);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 2rem;
+  border: 1px solid var(--blackTrans);
+}
+
+.social-wrapper:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.social-wrapper:active {
+  -webkit-box-shadow: var(--boxShadowIn);
+  box-shadow: var(--boxShadowIn);
+}
+
+.social svg path {
+  fill: var(--fontColor);
+}
