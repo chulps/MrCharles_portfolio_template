@@ -4,6 +4,12 @@ import "./resume.css";
 import skills from "../HOME/HOME_COMPONENTS/skills.json";
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 import axios from "axios";
+import UOfM from "../../../../IMG/uOfm-01.svg";
+import UOfMpng from "../../../../IMG/uOfm-01.png";
+import UCLAExt from "../../../../IMG/UCLAExt-01.svg";
+import UCLAExtpng from "../../../../IMG/UCLAExt-01.png";
+import Award from "../../../../IMG/award.svg";
+import Awardpng from "../../../../IMG/award.png";
 
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
 const printImages = require.context("../../../../IMG/PNGSKILLS", true);
@@ -115,15 +121,38 @@ class Resume extends React.Component {
           </div>
 
           <div className="whole one-column md-two-columns">
-            <div className="mb20">
+            <div className="mb20 one-column gap10">
               <label>EDUCATION</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="university-skills">univ. logo</div>
+                <div className="university-skills">
+                  <img
+                    src={UOfM}
+                    alt=""
+                    style={{ height: 24, width: 24, opacity: "0.5" }}
+                    className="mr10"
+                  />
+                </div>
                 <div className="flex-column">
                   <h5 className="university-name">University of Memphis</h5>
+                  <div className="degree-description">BFA: Graphic Design</div>
+                </div>
+              </div>
+
+              <div className="education-info flex-row">
+                {/* begin 1 education item */}
+                <div className="university-skills">
+                  <img
+                    src={UCLAExt}
+                    alt=""
+                    style={{ height: 24, width: 24, opacity: "0.5" }}
+                    className="mr10"
+                  />
+                </div>
+                <div className="flex-column">
+                  <h5 className="university-name">UCLA Extension</h5>
                   <div className="degree-description">
-                    Bachelor degree: graphic design
+                    Certificate: Full-Stack Web Development
                   </div>
                 </div>
               </div>
@@ -133,7 +162,14 @@ class Resume extends React.Component {
               <label>AWARDS</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
-                <div className="awards">award icon</div>
+                <div className="awards">
+                  <img
+                    src={Award}
+                    alt=""
+                    style={{ height: 24, width: 24, opacity: "0.5" }}
+                    className="mr10"
+                  />
+                </div>
                 <div className="flex-column">
                   <h5 className="university-name">Gold Addy 2015</h5>
                   <div className="degree-description">description</div>
@@ -245,7 +281,13 @@ class Resume extends React.Component {
                 <label>EDUCATION</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
-                  <div className="university-skills">univ. logo</div>
+                  <div className="university-skills">
+                    <img
+                      src={UOfMpng}
+                      alt=""
+                      style={{ height: 24, width: 24, opacity: "0.5" }}
+                    />
+                  </div>
                   <div className="flex-column">
                     <h5 className="university-name">University of Memphis</h5>
                     <div className="degree-description">
@@ -259,7 +301,14 @@ class Resume extends React.Component {
                 <label>AWARDS</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
-                  <div className="university-skills">award icon</div>
+                  <div className="university-skills">
+                    <img
+                      src={Awardpng}
+                      alt=""
+                      style={{ height: 24, width: 24, opacity: "0.5" }}
+                      className="mr10"
+                    />
+                  </div>
                   <div className="flex-column">
                     <h5 className="university-name">Gold Addy 2015</h5>
                     <div className="degree-description">description</div>
