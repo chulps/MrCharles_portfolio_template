@@ -93,9 +93,10 @@ class Home extends React.Component {
             <Social />
           </div>
           {/* <h1 className="absolute text-black two-thirds">Hi!</h1> */}
-          <h1 className="two-thirds text-center m-auto">
-            I 'm {this.state.profile.fullName}
-          </h1>
+          <div className="two-thirds text-center m-auto">
+            <h1>I 'm {this.state.profile.fullName}</h1>
+            <p>Designer + Developer</p>
+          </div>
           <img
             className="me fixed whole md-half"
             src={images("./" + this.state.profile.picture)}
@@ -103,7 +104,7 @@ class Home extends React.Component {
           />
         </section>
         {/* 'deseloper' */}
-        <section className="home-Resume-section bg-main flex-column flex-center text-center">
+        {/* <section className="home-Resume-section bg-main flex-column flex-center text-center">
           <h1 className="absolute text-shadow-out text-main deseloper">
             {this.state.profile.role.split(",").length > 1
               ? this.state.profile.role.split(",").map((item, i) => {
@@ -125,7 +126,7 @@ class Home extends React.Component {
               anything, but I love making apps the most.
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* <section
           className="home-skills-section bg-blur"
@@ -154,7 +155,10 @@ class Home extends React.Component {
           </div>
         </section> */}
 
-        <section className="relative bg-main flex-center flex-column lg-pt30 lg-pb30">
+        <section
+          className="relative bg-main flex-center flex-column p30 mt30 mb30"
+          style={{ height: "110vh" }}
+        >
           <HomeProjectSection />
           <Link className="clicktool-project-button" to="/projects/clicktool">
             <button> View Project </button>
@@ -162,9 +166,8 @@ class Home extends React.Component {
         </section>
         {/* project section */}
 
-        <section className="bg-main">
+        {/* <section className="bg-main">
           <div className="colors">
-            `
             <div
               className="bg-primary0"
               style={{ height: 100, width: 100 }}
@@ -183,7 +186,7 @@ class Home extends React.Component {
             ></div>
             `
           </div>
-        </section>
+        </section> */}
       </div>
     ) : (
       <div
