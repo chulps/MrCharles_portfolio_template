@@ -9,20 +9,17 @@ import ClicktoolCity from "./ClicktoolCity";
 class HomeProjectsSection extends React.Component {
   render() {
     return (
-      <div className="whole flex-center">
+      <div className="home-project-section whole flex-center">
         {/* project section */}
 
         <div className="absolute whole md-two-thirds flex-column flex-center">
-          <div
-            className="whole absolute"
-            style={{ transform: "translateY(-25%)" }}
-          >
+          <div className="city whole absolute">
             <ClicktoolCity />
           </div>
           <div
             className="two-thirds mb30 relative"
             style={{
-              transform: "translateY(-200%)"
+              transform: "translateY(-150%)"
             }}
           >
             <ClicktoolLogo />

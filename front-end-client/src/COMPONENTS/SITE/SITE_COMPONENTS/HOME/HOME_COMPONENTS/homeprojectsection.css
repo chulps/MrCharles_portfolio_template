@@ -20,3 +20,8 @@
   position: absolute;
   top: calc(100% - 10em);
 }
+
+.home-project-section .city {
+  filter: blur(2px);
+  opacity: 0.5;
+}

@@ -86,7 +86,10 @@ class Clicktool extends React.Component {
             </div>
           </div>
         </section>
-        <section className="p30 flex-center flex-column">
+        <section
+          className="p30 flex-center flex-column"
+          style={{ minHeight: "110vh" }}
+        >
           <div className="whole flex-center">
             <Laptop />
           </div>
