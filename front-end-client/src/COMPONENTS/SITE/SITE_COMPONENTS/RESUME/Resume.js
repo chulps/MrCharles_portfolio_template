@@ -10,6 +10,8 @@ import UCLAExt from "../../../../IMG/UCLAExt-01.svg";
 import UCLAExtpng from "../../../../IMG/UCLAExt-01.png";
 import Award from "../../../../IMG/award.svg";
 import Awardpng from "../../../../IMG/award.png";
+import Behancepng from "../../../../IMG/BehanceGR.png";
+import Behance from "../../../../IMG/BehanceGR.svg";
 
 const skillsImages = require.context("../../../../IMG/SKILLS", true);
 const printImages = require.context("../../../../IMG/PNGSKILLS", true);
@@ -66,9 +68,12 @@ class Resume extends React.Component {
 
           <div className="intro mb20 flex-column whole">
             <label>statement</label>
-            I'm a digital product designer, creative director and front-end
-            developer. I'm seeking a role where I can use the sum of my talents
-            to build apps, brands,software, and websites from top to bottom.
+            <p>
+              I'm a digital product designer, creative director and front-end
+              developer. I'm seeking a role where I can use the sum of my
+              talents to build apps, brands,software, and websites from top to
+              bottom.
+            </p>
           </div>
 
           <div className="mb20">
@@ -104,25 +109,30 @@ class Resume extends React.Component {
               </div>
               <div className="job-duration">Aug 2018 - Current</div>
             </div>
-
             {/* begin exp item */}
             <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">BTFL</h5>
               <div className="job-title">Designer</div>
               <div className="job-duration">Mar 2017 - Aug 2018</div>
             </div>
-
             {/* begin exp item */}
             <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">Sullivan Branding</h5>
-              <div className="job-title">Art Director/Graphic Designer</div>
+              <div className="job-title">Art Director</div>
               <div className="job-duration">Mar 2016 - Mar 2017</div>
+            </div>{" "}
+            {/* begin exp item */}
+            <div className="experience-item whole one-column md-three-columns md-gap10">
+              <h5 className="employer">Signature Advertising</h5>
+              <div className="job-title">Art Director</div>
+              <div className="job-duration">Mar 2014 - Mar 2015</div>
             </div>
           </div>
 
           <div className="whole one-column md-two-columns">
             <div className="mb20 one-column gap10">
               <label>EDUCATION</label>
+
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
                 <div className="university-skills">
@@ -158,7 +168,7 @@ class Resume extends React.Component {
               </div>
             </div>
 
-            <div className="contact-info mb20">
+            <div className="contact-info mb20 one-column gap10">
               <label>AWARDS</label>
               <div className="education-info flex-row">
                 {/* begin 1 education item */}
@@ -172,25 +182,65 @@ class Resume extends React.Component {
                 </div>
                 <div className="flex-column">
                   <h5 className="university-name">Gold Addy 2015</h5>
-                  <div className="degree-description">description</div>
+                  <div className="degree-description">
+                    Signature Advertising 2015
+                  </div>
+                </div>
+              </div>
+              <div className="education-info flex-row">
+                {/* begin 1 education item */}
+                <div className="awards">
+                  <img
+                    src={Behance}
+                    alt=""
+                    style={{ height: 24, width: 24, opacity: "0.5" }}
+                    className="mr10"
+                  />
+                </div>
+                <div className="flex-column">
+                  <h5 className="university-name">Featured on Behance</h5>
+                  <div className="degree-description">
+                    www.behance.net
+                    <br />
+                    Graphic Design: Poster
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="location-info">
-              <label>REFERENCES</label>
-              <div className="references-info">
-                <h5 className="name">name</h5>
-                <div className="relationship">relationship</div>
-                <div className="phone-number">phone number</div>
-                <div className="email">phone number</div>
+          <div className="references">
+            <label>REFERENCES</label>
+            <div className="column gap10">
+              <div className="references-info three-columns gap10 whole">
+                <h5 className="name">Elton Hsu</h5>
+                <div className="relationship">Colleague</div>
+                <div className="linkedin">
+                  https://www.linkedin.com/in/elthsu/
+                </div>
+
+                <h5 className="name">William Ha</h5>
+                <div className="relationship">Former Colleague</div>
+                <div className="linkedin">
+                  https://www.linkedin.com/in/wvha17/
+                </div>
+
+                <h5 className="name">Isaac Grey</h5>
+                <div className="relationship">Former Colleague</div>
+                <div className="linkedin">
+                  https://www.linkedin.com/in/isaacgrey/
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/*            */}
+        {/*            */}
+        {/*            */}
         {/* PDF resume */}
+        {/*            */}
+        {/*            */}
         {/*            */}
 
         <PDFExport
@@ -226,10 +276,12 @@ class Resume extends React.Component {
 
             <div className="intro mb20 flex-column whole">
               <label>statement</label>
-              I'm a digital product designer, creative director and front-end
-              developer. I'm seeking a role where I can use the sum of my
-              talents to build apps, brands,software, and websites from top to
-              bottom.
+              <p>
+                I'm a digital product designer, creative director and front-end
+                developer. I'm seeking a role where I can use the sum of my
+                talents to build apps, brands,software, and websites from top to
+                bottom.
+              </p>
             </div>
 
             <div className="mb20">
@@ -267,18 +319,30 @@ class Resume extends React.Component {
                 </div>
                 <div className="job-duration">Aug 2018 - Current</div>
               </div>
-
               {/* begin exp item */}
-              <div className="experience-item whole">
+              <div className="experience-item whole one-column md-three-columns md-gap10">
                 <h5 className="employer">BTFL</h5>
                 <div className="job-title">Designer</div>
                 <div className="job-duration">Mar 2017 - Aug 2018</div>
               </div>
+              {/* begin exp item */}
+              <div className="experience-item whole one-column md-three-columns md-gap10">
+                <h5 className="employer">Sullivan Branding</h5>
+                <div className="job-title">Art Director</div>
+                <div className="job-duration">Mar 2016 - Mar 2017</div>
+              </div>{" "}
+              {/* begin exp item */}
+              <div className="experience-item whole one-column md-three-columns md-gap10">
+                <h5 className="employer">Signature Advertising</h5>
+                <div className="job-title">Art Director</div>
+                <div className="job-duration">Mar 2014 - Mar 2015</div>
+              </div>
             </div>
 
-            <div className="whole">
-              <div className="mb20">
+            <div className="whole one-column md-two-columns">
+              <div className="mb20 one-column gap10">
                 <label>EDUCATION</label>
+
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
                   <div className="university-skills">
@@ -286,6 +350,7 @@ class Resume extends React.Component {
                       src={UOfMpng}
                       alt=""
                       style={{ height: 24, width: 24, opacity: "0.5" }}
+                      className="mr10"
                     />
                   </div>
                   <div className="flex-column">
@@ -295,13 +360,31 @@ class Resume extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="contact-info mb20">
-                <label>AWARDS</label>
                 <div className="education-info flex-row">
                   {/* begin 1 education item */}
                   <div className="university-skills">
+                    <img
+                      src={UCLAExtpng}
+                      alt=""
+                      style={{ height: 24, width: 24, opacity: "0.5" }}
+                      className="mr10"
+                    />
+                  </div>
+                  <div className="flex-column">
+                    <h5 className="university-name">UCLA Extension</h5>
+                    <div className="degree-description">
+                      Certificate: Full-Stack Web Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="contact-info mb20 one-column gap10">
+                <label>AWARDS</label>
+                <div className="education-info flex-row">
+                  {/* begin 1 education item */}
+                  <div className="awards">
                     <img
                       src={Awardpng}
                       alt=""
@@ -311,18 +394,56 @@ class Resume extends React.Component {
                   </div>
                   <div className="flex-column">
                     <h5 className="university-name">Gold Addy 2015</h5>
-                    <div className="degree-description">description</div>
+                    <div className="degree-description">
+                      Signature Advertising 2015
+                    </div>
+                  </div>
+                </div>
+                <div className="education-info flex-row">
+                  {/* begin 1 education item */}
+                  <div className="awards">
+                    <img
+                      src={Behancepng}
+                      alt=""
+                      style={{ height: 24, width: "auto", opacity: "0.5" }}
+                      className="mr10"
+                    />
+                  </div>
+                  <div className="flex-column">
+                    <h5 className="university-name">Featured on Behance</h5>
+                    <div className="degree-description">
+                      www.behance.net
+                      <br />
+                      Graphic Design: Poster
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="location-info">
-                <label>REFERENCES</label>
-                <div className="references-info">
-                  <h5 className="name">name</h5>
-                  <div className="relationship">relationship</div>
-                  <div className="phone-number">phone number</div>
-                  <div className="email">phone number</div>
+            <div className="references">
+              <label>REFERENCES</label>
+              <div className="column gap10">
+                <div className="references-info four-columns gap10 whole">
+                  <h5 className="name">Elton Hsu</h5>
+                  <div className="relationship">Colleague</div>
+                  <div className="linkedin">
+                    https://www.linkedin.com/in/elthsu/
+                  </div>
+                </div>
+                <div className="references-info four-columns gap10 whole">
+                  <h5 className="name">Isaac Grey</h5>
+                  <div className="relationship">Former Colleague</div>
+                  <div className="linkedin">
+                    https://www.linkedin.com/in/isaacgrey/
+                  </div>
+                </div>
+                <div className="references-info four-columns gap10 whole">
+                  <h5 className="name">William Ha</h5>
+                  <div className="relationship">Former Colleague</div>
+                  <div className="linkedin">
+                    https://www.linkedin.com/in/wvha17/
+                  </div>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@
   padding: 3rem;
 }
 
-.main-resume .name {
+.main-resume * {
   font-family: var(--fontFamilyRegular);
 }
 
@@ -15,6 +15,11 @@
   box-sizing: border-box;
   font-size: 10px;
   background: white;
+}
+
+.resume-page label + div,
+.resume-page label + p {
+  margin-top: 0.5em;
 }
 
 .experience .experience-item {
