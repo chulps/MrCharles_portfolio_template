@@ -30,7 +30,7 @@ class Resume extends React.Component {
         resolve();
       }, 30);
     });
-    document.getElementById("myResume").style.display = "none";
+    // document.getElementById("myResume").style.display = "none";
   };
 
   render() {
@@ -71,7 +71,7 @@ class Resume extends React.Component {
             <p>
               I'm a digital product designer, creative director and front-end
               developer. I'm seeking a role where I can use the sum of my
-              talents to build apps, brands,software, and websites from top to
+              talents to build apps, brands, software, and websites from top to
               bottom.
             </p>
           </div>
@@ -215,20 +215,29 @@ class Resume extends React.Component {
               <div className="references-info one-column three-columns gap10 whole">
                 <h5 className="name">Elton Hsu</h5>
                 <div className="relationship">Colleague</div>
-                <div className="linkedin">
-                  https://www.linkedin.com/in/elthsu/
+                <div className="linkedin truncate md-un-truncate">
+                  <a target="_blank" href="https://www.linkedin.com/in/elthsu/">
+                    https://www.linkedin.com/in/elthsu/
+                  </a>
                 </div>
 
                 <h5 className="name">William Ha</h5>
                 <div className="relationship">Former Colleague</div>
-                <div className="linkedin">
-                  https://www.linkedin.com/in/wvha17/
+                <div className="linkedin truncate md-un-truncate">
+                  <a target="_blank" href="https://www.linkedin.com/in/wvha17/">
+                    https://www.linkedin.com/in/wvha17/
+                  </a>
                 </div>
 
                 <h5 className="name">Isaac Grey</h5>
                 <div className="relationship">Former Colleague</div>
-                <div className="linkedin">
-                  https://www.linkedin.com/in/isaacgrey/
+                <div className="linkedin truncate md-un-truncate">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/isaacgrey/"
+                  >
+                    https://www.linkedin.com/in/isaacgrey/
+                  </a>
                 </div>
               </div>
             </div>
@@ -424,25 +433,23 @@ class Resume extends React.Component {
             <div className="references">
               <label>REFERENCES</label>
               <div className="column gap10">
-                <div className="references-info three-columns gap10 whole">
+                <div className="references-info one-column three-columns gap10 whole">
                   <h5 className="name">Elton Hsu</h5>
                   <div className="relationship">Colleague</div>
-                  <div className="linkedin">
+                  <div className="linkedin truncate md-un-truncate">
                     https://www.linkedin.com/in/elthsu/
                   </div>
-                </div>
-                <div className="references-info three-columns gap10 whole">
-                  <h5 className="name">Isaac Grey</h5>
-                  <div className="relationship">Former Colleague</div>
-                  <div className="linkedin">
-                    https://www.linkedin.com/in/isaacgrey/
-                  </div>
-                </div>
-                <div className="references-info three-columns gap10 whole">
+
                   <h5 className="name">William Ha</h5>
                   <div className="relationship">Former Colleague</div>
-                  <div className="linkedin">
+                  <div className="linkedin truncate md-un-truncate">
                     https://www.linkedin.com/in/wvha17/
+                  </div>
+
+                  <h5 className="name">Isaac Grey</h5>
+                  <div className="relationship">Former Colleague</div>
+                  <div className="linkedin truncate md-un-truncate">
+                    https://www.linkedin.com/in/isaacgrey/
                   </div>
                 </div>
               </div>

@@ -6,6 +6,8 @@ import skills from "./HOME_COMPONENTS/skills.json";
 import "./home.css";
 import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
 import Social from "./HOME_COMPONENTS/Social/Social.js";
+import { Parallax } from "react-parallax";
+import Me from "../../../../IMG/USERS/chuck.png";
 
 // import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 
@@ -97,11 +99,17 @@ class Home extends React.Component {
             <h1>I 'm {this.state.profile.fullName}</h1>
             <p>Designer + Developer</p>
           </div>
-          <img
-            className="me fixed whole md-half"
-            src={images("./" + this.state.profile.picture)}
-            alt={this.state.profile.fullName}
-          />
+          <Parallax
+            bgImage={Me}
+            style={{ height: 200, width: "auto" }}
+            strength={500}
+          >
+            <img
+              className="me fixed whole md-half"
+              src={images("./" + this.state.profile.picture)}
+              alt={this.state.profile.fullName}
+            />
+          </Parallax>
         </section>
         {/* 'deseloper' */}
         {/* <section className="home-Resume-section bg-main flex-column flex-center text-center">
@@ -128,33 +136,6 @@ class Home extends React.Component {
           </div>
         </section> */}
 
-        {/* <section
-          className="home-skills-section bg-blur"
-          style={{ background: "#efefefaa" }}
-        >
-          <div
-            className="flex-row flex-space-around p30"
-            style={{ flexWrap: "wrap" }}
-          >
-            {skills.map(element => {
-              console.log(element.image);
-              return (
-                <div
-                  key={element.id}
-                  className="text-center m10 md-m20 flex-column"
-                >
-                  <img
-                    height={60}
-                    src={skillsImages("./" + element.image)}
-                    alt=""
-                  />
-                  {element.title}
-                </div>
-              );
-            })}
-          </div>
-        </section> */}
-
         <section
           className="relative bg-main flex-center flex-column p30 mt30 mb30"
           style={{ height: "110vh" }}
@@ -165,28 +146,6 @@ class Home extends React.Component {
           </Link>
         </section>
         {/* project section */}
-
-        {/* <section className="bg-main">
-          <div className="colors">
-            <div
-              className="bg-primary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            <div
-              className="bg-secondary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            <div
-              className="bg-tertiary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            <div
-              className="bg-quaternary0"
-              style={{ height: 100, width: 100 }}
-            ></div>
-            `
-          </div>
-        </section> */}
       </div>
     ) : (
       <div

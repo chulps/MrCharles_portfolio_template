@@ -24,4 +24,5 @@
 .home-project-section .city {
   filter: blur(2px);
   opacity: 0.5;
+  transform: translate(0, -10%);
 }

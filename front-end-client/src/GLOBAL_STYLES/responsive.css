@@ -563,6 +563,18 @@ and set display to "grid" */
 .text-right {
   text-align: right;
 }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.un-truncate {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
 /* ---------- */
 /* xs screens */
 /* ---------- */
@@ -1046,6 +1058,18 @@ and set display to "grid" */
   .xs-text-right {
     text-align: right;
   }
+
+  .xs-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .xs-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+  }
 }
 
 /* ---------- */
@@ -1527,6 +1551,18 @@ and set display to "grid" */
   .sm-text-right {
     text-align: right;
   }
+
+  .sm-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sm-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+  }
 }
 
 /* ---------- */
@@ -2007,6 +2043,18 @@ and set display to "grid" */
 
   .md-text-right {
     text-align: right;
+  }
+
+  .md-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .md-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
   }
 }
 
@@ -2490,6 +2538,18 @@ and set display to "grid" */
   .lg-text-right {
     text-align: right;
   }
+
+  .lg-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lg-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+  }
 }
 
 /* ---------- */
@@ -2956,6 +3016,18 @@ and set display to "grid" */
 
   .xl-text-right {
     text-align: right;
+  }
+
+  .xl-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .xl-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
   }
 }
 
@@ -3438,5 +3510,17 @@ and set display to "grid" */
 
   .hg-text-right {
     text-align: right;
+  }
+
+  .hg-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hg-un-truncate {
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
   }
 }

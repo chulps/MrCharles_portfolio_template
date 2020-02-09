@@ -30,6 +30,7 @@
     "jspdf": "^1.5.3",
     "mongoose": "^5.8.9",
     "nodemon": "^1.19.4",
+    "react-parallax": "^3.0.3",
     "react-sound": "^1.0.0"
   }
 }
