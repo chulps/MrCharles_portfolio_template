@@ -2,12 +2,9 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import skills from "./HOME_COMPONENTS/skills.json";
 import "./home.css";
 import HomeProjectSection from "./HOME_COMPONENTS/HomeProjectSection";
 import Social from "./HOME_COMPONENTS/Social/Social.js";
-import { Parallax } from "react-parallax";
-import Me from "../../../../IMG/USERS/chuck.png";
 
 // import Me from '../../../../IMG/chuck.png'// just change the name 'chuck' in this import to make it be you instead
 
@@ -99,17 +96,11 @@ class Home extends React.Component {
             <h1>I 'm {this.state.profile.fullName}</h1>
             <p>Designer + Developer</p>
           </div>
-          <Parallax
-            bgImage={Me}
-            style={{ height: 200, width: "auto" }}
-            strength={500}
-          >
-            <img
-              className="me fixed whole md-half"
-              src={images("./" + this.state.profile.picture)}
-              alt={this.state.profile.fullName}
-            />
-          </Parallax>
+          <img
+            className="me fixed whole md-half"
+            src={images("./" + this.state.profile.picture)}
+            alt={this.state.profile.fullName}
+          />
         </section>
         {/* 'deseloper' */}
         {/* <section className="home-Resume-section bg-main flex-column flex-center text-center">

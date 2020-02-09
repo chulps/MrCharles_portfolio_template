@@ -11,7 +11,7 @@ class ClicktoolRolesSection extends React.Component {
     return (
       <section className="relative roles p30 mt30">
         <div
-          className="whole lg-two-thirds  md-two-columns m-auto"
+          className="whole xl-three-fourths md-two-columns m-auto"
           style={{ height: "100%" }}
         >
           <div className="pl30 pr30 pb30 flex-center flex-column">
@@ -24,7 +24,7 @@ class ClicktoolRolesSection extends React.Component {
             <label className="whole flex-center">this is really my hat</label>
           </div>
           <div>
-            <h3 className="mb5">MY ROLE:</h3>
+            <h3 className="mb5">HATS I WEAR:</h3>
             <div className="one-column sm-two-columns gap10">
               <div>
                 <h5>PRODUCT DESIGNER</h5>

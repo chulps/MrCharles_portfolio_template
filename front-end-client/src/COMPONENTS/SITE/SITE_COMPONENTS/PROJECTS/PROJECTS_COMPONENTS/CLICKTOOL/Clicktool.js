@@ -36,7 +36,9 @@ class Clicktool extends React.Component {
 
         {/* design system section */}
         <ClicktoolDesignSystemSection />
-        <section className="challenges p30">
+
+        {/* challenges section */}
+        <section className="clicktool-svg section p30">
           <div className="relative md-sticky-top">
             <h5>THE THING ABOUT SVG...</h5>
             <p className="whole sm-four-fifths md-half lg-third xl-fourth">
