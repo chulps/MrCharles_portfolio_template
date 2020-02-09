@@ -41,6 +41,13 @@ class Clicktool extends React.Component {
           section about passing data through svg's coming soon
         </section>
 
+        <section className="components flex-center">
+          section about components coming soon
+        </section>
+        <section className="tools flex-center">
+          section about tools coming soon
+        </section>
+
         {/* visit section */}
         <ClicktoolVisitSection />
 
