@@ -30,7 +30,7 @@ class Resume extends React.Component {
         resolve();
       }, 30);
     });
-    // document.getElementById("myResume").style.display = "none";
+    document.getElementById("myResume").style.display = "none";
   };
 
   render() {
