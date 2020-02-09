@@ -93,7 +93,7 @@ class Home extends React.Component {
           </div>
           {/* <h1 className="absolute text-black two-thirds">Hi!</h1> */}
           <div className="two-thirds text-center m-auto">
-            <h1>I 'm {this.state.profile.fullName}</h1>
+            <h1>{this.state.profile.fullName}</h1>
             <p>Designer + Developer</p>
           </div>
           <img

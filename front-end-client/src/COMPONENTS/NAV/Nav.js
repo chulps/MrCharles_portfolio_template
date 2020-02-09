@@ -56,7 +56,7 @@ class Nav extends React.Component {
                 style={{ objectFit: "contain" }}
               />
             </div>
-            <h4
+            {/* <h4
               style={{
                 margin: 0,
                 textTransform: "none"
@@ -66,7 +66,7 @@ class Nav extends React.Component {
               Chuck
               <br />
               Howard
-            </h4>
+            </h4> */}
           </span>
         </Link>
         {/* desktop nav menu */}
