@@ -25,7 +25,7 @@ class ClicktoolRolesSection extends React.Component {
           </div>
           <div>
             <h3 className="mb5">HATS I WEAR:</h3>
-            <div className="one-column sm-two-columns gap10">
+            <div className="one-column md-two-columns gap10">
               <div>
                 <h5>PRODUCT DESIGNER</h5>
                 <p>
@@ -37,7 +37,7 @@ class ClicktoolRolesSection extends React.Component {
               <div>
                 <h5>CREATIVE DIRECTOR</h5>
                 <p>
-                  Lead the creation of this app from top to bottom while
+                  Lead the creation of this app from top to bottom;
                   collaborating with other designers, developers, and
                   copywriters.
                 </p>

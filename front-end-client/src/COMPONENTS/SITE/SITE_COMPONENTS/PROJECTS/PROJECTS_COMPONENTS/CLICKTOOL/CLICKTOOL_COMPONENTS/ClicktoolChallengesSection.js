@@ -5,6 +5,9 @@ class ClicktoolChallengesSection extends React.Component {
   render() {
     return (
       <section className="challenges pt30">
+        <div className="absolute whole flex-center">
+          Flow-chart explaining the whole app coming soon...
+        </div>
         <div className="sticky-top relative pl30 pr30 pb30">
           <h3 className="mb5">CHALLENGE</h3>
           <div>

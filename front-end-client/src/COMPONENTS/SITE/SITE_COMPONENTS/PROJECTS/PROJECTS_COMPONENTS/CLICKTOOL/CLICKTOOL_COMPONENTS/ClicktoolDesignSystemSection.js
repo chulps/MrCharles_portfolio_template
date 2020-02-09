@@ -30,20 +30,20 @@ class ClicktoolDesignSystemSection extends React.Component {
         <div className="whole md-half lg-two-thirds xl-three-fourths ml-auto md-pl30">
           <div className="logo mb30">
             <label>logo</label>
-            <div className="shadow-out rounded p10 sm-p20  md-p30 flex-center flex-column mt10">
+            <div className="shadow-in rounded p10 sm-p20  md-p30 flex-center flex-column mt10">
               <Geometry />
               <label className="mt30">CONTRUCTION_GEOMETRY.AI</label>
             </div>
             <div className="one-column xl-three-columns gap10 mt10">
-              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
+              <div className="rounded shadow-in p10 md-p30 flex-center flex-column">
                 <LogoHorizontal />
                 <label className="mt30">HORIZONTAL_LOCKUP.SVG</label>
               </div>
-              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
+              <div className="rounded shadow-in p10 md-p30 flex-center flex-column">
                 <LogoMark />
                 <label className="mt30">MARK.SVG</label>
               </div>
-              <div className="rounded shadow-out p10 md-p30 flex-center flex-column">
+              <div className="rounded shadow-in p10 md-p30 flex-center flex-column">
                 <LogoStacked />
                 <label className="mt30">VERTICAL_LOCKUP.SVG</label>
               </div>
@@ -52,36 +52,36 @@ class ClicktoolDesignSystemSection extends React.Component {
           <div className="fonts flex-column mb30">
             <label>fonts</label>
             <div className="xl-three-columns gap10">
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <HelveticaNeueRegular />
                 <p>
                   Primary font used for links, buttons, paragraphs, inputs, and
                   almost everything{" "}
                 </p>
               </div>
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <HelveticaNeueBold />
                 <p>
                   For headers and subheaders. Sometimes to emphasize text in
                   paragraphs.
                 </p>
               </div>
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <HelveticaNeueCondensedBold />
                 <p>For labels and H1 headers only.</p>
               </div>
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <AntarcticanMonoRegular />
                 <p>For representing data in a table.</p>
               </div>
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <AntarcticanMonoMedium />
                 <p>
                   For emphasizing data shown somewhere on the UI but not in a
                   table
                 </p>
               </div>
-              <div className="shadow-out p10 md-p30 rounded flex-column">
+              <div className="shadow-in p10 md-p30 rounded flex-column">
                 <AntarcticanMonoBold />
                 <p>For emphasizing data even more, possibly in a table</p>
               </div>
@@ -116,7 +116,7 @@ class ClicktoolDesignSystemSection extends React.Component {
 
           <div>
             {/* begin black */}
-            <div className="rounded shadow-out flex-start flex-row mb10">
+            <div className="rounded shadow-in flex-start flex-row mb10">
               <div className="colors flex-row flex-start whole">
                 <div
                   className="clicktool-color rounded shadow out flex-center"
@@ -195,7 +195,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             {/* end black */}
 
             {/* begin navy */}
-            <div className="rounded shadow-out flex-start flex-row mb10">
+            <div className="rounded shadow-in flex-start flex-row mb10">
               <div className="colors flex-row flex-start whole">
                 <div
                   className="clicktool-color rounded shadow out flex-center"
@@ -264,7 +264,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             {/* end navy */}
 
             {/* begin cyan */}
-            <div className="rounded shadow-out flex-start flex-row mb10">
+            <div className="rounded shadow-in flex-start flex-row mb10">
               <div className="colors flex-row flex-start whole">
                 <div
                   className="clicktool-color rounded shadow out flex-center"
@@ -331,7 +331,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             {/* end cyan */}
 
             {/* begin gold */}
-            <div className="rounded shadow-out flex-start flex-row mb10">
+            <div className="rounded shadow-in flex-start flex-row mb10">
               <div className="colors flex-row flex-start whole">
                 <div
                   className="clicktool-color rounded shadow out flex-center"
@@ -392,7 +392,7 @@ class ClicktoolDesignSystemSection extends React.Component {
             {/* end gold */}
 
             {/* begin coral */}
-            <div className="rounded shadow-out flex-start flex-row mb10">
+            <div className="rounded shadow-in flex-start flex-row mb10">
               <div className="colors flex-row flex-start whole">
                 <div
                   className="clicktool-color rounded shadow out flex-center"
