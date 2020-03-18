@@ -242,7 +242,7 @@ nav .logo {
 }
 
 .nav-show-onScrollUp {
-  transform: var(--navHeight);
+  transform: translateY(calc(0px + var(--navHeight)));
   transition: 0.4s;
 }
 

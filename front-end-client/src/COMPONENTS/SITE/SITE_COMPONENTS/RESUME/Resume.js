@@ -105,7 +105,7 @@ class Resume extends React.Component {
             <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">Clicktool</h5>
               <div className="job-title">
-                Creative Director/Product Designer
+                Creative Director/Product Designer/Front End Developer
               </div>
               <div className="job-duration">Aug 2018 - Current</div>
             </div>
@@ -324,7 +324,7 @@ class Resume extends React.Component {
               <div className="experience-item whole one-column md-three-columns md-gap10">
                 <h5 className="employer">Clicktool</h5>
                 <div className="job-title">
-                  Creative Director/Product Designer
+                  Creative Director/Product Designer/Front End Developer
                 </div>
                 <div className="job-duration">Aug 2018 - Current</div>
               </div>
