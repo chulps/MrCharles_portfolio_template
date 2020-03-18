@@ -70,8 +70,9 @@ class Resume extends React.Component {
             <label>statement</label>
             <p>
               I'm a digital product designer, creative director and front-end
-              developer. I'm seeking a role where I can use the sum of my
-              talents to build apps, brands, software, and websites from top to
+              developer. I'm seeking a role where I can use the latest UI/UX
+              design practices, advanced HTML/CSS and Javascript frameworks like
+              React to build apps, brands, software, and websites from top to
               bottom.
             </p>
           </div>
@@ -287,9 +288,10 @@ class Resume extends React.Component {
               <label>statement</label>
               <p>
                 I'm a digital product designer, creative director and front-end
-                developer. I'm seeking a role where I can use the sum of my
-                talents to build apps, brands,software, and websites from top to
-                bottom.
+                developer. I'm seeking a role where I can use the latest UI/UX
+                design practices, advanced HTML/CSS and Javascript frameworks
+                like React to build apps, brands, software, and websites from
+                top to bottom.
               </p>
             </div>
 
