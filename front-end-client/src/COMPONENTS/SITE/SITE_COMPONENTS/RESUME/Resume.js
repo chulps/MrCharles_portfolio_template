@@ -120,7 +120,7 @@ class Resume extends React.Component {
             <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">Sullivan Branding</h5>
               <div className="job-title">Art Director</div>
-              <div className="job-duration">Mar 2016 - Mar 2017</div>
+              <div className="job-duration">Mar 2015 - Mar 2017</div>
             </div>{" "}
             {/* begin exp item */}
             <div className="experience-item whole one-column md-three-columns md-gap10">
@@ -340,7 +340,7 @@ class Resume extends React.Component {
               <div className="experience-item whole one-column md-three-columns md-gap10">
                 <h5 className="employer">Sullivan Branding</h5>
                 <div className="job-title">Art Director</div>
-                <div className="job-duration">Mar 2016 - Mar 2017</div>
+                <div className="job-duration">Mar 2015 - Mar 2017</div>
               </div>{" "}
               {/* begin exp item */}
               <div className="experience-item whole one-column md-three-columns md-gap10">
