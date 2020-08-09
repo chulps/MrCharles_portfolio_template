@@ -275,10 +275,6 @@ hg screens
 /* find all elements with the word 
 "column" or "columns" in the className 
 and set display to "grid" */
-[class*="columns"],
-[class*="column"] {
-  display: grid;
-}
 
 .gap0 {
   grid-gap: 0;
@@ -475,7 +471,9 @@ and set display to "grid" */
   flex-grow: 1;
 }
 
-.grid {
+.grid,
+[class*="column"],
+[class*="columns"] {
   display: -ms-grid;
   display: grid;
 }

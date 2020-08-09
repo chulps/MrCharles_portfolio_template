@@ -69,11 +69,10 @@ class Resume extends React.Component {
           <div className="intro mb20 flex-column whole">
             <label>statement</label>
             <p>
-              I'm a digital product designer, creative director and front-end
-              developer. I'm seeking a role where I can use the latest UI/UX
-              design practices, advanced HTML/CSS and Javascript frameworks like
-              React to build apps, brands, software, and websites from top to
-              bottom.
+              I'm a product designer, and front-end developer. I'm seeking a
+              role where I can use the latest UI/UX design practices, HTML/CSS
+              and Javascript frameworks like React to build apps, brands,
+              software, and websites from top to bottom.
             </p>
           </div>
 
@@ -104,11 +103,19 @@ class Resume extends React.Component {
           <div className="experience mb20">
             {/* begin experience-item */}
             <div className="experience-item whole one-column md-three-columns md-gap10">
+              <h5 className="employer">CRI Genetics</h5>
+              <div className="job-title">
+                Product Designer/Sr. Front End Developer
+              </div>
+              <div className="job-duration">April 2020 - Current</div>
+            </div>
+            {/* begin experience-item */}
+            <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">Clicktool</h5>
               <div className="job-title">
-                Creative Director/Product Designer/Front End Developer
+                Product Designer/Front End Developer
               </div>
-              <div className="job-duration">Aug 2018 - Current</div>
+              <div className="job-duration">Aug 2018 - April 2020</div>
             </div>
             {/* begin exp item */}
             <div className="experience-item whole one-column md-three-columns md-gap10">
@@ -121,13 +128,13 @@ class Resume extends React.Component {
               <h5 className="employer">Sullivan Branding</h5>
               <div className="job-title">Art Director</div>
               <div className="job-duration">Mar 2015 - Mar 2017</div>
-            </div>{" "}
+            </div>
             {/* begin exp item */}
-            <div className="experience-item whole one-column md-three-columns md-gap10">
+            {/* <div className="experience-item whole one-column md-three-columns md-gap10">
               <h5 className="employer">Signature Advertising</h5>
               <div className="job-title">Art Director</div>
               <div className="job-duration">Mar 2014 - Mar 2015</div>
-            </div>
+            </div> */}
           </div>
 
           <div className="whole one-column md-two-columns">
@@ -287,11 +294,10 @@ class Resume extends React.Component {
             <div className="intro mb20 flex-column whole">
               <label>statement</label>
               <p>
-                I'm a digital product designer, creative director and front-end
-                developer. I'm seeking a role where I can use the latest UI/UX
-                design practices, advanced HTML/CSS and Javascript frameworks
-                like React to build apps, brands, software, and websites from
-                top to bottom.
+                I'm a product designer, and front-end developer. I'm seeking a
+                role where I can use the latest UI/UX design practices, HTML/CSS
+                and Javascript frameworks like React to build apps, brands,
+                software, and websites from top to bottom.
               </p>
             </div>
 
@@ -324,11 +330,19 @@ class Resume extends React.Component {
             <div className="experience mb20">
               {/* begin experience-item */}
               <div className="experience-item whole one-column md-three-columns md-gap10">
+                <h5 className="employer">CRI Genetics</h5>
+                <div className="job-title">
+                  Product Designer/Sr. Front End Developer
+                </div>
+                <div className="job-duration">April 2020 - Current</div>
+              </div>
+              {/* begin experience-item */}
+              <div className="experience-item whole one-column md-three-columns md-gap10">
                 <h5 className="employer">Clicktool</h5>
                 <div className="job-title">
-                  Creative Director/Product Designer/Front End Developer
+                  Product Designer/Front End Developer
                 </div>
-                <div className="job-duration">Aug 2018 - Current</div>
+                <div className="job-duration">Aug 2018 - April 2020</div>
               </div>
               {/* begin exp item */}
               <div className="experience-item whole one-column md-three-columns md-gap10">
@@ -341,13 +355,13 @@ class Resume extends React.Component {
                 <h5 className="employer">Sullivan Branding</h5>
                 <div className="job-title">Art Director</div>
                 <div className="job-duration">Mar 2015 - Mar 2017</div>
-              </div>{" "}
-              {/* begin exp item */}
-              <div className="experience-item whole one-column md-three-columns md-gap10">
-                <h5 className="employer">Signature Advertising</h5>
-                <div className="job-title">Art Director</div>
-                <div className="job-duration">Mar 2014 - Mar 2015</div>
               </div>
+              {/* begin exp item */}
+              {/* <div className="experience-item whole one-column md-three-columns md-gap10">
+              <h5 className="employer">Signature Advertising</h5>
+              <div className="job-title">Art Director</div>
+              <div className="job-duration">Mar 2014 - Mar 2015</div>
+            </div> */}
             </div>
 
             <div className="whole one-column md-two-columns">
