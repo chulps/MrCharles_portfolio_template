@@ -27,7 +27,7 @@
     "concurrently": "^3.5.0",
     "express": "^4.15.4",
     "html2canvas": "^1.0.0-rc.5",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "mongoose": "^5.8.9",
     "nodemon": "^1.19.4",
     "react-parallax": "^3.0.3",
